@@ -77,6 +77,10 @@ a {
 }
 
 /* reset end */
+body {
+  background-color: #F2E9D4;
+}
+
 /* 頁首區 */
 #topbar {
   display: flex;
