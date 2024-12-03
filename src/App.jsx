@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import '../scss/style.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <body>
+
+      {/* 頁首區 */}
+      <header id="topbar">
+        {/* Logo */}
+        <h1><a href="./index.html">郵你真好</a></h1>
+        <nav>
+          <ul className="menu">
+            <li><a href="">首頁</a></li>
+            <li><a href="">配對明信片</a></li>
+            <li><a href="">商店</a></li>
+            <li><a href="">會員專區</a></li>
+            <li><a href="">關於</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* 內容區 */}
+
+      <main>
+        {/* 第一層 */}
+        <div id='layer1'>
+          <figure><img src="./Public/images/stamp-4.png" alt="" /></figure>
+          <p>郵你真好</p>
+          <p>Send a postcard to convey warmth.</p>
+          <figure><img src="./Public/images/stamp-3.png" alt="" /></figure>
+          {/* 裝飾郵戳 */}
+          <figure id="stampLeft"><img src="./Public/images/postmark-1.png" alt="左郵戳" /></figure>
+          <figure id="stampRight"><img src="./Public/images/postmark-1.png" alt="右郵戳" /></figure>
+        </div>
+
+
+
+
+      </main>
+    </body>
   )
 }
 

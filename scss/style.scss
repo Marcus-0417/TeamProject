@@ -1,0 +1,41 @@
+@use 'reset';
+
+/* 頁首區 */
+#topbar {
+    display: flex; // 主軸方向：水平
+    justify-content: space-between; // 主軸水平左右均分
+    align-items: center; // 副軸垂直置中
+    padding: 20px 50px;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .menu {
+            display: flex;
+            padding: 0 10px;
+            margin-top: 10px;
+
+            a {
+                margin: 15px;
+                padding: 7px 0 5px;
+                border-bottom: 2px solid transparent;
+                transition: 0.4s;
+                text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+
+                &:hover {
+                    color: #00ff88;
+                    border-bottom: 2px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+/* 內容區 */
+#layer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
