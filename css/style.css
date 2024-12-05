@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mallanna&family=Mansalva&family=Noto+Serif+TC:wght@200..900&display=swap");
 /* 清除預設值 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
@@ -53,34 +54,15 @@ a {
   text-decoration: none;
 }
 
-/* 卷軸樣式 */
-::-webkit-scrollbar {
-  width: 15px;
-  height: 15px;
-  border-radius: 99px;
-}
-
-::-webkit-scrollbar-button {
-  background-color: #ffea00;
-  border-radius: 99px;
-  width: 15px;
-  height: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(156, 156, 156, 0.7960784314);
-  border-radius: 99px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #012054;
-}
-
 /* reset end */
 body {
   background-color: #F2E9D4;
 }
 
+@font-face {
+  font-family: "ChenYuluoyan";
+  src: url("../public/fonts/ChenYuluoyan-Thin.ttf") format("truetype");
+}
 /* 頁首區 */
 #topbar {
   display: flex;
@@ -111,8 +93,90 @@ body {
 }
 
 /* 內容區 */
+/* 第一層 */
 #layer1 {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  gap: 60px;
+}
+#layer1 .text {
+  text-align: center;
+}
+#layer1 .text .text-TW {
+  font-family: "ChenYuluoyan", sans-serif;
+  font-size: 200px;
+  margin-top: 30px;
+}
+#layer1 .text .text-EN {
+  font-family: "Mansalva", sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-align: right;
+}
+#layer1 .stamp {
+  width: 350px;
+  height: 350px;
+}
+
+/* 第二層 */
+#layer2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 50px;
+}
+#layer2 .layer2-1 {
+  width: 450px;
+  height: 300px;
+}
+#layer2 .layer2-2 {
+  display: inline-block;
+  font-family: "Noto Sans TC", serif;
+  font-size: 25px;
+  position: relative;
+  width: 700px;
+  height: 300px;
+}
+#layer2 .layer2-2 img {
+  width: 100%;
+  height: 100%;
+}
+#layer2 .layer2-2 .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+#layer2 .layer2-2 .text #text1 {
+  margin: 25px 0 25px 50px;
+  text-align: left;
+}
+#layer2 .layer2-2 .text #text2 {
+  text-align: center;
+}
+#layer2 .layer2-2 .text #text3 {
+  margin: 25px 50px 25px 0;
+  text-align: right;
+}
+#layer2 .layer2-3 {
+  width: 450px;
+  height: 300px;
+}
+
+#stampLeft {
+  width: 140px;
+  position: absolute;
+  left: 470px;
+  bottom: 150px;
+}
+
+#stampRight {
+  width: 120px;
+  position: absolute;
+  right: 650px;
+  bottom: 270px;
 }/*# sourceMappingURL=style.css.map */
