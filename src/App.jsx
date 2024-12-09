@@ -36,7 +36,7 @@ function App() {
 
         {/* 第二層 */}
         <div id='layer2'>
-          <div><img className='layer2-1' src=".images/layer2/stamp-5.png" alt="" /></div>
+          <div><img className='layer2-1' src="./images/layer2/stamp-5.png" alt="" /></div>
           <div className='layer2-2'>
             <img src="./images/layer2/btn-1.jpg" alt="" />
             <div className='text'>
