@@ -61,17 +61,20 @@ function App() {
             </div>
             <div>
               <img className='layer3-1-img2' src="./public/images/layer3/tape-2.png" alt="" />
-              <img className='layer3-1-img3' src="./public/images/layer3/p4-papers-1.png" alt="" />
+              <div className='layer3-2'>
+                <img className='layer3-1-img3' src="./public/images/layer3/p4-papers-1.png" alt="" />
+                <p id='text6'>想要獲得更完整的體驗<br />可以先到會員中心<br />進行登入/註冊喔!</p>
+              </div>
             </div>
             <img className='layer3-1-img4' src="./public/images/layer3/postmask-5.png" alt="" />
           </div>
 
-          <div className='layer3-2'>
+          <div className='layer3-3'>
             <img src="./public/images/layer3/bar1.png" alt="" />
-            <img src="./public/images/layer3/Rectangle 191.png" alt="" />
+            <img src="./public/images/layer3/Rectangle-191.png" alt="" />
           </div>
 
-          <div className='layer3-3'>
+          <div className='layer3-4'>
             <img src="./public/images/layer3/bar2.png" alt="" />
             <img src="./public/images/layer3/Rectangle-191.png" alt="" />
           </div>

@@ -116,15 +116,18 @@ body {
             #text1 {
                 margin: 35px 0 35px 50px;
                 text-align: left;
+                letter-spacing: 3px;
             }
 
             #text2 {
                 text-align: center;
+                letter-spacing: 3px;
             }
 
             #text3 {
                 margin: 35px 50px 35px 0;
                 text-align: right;
+                letter-spacing: 3px;
             }
         }
     }
@@ -194,22 +197,57 @@ body {
                 left: 45px;
                 font-size: 48px;
                 text-shadow: white 0.02em 0.02em 0.02em;
+                font-weight:600
             }
         }
     }
+
     .layer3-1-img2 {
         z-index: 999;
         position: absolute;
-        width: 90px;
+        width: 70px;
+        top: 1440px;
+        left: 610px;
+        transform: rotate(17deg);
     }
-    .layer3-1-img3 {
-        z-index: 998;
-        position: absolute;
-        width: 300px;
-    }
-
 
     .layer3-2 {
-        width: 300px;
+        display: inline-block;
+        position: relative;
+
+        .layer3-1-img3 {
+            z-index: 998;
+            position: absolute;
+            width: 300px;
+            top: -50px;
+            left: 470px;
+            transform: rotate(9deg);
+        }
+
+        #text6 {
+            z-index: 998;
+            position: absolute;
+            width: 300px;
+            top:-5px;
+            left: 470px;
+            line-height: 30px;
+            letter-spacing: 4px;
+            text-align: center;
+            transform: rotate(7deg);
+        }
+    }
+
+    .layer3-1-img4{
+        width: 400px;
+        margin-top: 200px;
+    }
+
+
+    .layer3-3 {
+        width: 400px;
+    }
+
+    .layer3-4 {
+        width: 200px;
     }
 }
