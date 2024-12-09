@@ -141,14 +141,14 @@ body {
 .stampLeft {
     width: 140px;
     position: absolute;
-    left: 570px;
+    left: 470px;
     bottom: 530px;
 }
 
 .stampRight {
     width: 120px;
     position: absolute;
-    right: 570px;
+    right: 520px;
     bottom: 650px;
 }
 
@@ -157,8 +157,8 @@ body {
     width: 100%;
     max-width: 1900px;
     display: flex;
-    justify-content: space-around;
-    padding: 50px 30px;
+    justify-content: space-between;
+    padding: 50px 50px;
 
     .layer3-1 {
         position: relative;
@@ -197,7 +197,7 @@ body {
                 left: 45px;
                 font-size: 48px;
                 text-shadow: white 0.02em 0.02em 0.02em;
-                font-weight:600
+                font-weight: 600
             }
         }
     }
@@ -228,7 +228,7 @@ body {
             z-index: 998;
             position: absolute;
             width: 300px;
-            top:-5px;
+            top: -5px;
             left: 470px;
             line-height: 30px;
             letter-spacing: 4px;
@@ -237,17 +237,236 @@ body {
         }
     }
 
-    .layer3-1-img4{
-        width: 400px;
-        margin-top: 200px;
+    .layer3-1-img4 {
+        width: 420px;
+        margin-top: 60px;
     }
 
 
     .layer3-3 {
-        width: 400px;
+        position: relative;
+
+        #bar1 {
+
+            #bar1-1 {
+                width: 50px;
+                position: absolute;
+                top: -20px;
+                left: -395px;
+            }
+
+            #bar1-2 {
+                width: 50px;
+                position: absolute;
+                top: -20px;
+                left: -315px;
+            }
+
+            #bar1-3 {
+                width: 50px;
+                position: absolute;
+                top: -20px;
+                left: -235px;
+            }
+
+            #bar1-4 {
+                width: 50px;
+                position: absolute;
+                top: -20px;
+                left: -155px;
+            }
+
+            #text3-3-1 {
+                position: absolute;
+                top: -15px;
+                left: -385px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text3-3-2 {
+                position: absolute;
+                top: -15px;
+                left: -305px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text3-3-3 {
+                position: absolute;
+                top: -15px;
+                left: -225px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text3-3-4 {
+                position: absolute;
+                top: -15px;
+                left: -145px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+
+        #layer3-3-img1 {
+            width: 480px;
+            height: 750px;
+            position: absolute;
+            top: 60px;
+            left: -460px;
+        }
+
+        #dontai1 {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: center;
+            width: 450px;
+            position: absolute;
+            top: 60px;
+            left: -450px;
+            padding: 60px 15px;
+
+            .dontai-1 {
+                display: flex;
+                margin-top: 35px;
+                letter-spacing: 5px;
+                justify-content: flex-start;
+                font-size: 18px;
+            }
+
+            .logo {
+                width: 25px;
+                height: 25px;
+                margin: 0 10px;
+            }
+        }
     }
 
     .layer3-4 {
-        width: 200px;
+        position: relative;
+
+        #bar2 {
+
+            #bar2-1 {
+                width: 50px;
+                position: absolute;
+                top: -15px;
+                left: -400px;
+            }
+
+            #bar2-2 {
+                width: 50px;
+                position: absolute;
+                top: -15px;
+                left: -335px;
+            }
+
+            #bar2-3 {
+                width: 50px;
+                position: absolute;
+                top: -15px;
+                left: -275px;
+            }
+
+            #bar2-4 {
+                width: 50px;
+                position: absolute;
+                top: -15px;
+                left: -215px;
+            }
+
+            #bar2-5 {
+                width: 50px;
+                position: absolute;
+                top: -15px;
+                left: -155px;
+            }
+
+            #text3-4-1 {
+                position: absolute;
+                top: -15px;
+                left: -390px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text3-4-2 {
+                position: absolute;
+                top: -15px;
+                left: -328px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text3-4-3 {
+                position: absolute;
+                top: -15px;
+                left: -265px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text3-4-4 {
+                position: absolute;
+                top: -15px;
+                left: -205px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            #text3-4-5 {
+                position: absolute;
+                top: -15px;
+                left: -145px;
+                font-family: "Noto Sans TC", serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+        }
+
+        #layer3-4-img1 {
+            width: 480px;
+            height: 750px;
+            position: absolute;
+            top: 60px;
+            left: -460px;
+        }
+
+        #dontai2 {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: center;
+            width: 450px;
+            position: absolute;
+            top: 60px;
+            left: -440px;
+            padding: 60px 45px;
+
+            .dontai-1 {
+                display: flex;
+                margin-top: 40px;
+                letter-spacing: 5px;
+                justify-content: flex-start;
+                font-size: 18px;
+            }
+
+            .logo {
+                width: 25px;
+                height: 25px;
+                margin: 0 10px;
+            }
+        }
     }
 }
