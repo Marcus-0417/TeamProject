@@ -29,6 +29,9 @@ function App() {
           <div className='text'>
             <p className='text-TW'>郵你真好</p>
             <p className='text-EN'>Send a postcard to convey warmth.</p>
+            {/* 裝飾郵戳 */}
+            <div><img className="stampLeft" src="./Public/images/postmark-1.png" alt="左郵戳" /></div>
+            <div><img className="stampRight" src="./Public/images/postmark-1.png" alt="右郵戳" /></div>
           </div>
           <div><img className='stamp' src="./public/images/layer1/stamp-3.png" alt="" /></div>
 
@@ -161,17 +164,23 @@ function App() {
 
         {/* 第四層 */}
         <div id='layer4'>
-        <div>
-          <img src="./images/layer4/p1-picture-1.jpg" alt="" />
+          <div className='layer4-1'>
+            <img id='layer4-1-img1' src="./images/layer4/p1-picture-1.jpg" alt="" />
+            <p id='layer4-1-text1'>這裡可以看到其他用戶分享的故事與心得哦！</p>
+            <p id='layer4-1-text2'>點這裡閱讀用戶故事</p>
+          </div>
+          <div className='layer4-2'>
+            <img id='layer4-2-img1' src="./images/layer4/p1-papers-3.jpg" alt="" />
+            <h3>主題活動</h3>
+            <p>節日快樂！</p>
+            <p>很高興與你交換這張明信片，願它帶來一份溫暖的祝福，讓這個節日充滿快樂與驚喜！祝你平安喜樂！</p>
+          </div>
         </div>
-        <div></div>
-
-        </div>
-
       </main>
-      {/* 裝飾郵戳 */}
-      <figure><img className="stampLeft" src="./Public/images/postmark-1.png" alt="左郵戳" /></figure>
-      <figure><img className="stampRight" src="./Public/images/postmark-1.png" alt="右郵戳" /></figure>
+
+    <footer>
+      <p>郵你真好 &copy; 2024 postcard.com</p>
+    </footer>
     </body>
   )
 }

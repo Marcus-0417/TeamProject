@@ -52,10 +52,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+
 
     .text {
         text-align: center;
+        position: relative;
 
         .text-TW {
             font-family: "ChenYuluoyan", sans-serif;
@@ -69,6 +70,20 @@ body {
             font-size: 40px;
             margin-bottom: 50px;
             text-align: right;
+        }
+
+        .stampLeft {
+            width: 140px;
+            position: absolute;
+            left: -40px;
+            top: 130px;
+        }
+
+        .stampRight {
+            width: 120px;
+            position: absolute;
+            right: 0px;
+            top: 40px;
         }
     }
 
@@ -85,7 +100,7 @@ body {
     max-width: 1900px;
     display: flex;
     justify-content: space-around;
-    padding: 50px 30px;
+    padding: 50px 50px;
 
     .layer2-1 {
         width: 500px;
@@ -97,7 +112,7 @@ body {
         font-family: "Noto Sans TC", serif;
         font-size: 25px;
         position: relative;
-        width: 700px;
+        width: 750px;
         height: 330px;
 
         img {
@@ -138,19 +153,6 @@ body {
     }
 }
 
-.stampLeft {
-    width: 140px;
-    position: absolute;
-    left: 470px;
-    bottom: 530px;
-}
-
-.stampRight {
-    width: 120px;
-    position: absolute;
-    right: 520px;
-    bottom: 650px;
-}
 
 /* 第三層 */
 #layer3 {
@@ -324,7 +326,7 @@ body {
         #dontai1 {
             display: flex;
             flex-direction: column;
-            align-items:flex-start;
+            align-items: flex-start;
             justify-content: center;
             width: 450px;
             position: absolute;
@@ -446,7 +448,7 @@ body {
         #dontai2 {
             display: flex;
             flex-direction: column;
-            align-items:flex-start;
+            align-items: flex-start;
             justify-content: center;
             width: 450px;
             position: absolute;
@@ -468,5 +470,61 @@ body {
                 margin: 0 10px;
             }
         }
+    }
+}
+
+/* 第四層 */
+#layer4 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 40px;
+
+    .layer4-1 {
+        position: relative;
+        display: inline-block;
+        width: 1200px;
+
+        #layer4-1-img1 {
+            position: absolute;
+            width: 1180px;
+            height: 400px;
+        }
+
+        #layer4-1-text1 {
+            position: absolute;
+            bottom: 150px;
+            right: 50px;
+        }
+
+        #layer4-1-text2 {
+            position: absolute;
+            bottom: 100px;
+            right: 50px;
+        }
+    }
+
+    .layer4-2 {
+        position: relative;
+        display: inline-block;
+        width: 600px;
+
+        #layer4-2-img1 {
+            width: 600px;
+            height: 400px;
+        }
+    }
+}
+
+/* footer */
+footer {
+    width: 1855px;
+    height: 60px;
+    background-color: #E2CA9E;
+    margin: 0 20px 20px 20px;
+
+    p {
+        text-align: center;
+        line-height: 60px;
+        color: #464646;
     }
 }
