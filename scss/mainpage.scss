@@ -75,7 +75,6 @@ body {
     justify-content: space-around;
     align-items: center;
 
-
     .text {
         text-align: center;
         position: relative;
@@ -117,7 +116,6 @@ body {
         width: 380px;
         height: 380px;
     }
-
 }
 
 /* 第二層 */
@@ -270,8 +268,6 @@ body {
         }
     }
 
-    
-
     .layer3-2 {
         display: inline-block;
         position: relative;
@@ -297,9 +293,6 @@ body {
             transform: rotate(7deg);
         }
     }
-
-    
-
 
     .layer3-3 {
         position: relative;
@@ -541,6 +534,7 @@ body {
 
 /* 第四層 */
 #layer4 {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 50px 40px;
@@ -659,7 +653,6 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    width: 1680px;
     height: 60px;
     background-color: #E2CA9E;
     margin: 0 20px 20px 20px;
