@@ -1,6 +1,6 @@
 import '../css/MainPage.css'
 
-function MainPage() {
+function App() {
 
   return (
     <body>
@@ -196,4 +196,4 @@ function MainPage() {
   )
 }
 
-export default MainPage
+export default App

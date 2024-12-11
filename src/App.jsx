@@ -1,15 +1,14 @@
 import '../scss/MainPage.scss'
 
-function MainPage() {
+function App() {
 
   return (
-    <body>
-
+    <div id="body">
       {/* 頁首區 */}
-      <header id="topbar">
+      <header className="topbar">
         {/* Logo */}
-        <div id="logo">
-        <img id="img-logo" src="./images/logo.png" alt="" />
+        <div className="logo">
+        <img className="img-logo" src="./images/logo.png" alt="" />
         <h1>郵你真好</h1>
         </div>
         <nav>
@@ -188,11 +187,12 @@ function MainPage() {
         </div>
       </main>
 
+
       <footer>
         <p>郵你真好 &copy; 2024 postcard.com</p>
       </footer>
-    </body>
+    </div>
   )
 }
 
-export default MainPage
+export default App

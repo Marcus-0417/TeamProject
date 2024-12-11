@@ -1,8 +1,9 @@
 @use 'reset';
 @import url('https://fonts.googleapis.com/css2?family=Mallanna&family=Mansalva&family=Noto+Serif+TC:wght@200..900&display=swap');
 
-body {
+#body {
     width: 100%;
+    height: 100%;
     background-color: #F2E9D4;
 }
 
@@ -12,18 +13,18 @@ body {
 }
 
 /* 頁首區 */
-#topbar {
+.topbar {
     width: 100%;
     display: flex; // 主軸方向：水平
     justify-content: space-between; // 主軸水平左右均分
     align-items: center; // 副軸垂直置中
     padding: 20px 50px;
 
-    #logo {
+    .logo {
         display: flex;
         position: relative;
 
-        #img-logo {
+        .img-logo {
             width: 150px;
             position: absolute;
             left: -60px;
