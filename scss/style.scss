@@ -61,29 +61,33 @@ body {
         .text-TW {
             font-family: "ChenYuluoyan", sans-serif;
             font-size: 200px;
-            margin-top: 30px;
+            margin-bottom: 50px;
             letter-spacing: 50px;
         }
 
         .text-EN {
+            position: absolute;
             font-family: "Mansalva", sans-serif;
             font-size: 40px;
+            letter-spacing: 5px;
             margin-bottom: 50px;
             text-align: right;
+            right: -70px;
+            bottom: -30px;
         }
 
         .stampLeft {
             width: 140px;
             position: absolute;
             left: -40px;
-            top: 130px;
+            top: 110px;
         }
 
         .stampRight {
             width: 120px;
             position: absolute;
             right: 0px;
-            top: 40px;
+            top: 20px;
         }
     }
 
@@ -170,6 +174,45 @@ body {
             width: 700px;
             height: 450px;
         }
+        .layer3-1-img2 {
+            position: absolute;
+            width: 150px;
+            top: -70px;
+            right: -30px;
+        }
+        .layer3-1-img8 {
+            z-index: 999;
+            position: absolute;
+            width: 70px;
+            bottom: 350px;
+            left: 560px;
+            transform: rotate(17deg);
+        }
+        #layer3-1-img4 {
+            width: 420px;
+            margin-top: 60px;
+        }
+        #layer3-1-img5 {
+            position: absolute;
+            width: 150px;
+            bottom: -70px;
+            left: 500px;
+            z-index: 999;
+        }
+        #layer3-1-img6 {
+            position: absolute;
+            width: 100px;
+            bottom: -40px;
+            left: 620px;
+            z-index: 998;
+        }
+        #layer3-1-img7 {
+            position: absolute;
+            width: 130px;
+            bottom: 10px;
+            left: 550px;
+            z-index: 997;
+        }
 
         .text1 {
             position: absolute;
@@ -198,20 +241,14 @@ body {
                 top: -180px;
                 left: 45px;
                 font-size: 48px;
-                text-shadow: white 0.02em 0.02em 0.02em;
-                font-weight: 600
+                text-shadow: white 0.04em 0.04em 0.02em;
+                font-weight: 600;
+                letter-spacing: 5px;
             }
         }
     }
 
-    .layer3-1-img2 {
-        z-index: 999;
-        position: absolute;
-        width: 70px;
-        top: 1440px;
-        left: 610px;
-        transform: rotate(17deg);
-    }
+    
 
     .layer3-2 {
         display: inline-block;
@@ -239,10 +276,7 @@ body {
         }
     }
 
-    .layer3-1-img4 {
-        width: 420px;
-        margin-top: 60px;
-    }
+    
 
 
     .layer3-3 {
@@ -321,6 +355,13 @@ body {
             position: absolute;
             top: 60px;
             left: -460px;
+        }
+        #layer3-3-img2 {
+            position: absolute;
+            width: 150px;
+            top: 50px;
+            right: -50px;
+            transform: rotate(15deg);
         }
 
         #dontai1 {
@@ -445,6 +486,15 @@ body {
             left: -460px;
         }
 
+        #layer3-4-img2 {
+            position: absolute;
+            width: 150px;
+            top: 50px;
+            right: -50px;
+            transform: rotate(15deg);
+        }
+
+
         #dontai2 {
             display: flex;
             flex-direction: column;
@@ -490,16 +540,27 @@ body {
             height: 400px;
         }
 
+        #layer4-1-img2 {
+            position: absolute;
+            width: 160px;
+            top: 10px;
+            right: 30px;
+        }
+
         #layer4-1-text1 {
             position: absolute;
-            bottom: 150px;
-            right: 50px;
+            bottom: 120px;
+            right: 60px;
+            color: #6a4217;
+            font-size: 16px;
         }
 
         #layer4-1-text2 {
             position: absolute;
-            bottom: 100px;
-            right: 50px;
+            bottom: 20px;
+            right: 60px;
+            color: #6a4217;
+            font-size: 48px;
         }
     }
 
@@ -511,6 +572,56 @@ body {
         #layer4-2-img1 {
             width: 600px;
             height: 400px;
+        }
+
+        #layer4-2-img2 {
+            position: absolute;
+            width: 120px;
+            top: 35px;
+            right: 40px;
+            transform: scaleX(-1);
+        }
+
+        #layer4-2-img3 {
+            position: absolute;
+            width: 100px;
+            top: 40px;
+            right: 100px;
+        }
+
+        #layer4-2-img4 {
+            position: absolute;
+            width: 200px;
+            bottom: -30px;
+            right: 10px;
+        }
+
+        #layer4-2-text1 {
+            position: absolute;
+            top: 35px;
+            left: 50px;
+            font-family: "Noto Sans TC", serif;
+            color: #464646;
+            line-height: 70px;
+            font-size: 48px;
+            text-shadow: white 0.04em 0.04em 0.1em;
+            font-weight: 600;
+        }
+
+        #layer4-2-text2 {
+            position: absolute;
+            top: 120px;
+            left: 50px;
+            font-size: 24px;
+            letter-spacing: 5px;
+        }
+
+        #layer4-2-text3 {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            font-size: 24px;
+            letter-spacing: 8px;
         }
     }
 }
