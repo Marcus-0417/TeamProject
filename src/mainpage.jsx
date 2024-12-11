@@ -1,6 +1,6 @@
 import '../css/mainpage.css'
 
-function App() {
+function MainPage() {
 
   return (
     <body>
@@ -173,7 +173,7 @@ function App() {
             <img id='layer4-1-img1' src="./images/layer4/p1-picture-1.jpg" alt="" />
             <img id='layer4-1-img2' src="./images/layer4/postmark-2.png" alt="" />
             <p id='layer4-1-text1'>這裡可以看到其他用戶分享的故事與心得哦！</p>
-            <p id='layer4-1-text2'>點這裡閱讀用戶故事</p>
+            <p id='layer4-1-text2'><a href="">點這裡閱讀用戶故事</a></p>
             <img id='layer4-1-img3' src="./images/layer4/Vector.png" alt="" />
             <img id='layer4-1-img4' src="./images/layer4/Vector.png" alt="" />
           </div>
@@ -196,4 +196,4 @@ function App() {
   )
 }
 
-export default App
+export default MainPage

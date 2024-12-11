@@ -624,7 +624,9 @@ body {
 
 /* footer */
 footer {
-  width: 1855px;
+  display: flex;
+  justify-content: center;
+  width: 1680px;
   height: 60px;
   background-color: #E2CA9E;
   margin: 0 20px 20px 20px;
@@ -633,4 +635,4 @@ footer p {
   text-align: center;
   line-height: 60px;
   color: #464646;
-}/*# sourceMappingURL=mainpage.css.map */
+}/*# sourceMappingURL=MainPage.css.map */
