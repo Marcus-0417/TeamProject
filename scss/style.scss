@@ -19,6 +19,27 @@ body {
     align-items: center; // 副軸垂直置中
     padding: 20px 50px;
 
+    #logo {
+        display: flex;
+        position: relative;
+
+        #img-logo {
+            width: 150px;
+            position: absolute;
+            left: -60px;
+            top: -70px;
+        }
+
+        h1{
+            position: absolute;
+            width: 100px;
+            top: 30px;
+            left: 70px;
+            letter-spacing: 2px;
+        }
+    }
+    
+
     nav {
         display: flex;
         flex-direction: column;
@@ -28,6 +49,7 @@ body {
             display: flex;
             padding: 0 10px;
             margin-top: 10px;
+            margin-bottom: 20px;
 
             a {
                 margin: 15px;
@@ -545,6 +567,19 @@ body {
             width: 160px;
             top: 10px;
             right: 30px;
+        }
+
+        #layer4-1-img3 {
+            position: absolute;
+            width: 23px;
+            bottom: 33px;
+            right: 540px;
+        }
+        #layer4-1-img4 {
+            position: absolute;
+            width: 23px;
+            bottom: 33px;
+            right: 510px;
         }
 
         #layer4-1-text1 {

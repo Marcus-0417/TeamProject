@@ -8,7 +8,10 @@ function App() {
       {/* 頁首區 */}
       <header id="topbar">
         {/* Logo */}
+        <div id="logo">
+        <img id="img-logo" src="./public/images/logo.png" alt="" />
         <h1><a href="./index.html">郵你真好</a></h1>
+        </div>
         <nav>
           <ul className="menu">
             <li><a href="">首頁</a></li>
@@ -171,6 +174,8 @@ function App() {
             <img id='layer4-1-img2' src="./images/layer4/postmark-2.png" alt="" />
             <p id='layer4-1-text1'>這裡可以看到其他用戶分享的故事與心得哦！</p>
             <p id='layer4-1-text2'>點這裡閱讀用戶故事</p>
+            <img id='layer4-1-img3' src="./images/layer4/Vector.png" alt="" />
+            <img id='layer4-1-img4' src="./images/layer4/Vector.png" alt="" />
           </div>
           <div className='layer4-2'>
             <img id='layer4-2-img1' src="./images/layer4/p1-papers-3.jpg" alt="" />
