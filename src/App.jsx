@@ -1,4 +1,5 @@
-import '../scss/style.scss'
+import '../css/mainpage.css'
+// import '../scss/style.scss'
 
 function App() {
 
