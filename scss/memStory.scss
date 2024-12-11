@@ -1,0 +1,95 @@
+@use 'reset';
+
+
+body {
+    width: 100%;
+    background-color: #F2E9D4;
+}
+
+/* 頁首區 */
+#topbar {
+    width: 100%;
+    display: flex; // 主軸方向：水平
+    justify-content: space-between; // 主軸水平左右均分
+    align-items: center; // 副軸垂直置中
+    padding: 20px 50px;
+
+    #logo {
+        display: flex;
+        position: relative;
+
+        #img-logo {
+            width: 150px;
+            position: absolute;
+            left: -60px;
+            top: -70px;
+        }
+
+        h1 {
+            position: absolute;
+            width: 100px;
+            top: 30px;
+            left: 70px;
+            letter-spacing: 2px;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .menu {
+            display: flex;
+            padding: 0 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            a {
+                margin: 15px;
+                padding: 7px 0 5px;
+                border-bottom: 2px solid transparent;
+                transition: 0.4s;
+                text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+
+                &:hover {
+                    color: #00ff88;
+                    border-bottom: 2px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+/* 內容區 */
+#layer1 {
+    position: relative;
+
+    #layer1-1 {
+        width: 50px;
+        position: absolute;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    width: 1855px;
+    height: 60px;
+    background-color: #E2CA9E;
+    margin: 0 20px 20px 20px;
+
+    p {
+        text-align: center;
+        line-height: 60px;
+        color: #464646;
+    }
+}

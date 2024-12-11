@@ -1,5 +1,4 @@
 import '../css/mainpage.css'
-// import '../scss/style.scss'
 
 function App() {
 
@@ -10,7 +9,7 @@ function App() {
       <header id="topbar">
         {/* Logo */}
         <div id="logo">
-        <img id="img-logo" src="./public/images/logo.png" alt="" />
+        <img id="img-logo" src="./images/logo.png" alt="" />
         <h1><a href="./index.html">郵你真好</a></h1>
         </div>
         <nav>
@@ -29,15 +28,15 @@ function App() {
       <main>
         {/* 第一層 */}
         <div id='layer1'>
-          <div><img className='stamp' src="./public/images/layer1/stamp-4.png" alt="" /></div>
+          <div><img className='stamp' src="./images/layer1/stamp-4.png" alt="" /></div>
           <div className='text'>
             <p className='text-TW'>郵你真好</p>
             <p className='text-EN'>Send a postcard to convey warmth.</p>
             {/* 裝飾郵戳 */}
-            <div><img className="stampLeft" src="./Public/images/layer1/postmark-1.png" alt="左郵戳" /></div>
-            <div><img className="stampRight" src="./Public/images/layer1/postmark-1.png" alt="右郵戳" /></div>
+            <div><img className="stampLeft" src="./images/layer1/postmark-1.png" alt="左郵戳" /></div>
+            <div><img className="stampRight" src="./images/layer1/postmark-1.png" alt="右郵戳" /></div>
           </div>
-          <div><img className='stamp' src="./public/images/layer1/stamp-3.png" alt="" /></div>
+          <div><img className='stamp' src="./images/layer1/stamp-3.png" alt="" /></div>
 
         </div>
 
@@ -59,21 +58,21 @@ function App() {
         {/* 第三層 */}
         <div id='layer3'>
           <div className='layer3-1'>
-            <img className='layer3-1-img1' src="./public/images/layer3/p1-papers-2.jpg" alt="" />
-            <img className='layer3-1-img2' src="./public/images/layer3/postmark-2.png" alt="" />
+            <img className='layer3-1-img1' src="./images/layer3/p1-papers-2.jpg" alt="" />
+            <img className='layer3-1-img2' src="./images/layer3/postmark-2.png" alt="" />
             <div className='text1'>
               <p id='text4'>已經迫不及待想與別人分享生活了嗎?<br />點選這裡就可以直接交流啦 !</p>
               <p id='text5'>開始<br />你的明信片旅程吧！</p>
             </div>
-            <img className='layer3-1-img8' src="./public/images/layer3/tape-2.png" alt="" />
+            <img className='layer3-1-img8' src="./images/layer3/tape-2.png" alt="" />
             <div className='layer3-2'>
-              <img className='layer3-1-img3' src="./public/images/layer3/p4-papers-1.png" alt="" />
+              <img className='layer3-1-img3' src="./images/layer3/p4-papers-1.png" alt="" />
               <p id='text6'>想要獲得更完整的體驗<br />可以先到會員中心<br />進行登入/註冊喔!</p>
             </div>
-            <img id='layer3-1-img4' src="./public/images/layer3/postmask-5.png" alt="" />
-            <img id='layer3-1-img5' src="./public/images/layer3/stamp-7.png" alt="" />
-            <img id='layer3-1-img6' src="./public/images/layer3/stamp-8.png" alt="" />
-            <img id='layer3-1-img7' src="./public/images/layer3/stamp-9.png" alt="" />
+            <img id='layer3-1-img4' src="./images/layer3/postmask-5.png" alt="" />
+            <img id='layer3-1-img5' src="./images/layer3/stamp-7.png" alt="" />
+            <img id='layer3-1-img6' src="./images/layer3/stamp-8.png" alt="" />
+            <img id='layer3-1-img7' src="./images/layer3/stamp-9.png" alt="" />
           </div>
 
           <div className='layer3-3'>
@@ -89,7 +88,7 @@ function App() {
             </div>
             <div>
               <img id='layer3-3-img1' src="./images/layer3/Rectangle-191.png" alt="" />
-              <img id='layer3-3-img2' src="./public/images/layer3/postmark-3.png" alt="" />
+              <img id='layer3-3-img2' src="./images/layer3/postmark-3.png" alt="" />
               <div id='dontai1'>
                 <div className='dontai-1'>
                   <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
@@ -136,8 +135,8 @@ function App() {
               <p id='text3-4-5'>戶</p>
             </div>
             <div>
-              <img id='layer3-4-img1' src="./public/images/layer3/Rectangle-191.png" alt="" />
-              <img id='layer3-4-img2' src="./public/images/layer3/postmark-3.png" alt="" />
+              <img id='layer3-4-img1' src="./images/layer3/Rectangle-191.png" alt="" />
+              <img id='layer3-4-img2' src="./images/layer3/postmark-3.png" alt="" />
               <div id='dontai2'>
                 <div className='dontai-1'>
                   <p>歡迎</p><img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p> ********加入郵你真好!!!</p>
@@ -195,6 +194,6 @@ function App() {
       </footer>
     </body>
   )
-}
 
+}
 export default App
