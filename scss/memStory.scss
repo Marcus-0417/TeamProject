@@ -1,27 +1,27 @@
 @use 'reset';
 
-body {
+#MemStory {
     width: 100%;
     background-color: #F2E9D4;
 
-    main{
+    #MemStory-main{
         height: 80vh;
     }
 }
 
 /* 頁首區 */
-#topbar {
+.topbar {
     width: 100%;
     display: flex; // 主軸方向：水平
     justify-content: space-between; // 主軸水平左右均分
     align-items: center; // 副軸垂直置中
     padding: 20px 50px;
 
-    #logo {
+    .logo {
         display: flex;
         position: relative;
 
-        #img-logo {
+        .img-logo {
             width: 150px;
             position: absolute;
             left: -60px;
@@ -288,7 +288,7 @@ body {
 
 
 /* footer */
-footer {
+#MemStory-footer {
     display: flex;
     justify-content: center;
     width: 1680px;

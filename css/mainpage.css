@@ -55,7 +55,7 @@ a {
 }
 
 /* reset end */
-body {
+#all {
   width: 100%;
   background-color: #F2E9D4;
 }
@@ -65,49 +65,49 @@ body {
   src: url("../public/fonts/ChenYuluoyan-Thin.ttf") format("truetype");
 }
 /* 頁首區 */
-#topbar {
+.topbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
 }
-#topbar #logo {
+.topbar .logo {
   display: flex;
   position: relative;
 }
-#topbar #logo #img-logo {
+.topbar .logo .img-logo {
   width: 150px;
   position: absolute;
   left: -60px;
   top: -70px;
 }
-#topbar #logo h1 {
+.topbar .logo h1 {
   position: absolute;
   width: 100px;
   top: 30px;
   left: 70px;
   letter-spacing: 2px;
 }
-#topbar nav {
+.topbar nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-#topbar nav .menu {
+.topbar nav .menu {
   display: flex;
   padding: 0 10px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-#topbar nav .menu a {
+.topbar nav .menu a {
   margin: 15px;
   padding: 7px 0 5px;
   border-bottom: 2px solid transparent;
   transition: 0.4s;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
 }
-#topbar nav .menu a:hover {
+.topbar nav .menu a:hover {
   color: #00ff88;
   border-bottom: 2px solid transparent;
 }
@@ -134,11 +134,11 @@ body {
   position: absolute;
   font-family: "Mansalva", sans-serif;
   font-size: 40px;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   margin-bottom: 50px;
   text-align: right;
   right: -70px;
-  bottom: -30px;
+  bottom: -20px;
 }
 #layer1 .text .stampLeft {
   width: 140px;
@@ -153,29 +153,29 @@ body {
   top: 20px;
 }
 #layer1 .stamp {
-  width: 380px;
-  height: 380px;
+  width: 400px;
+  height: 400px;
 }
 
 /* 第二層 */
 #layer2 {
   width: 100%;
-  max-width: 1900px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 50px 50px;
 }
 #layer2 .layer2-1 {
   width: 500px;
-  height: 330px;
+  height: 300px;
 }
 #layer2 .layer2-2 {
   display: inline-block;
   font-family: "Noto Sans TC", serif;
   font-size: 25px;
   position: relative;
-  width: 750px;
-  height: 330px;
+  width: 800px;
+  height: 300px;
+  padding: 0 20px;
 }
 #layer2 .layer2-2 img {
   width: 100%;
@@ -205,24 +205,24 @@ body {
 }
 #layer2 .layer2-3 {
   width: 500px;
-  height: 330px;
+  height: 300px;
 }
 
 /* 第三層 */
 #layer3 {
   width: 100%;
-  max-width: 1900px;
   display: flex;
   justify-content: space-between;
   padding: 50px 50px;
+  height: 900px;
 }
 #layer3 .layer3-1 {
   position: relative;
   display: inline-block;
 }
 #layer3 .layer3-1 .layer3-1-img1 {
-  width: 700px;
-  height: 450px;
+  width: 600px;
+  height: 400px;
 }
 #layer3 .layer3-1 .layer3-1-img2 {
   position: absolute;
@@ -233,34 +233,36 @@ body {
 #layer3 .layer3-1 .layer3-1-img8 {
   z-index: 999;
   position: absolute;
-  width: 70px;
-  bottom: 350px;
-  left: 560px;
+  width: 50px;
+  bottom: 390px;
+  left: 480px;
   transform: rotate(17deg);
 }
 #layer3 .layer3-1 #layer3-1-img4 {
-  width: 420px;
-  margin-top: 60px;
+  position: absolute;
+  width: 400px;
+  top: 550px;
+  left: -20px;
 }
 #layer3 .layer3-1 #layer3-1-img5 {
   position: absolute;
   width: 150px;
   bottom: -70px;
-  left: 500px;
+  left: 410px;
   z-index: 999;
 }
 #layer3 .layer3-1 #layer3-1-img6 {
   position: absolute;
   width: 100px;
   bottom: -40px;
-  left: 620px;
+  left: 530px;
   z-index: 998;
 }
 #layer3 .layer3-1 #layer3-1-img7 {
   position: absolute;
   width: 130px;
   bottom: 10px;
-  left: 550px;
+  left: 460px;
   z-index: 997;
 }
 #layer3 .layer3-1 .text1 {
@@ -272,7 +274,7 @@ body {
   line-height: 60px;
   position: absolute;
   width: 400px;
-  top: -400px;
+  top: -370px;
   left: 45px;
   font-size: 24px;
   font-weight: bold;
@@ -290,28 +292,24 @@ body {
   font-weight: 600;
   letter-spacing: 5px;
 }
-#layer3 .layer3-2 {
-  display: inline-block;
-  position: relative;
-}
-#layer3 .layer3-2 .layer3-1-img3 {
+#layer3 .layer3-1 .layer3-1-img3 {
   z-index: 998;
   position: absolute;
   width: 300px;
-  top: -50px;
-  left: 470px;
-  transform: rotate(9deg);
+  top: 370px;
+  left: 370px;
+  transform: rotate(3deg);
 }
-#layer3 .layer3-2 #text6 {
+#layer3 .layer3-1 #text6 {
   z-index: 998;
   position: absolute;
   width: 300px;
-  top: -5px;
-  left: 470px;
+  top: 415px;
+  left: 370px;
   line-height: 30px;
   letter-spacing: 4px;
   text-align: center;
-  transform: rotate(7deg);
+  transform: rotate(5deg);
 }
 #layer3 .layer3-3 {
   position: relative;
@@ -320,30 +318,30 @@ body {
   width: 50px;
   position: absolute;
   top: -20px;
-  left: -395px;
+  left: -425px;
 }
 #layer3 .layer3-3 #bar1 #bar1-2 {
   width: 50px;
   position: absolute;
   top: -20px;
-  left: -315px;
+  left: -350px;
 }
 #layer3 .layer3-3 #bar1 #bar1-3 {
   width: 50px;
   position: absolute;
   top: -20px;
-  left: -235px;
+  left: -280px;
 }
 #layer3 .layer3-3 #bar1 #bar1-4 {
   width: 50px;
   position: absolute;
   top: -20px;
-  left: -155px;
+  left: -210px;
 }
 #layer3 .layer3-3 #bar1 #text3-3-1 {
   position: absolute;
   top: -15px;
-  left: -385px;
+  left: -415px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -351,7 +349,7 @@ body {
 #layer3 .layer3-3 #bar1 #text3-3-2 {
   position: absolute;
   top: -15px;
-  left: -305px;
+  left: -343px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -359,7 +357,7 @@ body {
 #layer3 .layer3-3 #bar1 #text3-3-3 {
   position: absolute;
   top: -15px;
-  left: -225px;
+  left: -270px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -367,7 +365,7 @@ body {
 #layer3 .layer3-3 #bar1 #text3-3-4 {
   position: absolute;
   top: -15px;
-  left: -145px;
+  left: -200px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -377,31 +375,29 @@ body {
   height: 750px;
   position: absolute;
   top: 60px;
-  left: -460px;
+  left: -500px;
 }
 #layer3 .layer3-3 #layer3-3-img2 {
   position: absolute;
   width: 150px;
   top: 50px;
-  right: -50px;
+  right: -20px;
   transform: rotate(15deg);
 }
 #layer3 .layer3-3 #dontai1 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
   width: 450px;
   position: absolute;
   top: 60px;
-  left: -450px;
+  left: -480px;
   padding: 60px 15px;
 }
 #layer3 .layer3-3 #dontai1 .dontai-1 {
   display: flex;
   margin-top: 35px;
   letter-spacing: 5px;
-  justify-content: flex-start;
   font-size: 18px;
 }
 #layer3 .layer3-3 #dontai1 .logo {
@@ -416,36 +412,36 @@ body {
   width: 50px;
   position: absolute;
   top: -15px;
-  left: -400px;
+  left: -450px;
 }
 #layer3 .layer3-4 #bar2 #bar2-2 {
   width: 50px;
   position: absolute;
   top: -15px;
-  left: -335px;
+  left: -385px;
 }
 #layer3 .layer3-4 #bar2 #bar2-3 {
   width: 50px;
   position: absolute;
   top: -15px;
-  left: -275px;
+  left: -325px;
 }
 #layer3 .layer3-4 #bar2 #bar2-4 {
   width: 50px;
   position: absolute;
   top: -15px;
-  left: -215px;
+  left: -265px;
 }
 #layer3 .layer3-4 #bar2 #bar2-5 {
   width: 50px;
   position: absolute;
   top: -15px;
-  left: -155px;
+  left: -205px;
 }
 #layer3 .layer3-4 #bar2 #text3-4-1 {
   position: absolute;
   top: -15px;
-  left: -390px;
+  left: -440px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -453,7 +449,7 @@ body {
 #layer3 .layer3-4 #bar2 #text3-4-2 {
   position: absolute;
   top: -15px;
-  left: -328px;
+  left: -378px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -461,7 +457,7 @@ body {
 #layer3 .layer3-4 #bar2 #text3-4-3 {
   position: absolute;
   top: -15px;
-  left: -265px;
+  left: -315px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -469,7 +465,7 @@ body {
 #layer3 .layer3-4 #bar2 #text3-4-4 {
   position: absolute;
   top: -15px;
-  left: -205px;
+  left: -255px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -477,7 +473,7 @@ body {
 #layer3 .layer3-4 #bar2 #text3-4-5 {
   position: absolute;
   top: -15px;
-  left: -145px;
+  left: -195px;
   font-family: "Noto Sans TC", serif;
   font-size: 30px;
   font-weight: bold;
@@ -487,13 +483,13 @@ body {
   height: 750px;
   position: absolute;
   top: 60px;
-  left: -460px;
+  left: -510px;
 }
 #layer3 .layer3-4 #layer3-4-img2 {
   position: absolute;
   width: 150px;
   top: 50px;
-  right: -50px;
+  right: 0px;
   transform: rotate(15deg);
 }
 #layer3 .layer3-4 #dontai2 {
@@ -504,14 +500,13 @@ body {
   width: 450px;
   position: absolute;
   top: 60px;
-  left: -440px;
+  left: -490px;
   padding: 60px 45px;
 }
 #layer3 .layer3-4 #dontai2 .dontai-1 {
   display: flex;
   margin-top: 40px;
   letter-spacing: 5px;
-  justify-content: flex-start;
   font-size: 18px;
 }
 #layer3 .layer3-4 #dontai2 .logo {
@@ -522,6 +517,7 @@ body {
 
 /* 第四層 */
 #layer4 {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 50px 40px;
@@ -623,15 +619,18 @@ body {
 }
 
 /* footer */
-footer {
+#MainPage-footer {
+  background-color: #F2E9D4;
+  height: 80px;
+}
+#MainPage-footer footer {
   display: flex;
   justify-content: center;
-  width: 1680px;
   height: 60px;
   background-color: #E2CA9E;
-  margin: 0 20px 20px 20px;
+  margin: 20px;
 }
-footer p {
+#MainPage-footer footer p {
   text-align: center;
   line-height: 60px;
   color: #464646;

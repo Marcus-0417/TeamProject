@@ -3,13 +3,13 @@ import '../scss/MainPage.scss'
 function App() {
 
   return (
-    <div id="body">
+    <div id="all">
       {/* 頁首區 */}
       <header className="topbar">
         {/* Logo */}
         <div className="logo">
-        <img className="img-logo" src="./images/logo.png" alt="" />
-        <h1>郵你真好</h1>
+          <img className="img-logo" src="./images/logo.png" alt="" />
+          <h1>郵你真好</h1>
         </div>
         <nav>
           <ul className="menu">
@@ -63,10 +63,8 @@ function App() {
               <p id='text5'>開始<br />你的明信片旅程吧！</p>
             </div>
             <img className='layer3-1-img8' src="./images/layer3/tape-2.png" alt="" />
-            <div className='layer3-2'>
-              <img className='layer3-1-img3' src="./images/layer3/p4-papers-1.png" alt="" />
-              <p id='text6'>想要獲得更完整的體驗<br />可以先到會員中心<br />進行登入/註冊喔!</p>
-            </div>
+            <img className='layer3-1-img3' src="./images/layer3/p4-papers-1.png" alt="" />
+            <p id='text6'>想要獲得更完整的體驗<br />可以先到會員中心<br />進行登入/註冊喔!</p>
             <img id='layer3-1-img4' src="./images/layer3/postmask-5.png" alt="" />
             <img id='layer3-1-img5' src="./images/layer3/stamp-7.png" alt="" />
             <img id='layer3-1-img6' src="./images/layer3/stamp-8.png" alt="" />
@@ -84,7 +82,6 @@ function App() {
               <img id='bar1-4' src="./images/layer3/Rectangle_208.png" alt="" />
               <p id='text3-3-4'>態</p>
             </div>
-            <div>
               <img id='layer3-3-img1' src="./images/layer3/Rectangle-191.png" alt="" />
               <img id='layer3-3-img2' src="./images/layer3/postmark-3.png" alt="" />
               <div id='dontai1'>
@@ -115,7 +112,6 @@ function App() {
                 <div className='dontai-1'>
                   <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
                 </div>
-              </div>
             </div>
           </div>
 
@@ -187,10 +183,11 @@ function App() {
         </div>
       </main>
 
-
+      <div id='MainPage-footer'>
       <footer>
         <p>郵你真好 &copy; 2024 postcard.com</p>
       </footer>
+      </div>
     </div>
   )
 }

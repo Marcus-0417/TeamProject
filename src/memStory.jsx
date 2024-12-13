@@ -3,13 +3,12 @@ import '../scss/MemStory.scss'
 function App() {
 
   return (
-    <body>
-
+    <div id="MemStory">
       {/* 頁首區 */}
-      <header id="topbar">
+      <header className="topbar">
         {/* Logo */}
-        <div id="logo">
-          <img id="img-logo" src="./images/logo.png" alt="" />
+        <div className="logo">
+          <img className="img-logo" src="./images/logo.png" alt="" />
           <h1>郵你真好</h1>
         </div>
         <nav>
@@ -24,7 +23,7 @@ function App() {
       </header>
 
       {/* 內容區 */}
-      <main>
+      <main id="MemStory-main">
         <div id='section1'>
           <img id='section1-img1' src="./images/memStory/stamp-7.png" alt="" />
           <img id='section1-img2' src="./images/memStory/stamp-8.png" alt="" />
@@ -87,10 +86,10 @@ function App() {
         </div>
       </main>
 
-      <footer>
+      <footer id='MemStory-footer'>
         <p>郵你真好 &copy; 2024 postcard.com</p>
       </footer>
-    </body>
+    </div>
   )
 }
 
