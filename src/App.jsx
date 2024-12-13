@@ -3,7 +3,7 @@ import '../scss/MainPage.scss'
 function App() {
 
   return (
-    <div id="all">
+    <div id="MainPage">
       {/* 頁首區 */}
       <header className="topbar">
         {/* Logo */}
@@ -82,36 +82,36 @@ function App() {
               <img id='bar1-4' src="./images/layer3/Rectangle_208.png" alt="" />
               <p id='text3-3-4'>態</p>
             </div>
-              <img id='layer3-3-img1' src="./images/layer3/Rectangle-191.png" alt="" />
-              <img id='layer3-3-img2' src="./images/layer3/postmark-3.png" alt="" />
-              <div id='dontai1'>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
-                </div>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
-                </div>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
-                </div>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
-                </div>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
-                </div>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
-                </div>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
-                </div>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
-                </div>
-                <div className='dontai-1'>
-                  <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
-                </div>
+            <img id='layer3-3-img1' src="./images/layer3/Rectangle-191.png" alt="" />
+            <img id='layer3-3-img2' src="./images/layer3/postmark-3.png" alt="" />
+            <div id='dontai1'>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
+              </div>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
+              </div>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
+              </div>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
+              </div>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
+              </div>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
+              </div>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
+              </div>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
+              </div>
+              <div className='dontai-1'>
+                <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
+              </div>
             </div>
           </div>
 
@@ -184,9 +184,9 @@ function App() {
       </main>
 
       <div id='MainPage-footer'>
-      <footer>
-        <p>郵你真好 &copy; 2024 postcard.com</p>
-      </footer>
+        <footer>
+          <p>郵你真好 &copy; 2024 postcard.com</p>
+        </footer>
       </div>
     </div>
   )
