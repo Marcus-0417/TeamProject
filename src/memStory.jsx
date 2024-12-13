@@ -1,6 +1,6 @@
-import '../scss/MemStory.scss'
+import '../css/MemStory.css'
 
-function App() {
+function MemStory() {
 
   return (
     <div id="MemStory">
@@ -93,4 +93,4 @@ function App() {
   )
 }
 
-export default App
+export default MemStory

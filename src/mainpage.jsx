@@ -1,6 +1,6 @@
 import '../css/MainPage.css'
 
-function App() {
+function MainPage() {
 
   return (
     <div id="MainPage">
@@ -13,7 +13,7 @@ function App() {
         </div>
         <nav>
           <ul className="menu">
-            <li><a href="">首頁</a></li>
+            <li><a href="/MainPage">首頁</a></li>
             <li><a href="">配對明信片</a></li>
             <li><a href="">商店</a></li>
             <li><a href="">會員專區</a></li>
@@ -197,4 +197,4 @@ function App() {
   )
 }
 
-export default App
+export default MainPage

@@ -55,14 +55,14 @@ a {
 }
 
 /* reset end */
-#all {
+#MainPage {
   width: 100%;
   background-color: #F2E9D4;
 }
 
 @font-face {
   font-family: "ChenYuluoyan";
-  src: url("../public/fonts/ChenYuluoyan-Thin.ttf") format("truetype");
+  src: url("./fonts/ChenYuluoyan-Thin.ttf") format("truetype");
 }
 /* 頁首區 */
 .topbar {
@@ -634,4 +634,4 @@ a {
   text-align: center;
   line-height: 60px;
   color: #464646;
-}/*# sourceMappingURL=mainpage.css.map */
+}/*# sourceMappingURL=MainPage.css.map */
