@@ -1,4 +1,6 @@
-import '../css/MainPage.css'
+import '../scss/MainPage.scss'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 function MainPage() {
 
@@ -13,7 +15,7 @@ function MainPage() {
         </div>
         <nav>
           <ul className="menu">
-            <li><a href="/MainPage">首頁</a></li>
+            <li><Link to="/">首頁</Link></li>
             <li><a href="">配對明信片</a></li>
             <li><a href="">商店</a></li>
             <li><a href="">會員專區</a></li>
@@ -172,7 +174,7 @@ function MainPage() {
             <img id='layer4-1-img1' src="./images/layer4/p1-picture-1.jpg" alt="" />
             <img id='layer4-1-img2' src="./images/layer4/postmark-2.png" alt="" />
             <p id='layer4-1-text1'>這裡可以看到其他用戶分享的故事與心得哦！</p>
-            <p id='layer4-1-text2'>點這裡閱讀用戶故事</p>
+            <p id='layer4-1-text2'><Link to="/MemStory">點這裡閱讀用戶故事</Link></p>
             <img id='layer4-1-img3' src="./images/layer4/Vector.png" alt="" />
             <img id='layer4-1-img4' src="./images/layer4/Vector.png" alt="" />
           </div>
@@ -188,7 +190,7 @@ function MainPage() {
         </div>
       </main>
 
-      <div id='MainPage-footer'>
+      <div className='footer'>
         <footer>
           <p>郵你真好 &copy; 2024 postcard.com</p>
         </footer>

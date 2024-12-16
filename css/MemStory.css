@@ -317,15 +317,18 @@ a {
 }
 
 /* footer */
-#MemStory-footer {
+.footer {
+  background-color: #F2E9D4;
+  height: 80px;
+}
+.footer footer {
   display: flex;
   justify-content: center;
-  width: 1680px;
   height: 60px;
   background-color: #E2CA9E;
-  margin: 0 20px 20px 20px;
+  margin: 20px;
 }
-#MemStory-footer p {
+.footer footer p {
   text-align: center;
   line-height: 60px;
   color: #464646;

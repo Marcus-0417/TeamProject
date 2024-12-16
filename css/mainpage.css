@@ -619,18 +619,18 @@ a {
 }
 
 /* footer */
-#MainPage-footer {
+.footer {
   background-color: #F2E9D4;
   height: 80px;
 }
-#MainPage-footer footer {
+.footer footer {
   display: flex;
   justify-content: center;
   height: 60px;
   background-color: #E2CA9E;
   margin: 20px;
 }
-#MainPage-footer footer p {
+.footer footer p {
   text-align: center;
   line-height: 60px;
   color: #464646;
