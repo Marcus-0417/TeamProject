@@ -36,6 +36,7 @@
             top: 30px;
             left: 70px;
             letter-spacing: 2px;
+            color: #464646;
         }
     }
 
@@ -56,9 +57,10 @@
                 border-bottom: 2px solid transparent;
                 transition: 0.4s;
                 text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+                color: #464646;
 
                 &:hover {
-                    color: #00ff88;
+                    color: #ffcc00;
                     border-bottom: 2px solid transparent;
                 }
             }
@@ -80,12 +82,14 @@
 
         .text-TW {
             font-family: "ChenYuluoyan", sans-serif;
+            color: #464646;
             font-size: 200px;
             margin-bottom: 50px;
             letter-spacing: 50px;
         }
 
         .text-EN {
+            color: #464646;
             position: absolute;
             font-family: "Mansalva", sans-serif;
             font-size: 40px;
@@ -293,6 +297,7 @@
             letter-spacing: 4px;
             text-align: center;
             transform: rotate(5deg);
+            color: #464646;
         }
 
     }
@@ -302,6 +307,7 @@
         position: relative;
 
         #bar1 {
+            color: #464646;
 
             #bar1-1 {
                 width: 50px;
@@ -399,6 +405,7 @@
                 margin-top: 35px;
                 letter-spacing: 5px;
                 font-size: 18px;
+                color: #464646;
             }
 
             .logo {
@@ -413,6 +420,7 @@
         position: relative;
 
         #bar2 {
+            color: #464646;
 
             #bar2-1 {
                 width: 50px;
@@ -529,6 +537,7 @@
                 margin-top: 40px;
                 letter-spacing: 5px;
                 font-size: 18px;
+                color: #464646;
             }
 
             .logo {
@@ -581,10 +590,10 @@
 
         #layer4-1-text1 {
             position: absolute;
-            bottom: 120px;
+            bottom: 110px;
             right: 60px;
             color: #6a4217;
-            font-size: 16px;
+            font-size: 20px;
         }
 
         #layer4-1-text2 {
@@ -646,6 +655,7 @@
             left: 50px;
             font-size: 24px;
             letter-spacing: 5px;
+            color: #464646;
         }
 
         #layer4-2-text3 {
@@ -654,6 +664,7 @@
             left: 50px;
             font-size: 24px;
             letter-spacing: 8px;
+            color: #464646;
         }
     }
 }

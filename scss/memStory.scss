@@ -10,63 +10,72 @@
 }
 
 /* 頁首區 */
-.topbar {
-    width: 100%;
-    display: flex; // 主軸方向：水平
-    justify-content: space-between; // 主軸水平左右均分
-    align-items: center; // 副軸垂直置中
-    padding: 20px 50px;
+// .topbar {
+//     width: 100%;
+//     display: flex; // 主軸方向：水平
+//     justify-content: space-between; // 主軸水平左右均分
+//     align-items: center; // 副軸垂直置中
+//     padding: 20px 50px;
 
-    .logo {
-        display: flex;
-        position: relative;
+//     .logo {
+//         display: flex;
+//         position: relative;
 
-        .img-logo {
-            width: 150px;
-            position: absolute;
-            left: -60px;
-            top: -70px;
-        }
+//         .img-logo {
+//             width: 150px;
+//             position: absolute;
+//             left: -60px;
+//             top: -70px;
+//         }
 
-        h1 {
-            position: absolute;
-            width: 100px;
-            top: 30px;
-            left: 70px;
-            letter-spacing: 2px;
-        }
-    }
+//         h1 {
+//             position: absolute;
+//             width: 100px;
+//             top: 30px;
+//             left: 70px;
+//             letter-spacing: 2px;
+//             color: #464646;
+//         }
+//     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+//     nav {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
 
-        .menu {
-            display: flex;
-            padding: 0 10px;
-            margin-top: 10px;
-            margin-bottom: 20px;
+//         .menu {
+//             display: flex;
+//             padding: 0 10px;
+//             margin-top: 10px;
+//             margin-bottom: 20px;
 
-            a {
-                margin: 15px;
-                padding: 7px 0 5px;
-                border-bottom: 2px solid transparent;
-                transition: 0.4s;
-                text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+//             a {
+//                 margin: 15px;
+//                 padding: 7px 0 5px;
+//                 border-bottom: 2px solid transparent;
+//                 transition: 0.4s;
+//                 text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+//                 color: #464646;
 
-                &:hover {
-                    color: #00ff88;
-                    border-bottom: 2px solid transparent;
-                }
-            }
-        }
-    }
-}
+//                 &:hover {
+//                     color: #00ff88;
+//                     border-bottom: 2px solid transparent;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* 內容區 */
 #section1 {
     position: relative;
+
+    #backToMainPage {
+        position: absolute;
+        width: 80px;
+        top: 60px;
+        left: 60px;
+    }
 
     #section1-img1 {
         z-index: 999;
@@ -87,28 +96,28 @@
         width: 50px;
         position: absolute;
         top: 0px;
-        left: 750px;
+        left: 770px;
     }
 
     #bar1-2 {
         width: 50px;
         position: absolute;
         top: 0px;
-        left: 850px;
+        left: 870px;
     }
 
     #bar1-3 {
         width: 50px;
         position: absolute;
         top: 0px;
-        left: 950px;
+        left: 970px;
     }
 
     #bar1-4 {
         width: 50px;
         position: absolute;
         top: 0px;
-        left: 1050px;
+        left: 1070px;
     }
 
     #text1-1 {
@@ -118,7 +127,7 @@
         font-size: 30px;
         font-weight: bold;
         top: 5px;
-        left: 760px;
+        left: 780px;
     }
 
     #text1-2 {
@@ -128,7 +137,7 @@
         font-size: 30px;
         font-weight: bold;
         top: 5px;
-        left: 860px;
+        left: 880px;
     }
 
     #text1-3 {
@@ -138,7 +147,7 @@
         font-size: 30px;
         font-weight: bold;
         top: 5px;
-        left: 960px;
+        left: 980px;
     }
 
     #text1-4 {
@@ -148,7 +157,7 @@
         font-size: 30px;
         font-weight: bold;
         top: 5px;
-        left: 1060px;
+        left: 1080px;
     }
 }
 
@@ -238,6 +247,7 @@
             top: 295px;
             left: 30px;
             letter-spacing: 3px;
+            color: #464646;
         }
 
         .text2 {
@@ -246,6 +256,7 @@
             top: 320px;
             left: 80px;
             letter-spacing: 3px;
+            color: #464646;
         }
 
         .text3 {
@@ -255,6 +266,7 @@
             top: 383px;
             left: 200px;
             letter-spacing: 3px;
+            color: #FFFFFF;
         }
     }
 
