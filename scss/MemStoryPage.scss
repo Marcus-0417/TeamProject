@@ -11,14 +11,14 @@
 
 /* 內容區 */
 /* 左邊 */
-#MemStoryPage-main{
+#MemStoryPage-main {
     display: flex;
 
-    #MSP-Section1{
+    #MSP-Section1 {
         width: 50%;
         position: relative;
 
-        #MSP-Section1-img1{
+        #MSP-Section1-img1 {
             z-index: 997;
             width: 680px;
             height: 430px;
@@ -27,7 +27,7 @@
             left: 250px;
         }
 
-        #MSP-Section1-img2{
+        #MSP-Section1-img2 {
             z-index: 998;
             width: 670px;
             height: 410px;
@@ -37,27 +37,97 @@
             transform: rotate(-2deg);
         }
 
-        #MSP-Section1-img3{
+        #MSP-Section1-img3 {
             z-index: 999;
-            width: 530px;
+            width: 570px;
             height: 330px;
             position: absolute;
             top: 190px;
-            left: 310px;
+            left: 280px;
         }
+
+        #MSP-Section1-img4 {
+            z-index: 998;
+            position: absolute;
+            width: 180px;
+            top: 0;
+            right: -80px;
+            transform: rotate(30deg);
+        }
+
+        #MSP-Section1-img5 {
+            z-index: 999;
+            position: absolute;
+            width: 130px;
+            top: 135px;
+            right: 35px;
+            transform: rotate(15deg);
+        }
+
+        #MSP-Section1-img6 {
+            z-index: 999;
+            position: absolute;
+            width: 140px;
+            top: 170px;
+            left: 240px;
+        }
+        #MSP-Section1-img7 {
+            z-index: 999;
+            position: absolute;
+            width: 100px;
+            top: 120px;
+            left: 290px;
+        }
+        #MSP-Section1-img8 {
+            z-index: 999;
+            position: absolute;
+            width: 100px;
+            top: 120px;
+            left: 360px;
+        }
+
+        #MSP-Section1-img9 {
+            z-index: 998;
+            position: absolute;
+            width: 150px;
+            bottom: 100px;
+            left: 150px;
+        }
+        #MSP-Section1-img10 {
+            z-index: 998;
+            position: absolute;
+            width: 100px;
+            bottom: 70px;
+            left: 225px;
+        }
+        #MSP-Section1-img11 {
+            z-index: 999;
+            position: absolute;
+            width: 150px;
+            bottom: 30px;
+            left: 110px;
+        }
+    
     }
 
-    #MSP-Section2{
+    #MSP-Section2 {
         width: 50%;
         position: relative;
 
-        #MSP-Section2-img1{
+        #MSP-Section2-img1 {
             z-index: 997;
-            width: 680px;
-            height: 430px;
+            width: 750px;
+            height: 800px;
             position: absolute;
-            top: 140px;
-            right: 250px;
+            top: -30px;
+            right: 130px;
+        }
+
+        #MSP-Section2-p{
+            z-index: 998;
+            position: absolute;
+            top: 150px;
+            left: 250px;
         }
     }
 }
