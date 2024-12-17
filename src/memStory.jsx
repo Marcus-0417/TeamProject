@@ -57,7 +57,7 @@ function MemStory() {
 
             <p className='text1'>東部 @noname_ya</p>
             <p className='text2'>在這個科技發達的時代，<br />好久沒拿起筆寫下當下的<br />感受，透過郵你真好這個<br />平台讓我......</p>
-            <p className='text3'>閱讀更多</p>
+            <p className='text3'><Link to="/MemStoryPage">閱讀更多</Link></p>
           </div>
 
           <div className='box'>
