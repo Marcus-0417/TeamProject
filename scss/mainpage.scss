@@ -670,21 +670,16 @@
 }
 
 /* footer */
-.footer {
-    background-color: #F2E9D4;
-    height: 80px;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #E2CA9E;
 
-    footer {
-        display: flex;
-        justify-content: center;
-        height: 60px;
-        background-color: #E2CA9E;
-        margin: 20px;
-
-        p {
-            text-align: center;
-            line-height: 60px;
-            color: #464646;
-        }
+    p {
+        text-align: center;
+        line-height: 60px;
+        color: #464646;
     }
 }

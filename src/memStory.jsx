@@ -89,11 +89,10 @@ function MemStory() {
         </div>
       </main>
 
-      <div className='footer'>
         <footer>
           <p>郵你真好 &copy; 2024 postcard.com</p>
         </footer>
-      </div>
+
     </div>
   )
 }
