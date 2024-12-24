@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MemStory from "./MemStory";
+import MemStory from "./MemStory"
 import MainPage from "./MainPage";
 import MemStoryPage from "./MemStoryPage";
 
