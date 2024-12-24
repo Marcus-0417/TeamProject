@@ -18,8 +18,8 @@ function MemStory() {
             <li><Link to="/">首頁</Link></li>
             <li><a href="">配對明信片</a></li>
             <li><a href="">商店</a></li>
-            <li><a href="">會員專區</a></li>
-            <li><a href="">關於</a></li>
+            <li><a href="/Member-Index.html">會員專區</a></li>
+            <li><a href="/index.html">關於</a></li>
           </ul>
         </nav>
       </header>
@@ -89,9 +89,9 @@ function MemStory() {
         </div>
       </main>
 
-        <footer>
-          <p>郵你真好 &copy; 2024 postcard.com</p>
-        </footer>
+      <footer>
+        <p>郵你真好 &copy; 2024 postcard.com</p>
+      </footer>
 
     </div>
   )
