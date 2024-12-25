@@ -602,6 +602,10 @@
             right: 60px;
             color: #6a4217;
             font-size: 48px;
+
+            &:hover{
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B;
+            }
         }
     }
 

@@ -23,8 +23,6 @@ function MemStoryPage() {
                 </nav>
             </header>
 
-
-
             {/* 內容區 */}
             <main id="MemStoryPage-main">
                 <div id='MSP-Section1'>

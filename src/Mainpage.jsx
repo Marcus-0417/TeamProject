@@ -1,6 +1,8 @@
 import '../scss/MainPage.scss'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom' //npm i react-router-dom
+import { motion } from "framer-motion"; //npm i framer-motion
+import TextReveal from './TextReveal';
 
 function MainPage() {
 
@@ -16,8 +18,8 @@ function MainPage() {
         <nav>
           <ul className="menu">
             <li><Link to="/">首頁</Link></li>
-            <li><a href="">配對明信片</a></li>
-            <li><a href="">商店</a></li>
+            <li><a href="/PC-index.html">配對明信片</a></li>
+            {/* <li><a href="">商店</a></li> */}
             <li><a href="/Member-Index.html">會員專區</a></li>
             <li><a href="/index.html">關於</a></li>
           </ul>
@@ -31,7 +33,8 @@ function MainPage() {
         <div id='layer1'>
           <div><img className='stamp' src="./images/layer1/stamp-4.png" alt="" /></div>
           <div className='text'>
-            <p className='text-TW'>郵你真好</p>
+            <TextReveal />
+            {/* <p className='text-TW'>郵你真好</p> */}
             <p className='text-EN'>Send a postcard to convey warmth.</p>
             {/* 裝飾郵戳 */}
             <div><img className="stampLeft" src="./images/layer1/postmark-1.png" alt="左郵戳" /></div>
@@ -175,8 +178,18 @@ function MainPage() {
             <img id='layer4-1-img2' src="./images/layer4/postmark-2.png" alt="" />
             <p id='layer4-1-text1'>這裡可以看到其他用戶分享的故事與心得哦！</p>
             <Link to="/MemStory"><p id='layer4-1-text2'>點這裡閱讀用戶故事</p></Link>
-            <img id='layer4-1-img3' src="./images/layer4/Vector.png" alt="" />
-            <img id='layer4-1-img4' src="./images/layer4/Vector.png" alt="" />
+            <motion.div
+              style={{ width: "10px", height: "100%", position: "absolute", top: "0", left: "1180px", zIndex: "999" }}
+              animate={{
+                x: ["0%", "25%", "50%", "75%", "100%", "-25%", "-50%", "-75%", "-100%", "0%"], // 從左到右，再返回初始位置
+              }}
+              transition={{
+                repeat: Infinity, // 無限循環
+                ease: "linear", // 線性過渡
+              }}>
+              <img id='layer4-1-img3' src="./images/layer4/Vector.png" alt="" />
+              <img id='layer4-1-img4' src="./images/layer4/Vector.png" alt="" /></motion.div>
+
           </div>
           <div className='layer4-2'>
             <img id='layer4-2-img1' src="./images/layer4/p1-papers-3.jpg" alt="" />
