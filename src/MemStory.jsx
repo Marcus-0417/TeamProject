@@ -17,7 +17,7 @@ function MemStory() {
           <ul className="menu">
             <li><Link to="/">首頁</Link></li>
             <li><a href="">配對明信片</a></li>
-            <li><a href="">商店</a></li>
+            {/* <li><a href="">商店</a></li> */}
             <li><a href="/Member-Index.html">會員專區</a></li>
             <li><a href="/index.html">關於</a></li>
           </ul>
