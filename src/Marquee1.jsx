@@ -23,6 +23,7 @@ const Marquee = () => {
     return (
         <div style={{ overflow: "hidden", height: `${containerHeight}px`, position: "relative", width: "100%", letterSpacing: "6px" }}>
             <motion.div
+                /* 由下往上 */
                 style={{
                     display: "flex",
                     flexDirection: "column",
@@ -35,6 +36,20 @@ const Marquee = () => {
                     duration: 10, // 動畫持續時間
                     ease: "linear",
                 }}
+
+                /* 由上往下 */
+                // style={{
+                //     display: "flex",
+                //     flexDirection: "column",
+                //     position: "absolute",
+                // }}
+                // animate={{ y: [`-${totalHeight / 2}px`, "0px"] }}
+                // transition={{
+                //     repeat: Infinity,
+                //     repeatType: "loop",
+                //     duration: 10, // 動畫持續時間
+                //     ease: "linear",
+                // }}
             >
                 {items.map((item, index) => (
                     <div
