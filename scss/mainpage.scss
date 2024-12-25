@@ -394,11 +394,13 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 450px;
+            width: 550px;
+            height: 750px;
             position: absolute;
             top: 60px;
             left: -480px;
             padding: 60px 15px;
+            overflow: hidden;
 
             .dontai-1 {
                 display: flex;
@@ -526,11 +528,13 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            width: 450px;
+            width: 500px;
+            height: 650px;
             position: absolute;
             top: 60px;
             left: -490px;
             padding: 60px 45px;
+            overflow: hidden;
 
             .dontai-1 {
                 display: flex;
@@ -538,6 +542,7 @@
                 letter-spacing: 5px;
                 font-size: 18px;
                 color: #464646;
+                animation: scrollAnimation 1s linear infinite;
             }
 
             .logo {
@@ -603,7 +608,7 @@
             color: #6a4217;
             font-size: 48px;
 
-            &:hover{
+            &:hover {
                 text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B;
             }
         }
@@ -685,5 +690,15 @@ footer {
         text-align: center;
         line-height: 60px;
         color: #464646;
+    }
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
     }
 }

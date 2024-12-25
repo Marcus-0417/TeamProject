@@ -1,27 +1,12 @@
 import '../scss/MemStoryPage.scss'
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from './Navbar';
 
 function MemStoryPage() {
     return (
         <div id="MemStoryPage">
-            {/* 頁首區 */}
-            <header className="topbar">
-                {/* Logo */}
-                <div className="logo">
-                    <img className="img-logo" src="./images/logo.png" alt="" />
-                    <h1>郵你真好</h1>
-                </div>
-                <nav>
-                    <ul className="menu">
-                        <li><Link to="/">首頁</Link></li>
-                        <li><a href="">配對明信片</a></li>
-                        {/* <li><a href="">商店</a></li> */}
-                        <li><a href="/Member-Index.html">會員專區</a></li>
-                        <li><a href="/index.html">關於</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <Navbar />
 
             {/* 內容區 */}
             <main id="MemStoryPage-main">

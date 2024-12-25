@@ -3,31 +3,16 @@ import React from 'react'
 import { Link } from 'react-router-dom' //npm i react-router-dom
 import { motion } from "framer-motion"; //npm i framer-motion
 import TextReveal from './TextReveal';
+import Marquee1 from './Marquee1';
+import Navbar from './Navbar';
 
 function MainPage() {
 
   return (
     <div id="MainPage">
-      {/* 頁首區 */}
-      <header className="topbar">
-        {/* Logo */}
-        <div className="logo">
-          <img className="img-logo" src="./images/logo.png" alt="" />
-          <h1>郵你真好</h1>
-        </div>
-        <nav>
-          <ul className="menu">
-            <li><Link to="/">首頁</Link></li>
-            <li><a href="/PC-index.html">配對明信片</a></li>
-            {/* <li><a href="">商店</a></li> */}
-            <li><a href="/Member-Index.html">會員專區</a></li>
-            <li><a href="/index.html">關於</a></li>
-          </ul>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* 內容區 */}
-
       <main>
         {/* 第一層 */}
         <div id='layer1'>
@@ -93,8 +78,8 @@ function MainPage() {
             <div>
               <img id='layer3-3-img1' src="./images/layer3/Rectangle-191.png" alt="" />
               <img id='layer3-3-img2' src="./images/layer3/postmark-3.png" alt="" />
-              <div id='dontai1'>
-                <div className='dontai-1'>
+              <div id='dontai1'><Marquee1 />
+                {/* <div className='dontai-1'>
                   <img className='logo' src="./images/layer3/logo-taipei.png" alt="" /><p>*********寄送明信片到</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" />
                 </div>
                 <div className='dontai-1'>
@@ -120,7 +105,7 @@ function MainPage() {
                 </div>
                 <div className='dontai-1'>
                   <img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p>*********收到了來自</p><img className='logo' src="./images/layer3/logo-Taichung.png" alt="" /><p>的明信片</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -181,9 +166,10 @@ function MainPage() {
             <motion.div
               style={{ width: "10px", height: "100%", position: "absolute", top: "0", left: "1180px", zIndex: "999" }}
               animate={{
-                x: ["0%", "25%", "50%", "75%", "100%", "-25%", "-50%", "-75%", "-100%", "0%"], // 從左到右，再返回初始位置
+                x: ["0%", "50%", "100%", "-50%", "0%", ], // 從左到右，再返回初始位置
               }}
               transition={{
+                duration: 1, // 完整動畫的持續時間（秒）
                 repeat: Infinity, // 無限循環
                 ease: "linear", // 線性過渡
               }}>
