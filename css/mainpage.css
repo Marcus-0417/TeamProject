@@ -88,6 +88,7 @@ a {
   top: 30px;
   left: 70px;
   letter-spacing: 2px;
+  color: #464646;
 }
 .topbar nav {
   display: flex;
@@ -106,9 +107,10 @@ a {
   border-bottom: 2px solid transparent;
   transition: 0.4s;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+  color: #464646;
 }
 .topbar nav .menu a:hover {
-  color: #00ff88;
+  color: #ffcc00;
   border-bottom: 2px solid transparent;
 }
 
@@ -126,11 +128,13 @@ a {
 }
 #layer1 .text .text-TW {
   font-family: "ChenYuluoyan", sans-serif;
+  color: #464646;
   font-size: 200px;
   margin-bottom: 50px;
   letter-spacing: 50px;
 }
 #layer1 .text .text-EN {
+  color: #464646;
   position: absolute;
   font-family: "Mansalva", sans-serif;
   font-size: 40px;
@@ -310,9 +314,13 @@ a {
   letter-spacing: 4px;
   text-align: center;
   transform: rotate(5deg);
+  color: #464646;
 }
 #layer3 .layer3-3 {
   position: relative;
+}
+#layer3 .layer3-3 #bar1 {
+  color: #464646;
 }
 #layer3 .layer3-3 #bar1 #bar1-1 {
   width: 50px;
@@ -388,17 +396,20 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 450px;
+  width: 550px;
+  height: 750px;
   position: absolute;
   top: 60px;
   left: -480px;
   padding: 60px 15px;
+  overflow: hidden;
 }
 #layer3 .layer3-3 #dontai1 .dontai-1 {
   display: flex;
   margin-top: 35px;
   letter-spacing: 5px;
   font-size: 18px;
+  color: #464646;
 }
 #layer3 .layer3-3 #dontai1 .logo {
   width: 25px;
@@ -407,6 +418,9 @@ a {
 }
 #layer3 .layer3-4 {
   position: relative;
+}
+#layer3 .layer3-4 #bar2 {
+  color: #464646;
 }
 #layer3 .layer3-4 #bar2 #bar2-1 {
   width: 50px;
@@ -497,17 +511,21 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 450px;
+  width: 500px;
+  height: 650px;
   position: absolute;
   top: 60px;
   left: -490px;
   padding: 60px 45px;
+  overflow: hidden;
 }
 #layer3 .layer3-4 #dontai2 .dontai-1 {
   display: flex;
   margin-top: 40px;
   letter-spacing: 5px;
   font-size: 18px;
+  color: #464646;
+  animation: scrollAnimation 1s linear infinite;
 }
 #layer3 .layer3-4 #dontai2 .logo {
   width: 25px;
@@ -552,10 +570,10 @@ a {
 }
 #layer4 .layer4-1 #layer4-1-text1 {
   position: absolute;
-  bottom: 120px;
+  bottom: 110px;
   right: 60px;
   color: #6a4217;
-  font-size: 16px;
+  font-size: 20px;
 }
 #layer4 .layer4-1 #layer4-1-text2 {
   position: absolute;
@@ -563,6 +581,9 @@ a {
   right: 60px;
   color: #6a4217;
   font-size: 48px;
+}
+#layer4 .layer4-1 #layer4-1-text2:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B;
 }
 #layer4 .layer4-2 {
   position: relative;
@@ -609,6 +630,7 @@ a {
   left: 50px;
   font-size: 24px;
   letter-spacing: 5px;
+  color: #464646;
 }
 #layer4 .layer4-2 #layer4-2-text3 {
   position: absolute;
@@ -616,22 +638,28 @@ a {
   left: 50px;
   font-size: 24px;
   letter-spacing: 8px;
+  color: #464646;
 }
 
 /* footer */
-.footer {
-  background-color: #F2E9D4;
-  height: 80px;
-}
-.footer footer {
+footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 60px;
   background-color: #E2CA9E;
-  margin: 20px;
 }
-.footer footer p {
+footer p {
   text-align: center;
   line-height: 60px;
   color: #464646;
-}/*# sourceMappingURL=MainPage.css.map */
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}/*# sourceMappingURL=Mainpage.css.map */
