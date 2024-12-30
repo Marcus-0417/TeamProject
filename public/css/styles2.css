@@ -77,72 +77,129 @@ body {
     background-size: 100%;
     /* left: 500px; */
     margin-left: 250px;
-}
-.box1 {
-   margin-left: 50px;
-   margin-top: 40px;
-}
-.box1 h2 {
-    color: #8A5D3B;
-    font-weight: bold;
-    font-size: 22px;
-    letter-spacing: 20%;
-    margin-bottom: 10px;
-    margin-left:30px;
     
 }
-.box1 input {
-    border: none;
-    background-color: #CDB17E;
-    margin-left:30px ;
-    width: 730px;
-    height: 40px;
-}
-.box2 {
-    margin-top: 70px;
-    margin-left: 50px;
-}
-/* .box2 h2 {
-    color: #8A5D3B;
-    font-size: 22px;
-    letter-spacing: 20%;
-} */
-.box2 input {
-    border: none;
-    background-color: #CDB17E;
-    margin-left:30px ;
-    width: 730px;
-    height: 40px;
 
+.box2 {
+  width: 530px;
+    margin-top: 70px;
+    margin-left: 180px;
+    border-radius: .25em;
+    background: #CDB17E;  
+   
+}
+.box2 h2 {
     color: #8A5D3B;
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 24px;
     letter-spacing: 20%;
+    text-align: center;
+    line-height: 55px;
+}
+
+/* 手風琴區accordion  */
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.hide {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#box3{
+  margin: 20px 150px;
+ 
+}
+.accordion {
+ 
+  background: #fff;
+  width: 480px;
+  border: 1px solid #e0e0e0;
+ 
+  background-color: transparent;
+}
+
+.accordion-item {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  list-style:none;
+
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-label {
+  padding: 10px 0 10px 30px;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  background-color:#E2CA9E;
+  color: #464646;
+  border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+ 
+}
+.accordion-label:hover {
+  cursor: pointer;
   
 }
-.box3 {
-    width: 900px;
-    height: 200px;
-    background-image: url(../images/p4-papers-2.jpg);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    margin-left: 80px;
-    margin-top: 50px;
-    padding-top: 10px;
-    padding-left: 15px;
+.accordion-label:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  top: 22px;
+  left: 12px;
+  display: inline-block;
+  border-left: 5px solid #999;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  
 }
-.box3 img {
-    transform: rotate(180deg);
+input[type=checkbox]:checked ~ .accordion-label:before {
+  transform: rotate(90deg);
 }
-.box3 h3 {
-    color: #464646;
-    font-size: 18px;
-    line-height: 200%;
-    letter-spacing: 10px;
-    margin: 5px;
-    margin-top: 10px;
+
+.accordion-child {
+  margin: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+  height: 0;
+  transform: scale(1, 0);
+  transform-origin: center top;
+  width: 515px;
+  
+
+
 }
+ 
+input[type=checkbox]:checked ~ .accordion-child {
+  border: 1px solid #e0e0e0;
+  margin: 0 -20px 15px -20px;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
+ 
+  padding: 15px;
+  text-align: justify;
+  height: auto;
+  opacity: 1;
+  transform: scale(1, 1);
+  background-image: url(../images/p4-papers-2.jpg);
+  
+  background-position: center 80px;
+  letter-spacing: 10px;
+  color: #464646;
+  border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+}
+
+
 
 /* 裝飾區 */
 .pic1 {
@@ -150,6 +207,8 @@ body {
     left: 410px;
     bottom: 180px;
     /* transform: rotate(deg); */
+   
+   
 }
 .pic2 {
     position: absolute;
@@ -176,6 +235,7 @@ body {
     left: 280px;
     bottom: 170px;
     transform: rotate(-2deg);
+  
 }
 .pic5 img {
     width: 130px;
