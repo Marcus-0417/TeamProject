@@ -5,6 +5,7 @@ import { motion } from "framer-motion"; //npm i framer-motion
 import TextReveal from './TextReveal';
 import Marquee1 from './Marquee1';
 import Navbar from './Navbar';
+import ENTextReveal from './ENTextReveal';
 
 function MainPage() {
 
@@ -20,6 +21,7 @@ function MainPage() {
           <div className='text'>
             <TextReveal />
             {/* <p className='text-TW'>郵你真好</p> */}
+            {/* <ENTextReveal /> */}
             <p className='text-EN'>Send a postcard to convey warmth.</p>
             {/* 裝飾郵戳 */}
             <div><img className="stampLeft" src="./images/layer1/postmark-1.png" alt="左郵戳" /></div>
