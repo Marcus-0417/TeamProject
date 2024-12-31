@@ -10,7 +10,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="logo">
                     <img className="img-logo" src="./images/logo.png" alt="" />
-                    <h1>郵你真好</h1>
+                    {/* <h1>郵你真好</h1> */}
                 </div>
                 <nav>
                     <ul className="menu">

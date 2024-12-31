@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; //npm i framer-motion
 import TextReveal from './TextReveal';
 import Marquee1 from './Marquee1';
 import Navbar from './Navbar';
-import ENTextReveal from './ENTextReveal';
+import Marquee2 from './Marquee2';
 
 function MainPage() {
 
@@ -128,8 +128,8 @@ function MainPage() {
             <div>
               <img id='layer3-4-img1' src="./images/layer3/Rectangle-191.png" alt="" />
               <img id='layer3-4-img2' src="./images/layer3/postmark-3.png" alt="" />
-              <div id='dontai2'>
-                <div className='dontai-1'>
+              <div id='dontai2'><Marquee2 />
+                {/* <div className='dontai-1'>
                   <p>歡迎</p><img className='logo' src="./images/layer3/logo-Taoyuan.png" alt="" /><p> ********加入郵你真好!!!</p>
                 </div>
                 <div className='dontai-1'>
@@ -152,7 +152,7 @@ function MainPage() {
                 </div>
                 <div className='dontai-1'>
                   <p>歡迎</p><img className='logo' src="./images/layer3/logo-new_taipei.png" alt="" /><p> ********加入郵你真好!!!</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -176,7 +176,8 @@ function MainPage() {
                 ease: "linear", // 線性過渡
               }}>
               <img id='layer4-1-img3' src="./images/layer4/Vector.png" alt="" />
-              <img id='layer4-1-img4' src="./images/layer4/Vector.png" alt="" /></motion.div>
+              <img id='layer4-1-img4' src="./images/layer4/Vector.png" alt="" />
+              </motion.div>
 
           </div>
           <div className='layer4-2'>
@@ -194,7 +195,6 @@ function MainPage() {
       <footer>
         <p>郵你真好 &copy; 2024 postcard.com</p>
       </footer>
-
     </div>
   )
 }

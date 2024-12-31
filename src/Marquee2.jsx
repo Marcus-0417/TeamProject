@@ -1,17 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Marquee1 = () => {
+const Marquee2 = () => {
     const items = [
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********收到了來自", src1: "./images/layer3/logo-Taoyuan.png", src2: "./images/layer3/logo-Taichung.png", text1: "的明信片" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********收到了來自", src1: "./images/layer3/logo-Taoyuan.png", src2: "./images/layer3/logo-Taichung.png", text1: "的明信片" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********收到了來自", src1: "./images/layer3/logo-Taoyuan.png", src2: "./images/layer3/logo-Taichung.png", text1: "的明信片" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
+        { text: "歡迎", src1: "./images/layer3/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-Taichung.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-Taichung.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/layer3/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
+
+        // { text: "*********收到了來自", src1: "./images/layer3/logo-Taoyuan.png", src2: "./images/layer3/logo-Taichung.png", text1: "的明信片" },
+        // { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
         // 添加更多項目...
     ];
 
@@ -24,32 +28,32 @@ const Marquee1 = () => {
         <div style={{ overflow: "hidden", height: `${containerHeight}px`, position: "relative", width: "100%", letterSpacing: "6px" }}>
             <motion.div
                 /* 由下往上 */
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    position: "absolute",
-                }}
-                animate={{ y: [0, -totalHeight / 2] }}
-                transition={{
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 8, // 動畫持續時間
-                    ease: "linear",
-                }}
-
-                /* 由上往下 */
                 // style={{
                 //     display: "flex",
                 //     flexDirection: "column",
                 //     position: "absolute",
                 // }}
-                // animate={{ y: [`-${totalHeight / 2}px`, "0px"] }}
+                // animate={{ y: [0, -totalHeight / 2] }}
                 // transition={{
                 //     repeat: Infinity,
                 //     repeatType: "loop",
                 //     duration: 10, // 動畫持續時間
                 //     ease: "linear",
                 // }}
+
+            /* 由上往下 */
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                position: "absolute",
+            }}
+            animate={{ y: [`-${totalHeight / 2}px`, "0px"] }}
+            transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 25, // 動畫持續時間
+                ease: "linear",
+            }}
             >
                 {items.map((item, index) => (
                     <div
@@ -61,9 +65,8 @@ const Marquee1 = () => {
                             height: `${itemHeight}px`,
                         }}
                     >
-                        <img className="logo" src={item.src1} alt="" />
                         <p>{item.text}</p>
-                        <img className="logo" src={item.src2} alt="" />
+                        <img className="logo" src={item.src1} alt="" />
                         <p>{item.text1}</p>
                     </div>
                 ))}
@@ -78,9 +81,8 @@ const Marquee1 = () => {
                             height: `${itemHeight}px`,
                         }}
                     >
-                        <img className="logo" src={item.src1} alt="" />
                         <p>{item.text}</p>
-                        <img className="logo" src={item.src2} alt="" />
+                        <img className="logo" src={item.src1} alt="" />
                         <p>{item.text1}</p>
                     </div>
                 ))}
@@ -89,4 +91,4 @@ const Marquee1 = () => {
     );
 };
 
-export default Marquee1;
+export default Marquee2;

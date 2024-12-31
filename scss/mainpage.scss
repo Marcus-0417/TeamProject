@@ -24,17 +24,17 @@
         position: relative;
 
         .img-logo {
-            width: 150px;
+            width: 120px;
             position: absolute;
-            left: -60px;
+            left: -50px;
             top: -70px;
         }
 
         h1 {
             position: absolute;
             width: 100px;
-            top: 30px;
-            left: 70px;
+            top: 0px;
+            left: 40px;
             letter-spacing: 2px;
             color: #464646;
         }
@@ -526,10 +526,10 @@
         #dontai2 {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            // align-items: flex-start;
             justify-content: center;
             width: 500px;
-            height: 650px;
+            height: 750px;
             position: absolute;
             top: 60px;
             left: -490px;
