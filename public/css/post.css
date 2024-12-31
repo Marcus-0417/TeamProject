@@ -456,46 +456,117 @@ margin: 0 35px;
   
 }
 /* 離島 */
-.point01{
+#islands{
   position: absolute;
-  width: 24px;
-  height: 24px;
+ 
   top: 170px;
   left: 40px;
 }
 /* 北部 */
-.point02{
+#north{
   position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 90px;
-  left: 270px;
+  top: 110px;
+  left: 260px;
 }
 /* 中部 */
-.point03 {
+#central {
   position: absolute;
-  width: 24px;
-  height: 24px;
+ 
   top: 210px;
-  left: 200px;
+  left: 180px;
 }
 /* 南部 */
-.point04 {
+#south {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  bottom: 150px;
+  bottom: 160px;
   left: 160px;
 
 }
 /* 東部 */
-.point05 {
+#east {
   position: absolute;
+  bottom: 230px;
+  right: 200px;
+}
+/* 顯示的小視窗 */
+.point button{
   width: 24px;
   height: 24px;
-  bottom: 230px;
-  right: 210px;
+  border-radius: 99px;
+  background-color: #e2ca9e;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* 添加平滑過渡效果 */
 }
+.point button:hover {
+  background-color: #8A5D3B; /* 滑鼠移入時的顏色 */
+ 
+  transform: translateY(-3px); /* 按鈕往上移動，模擬凸起 */
+}
+.point button.active {
+  background-color: #8A5D3B; /* 點擊後保持的顏色 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1); /* 保持的陰影效果 */
+  transform: translateY(-3px); /* 按鈕往上移動，模擬凸起 */
+}
+.popover {
+  position: absolute;
+  display: none;
+
+  background-image: url(../images/p2-papers-1.jpg);
+  border-radius: 10px;
+  width: 164px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  opacity:90%;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+}
+.popover-title{
+  display: flex;
+  margin:auto;
+
+  
+}
+#taiwan .popover-title img{
+  margin-left: 4px;
+  width: 30px;
+  height: 30px;
+}
+.total{
+  background-image: url(../images/p2-papers-1.jpg);
+  background-position: center bottom;
+  border-radius: 10px;
+  border:1px solid #ffffff;
+  width: 140px;
+  height: 30px;
+  margin-top:12px ;
+  
+}
+.r-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#taiwan .r-title img{
+width: 28px;
+height: 28px;
+margin: 5px;
+
+}
+.rankings{
+  background-image: url(../images/p2-papers-1.jpg);
+  background-position: center bottom;
+  border-radius: 10px;
+  border:1px solid #ffffff;
+  width: 140px;
+  height: 98px;
+  margin: auto;
+}
+
 
 
 /* 裝飾區 */

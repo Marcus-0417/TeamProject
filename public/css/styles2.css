@@ -69,137 +69,135 @@ body {
 
 /* 內容區 */
 .info-box {
-    flex-direction: column;
-    width: 900px;
-    height: 650px;
-    background-image: url(../images/p5-papers-1.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* left: 500px; */
-    margin-left: 250px;
-    
+  flex-direction: column;
+  width: 900px;
+  height: 650px;
+  background-image: url(../images/p5-papers-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* left: 500px; */
+  margin-left: 250px;
+  
 }
 
 .box2 {
-  width: 530px;
-    margin-top: 70px;
-    margin-left: 180px;
-    border-radius: .25em;
-    background: #CDB17E;  
-   
+width: 530px;
+  margin-top: 70px;
+  margin-left: 180px;
+  border-radius: .25em;
+  background: #CDB17E;  
+ 
 }
 .box2 h2 {
-    color: #8A5D3B;
-    font-size: 24px;
-    letter-spacing: 20%;
-    text-align: center;
-    line-height: 55px;
+  color: #8A5D3B;
+  font-size: 24px;
+  letter-spacing: 20%;
+  text-align: center;
+  line-height: 55px;
 }
 
 /* 手風琴區accordion  */
 *:before,
 *:after {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 .hide {
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+padding: 0;
+position: absolute;
+width: 1px;
 }
 
 #box3{
-  margin: 20px 150px;
- 
+margin: 20px 150px;
+
 }
 .accordion {
- 
-  background: #fff;
-  width: 480px;
-  border: 1px solid #e0e0e0;
- 
-  background-color: transparent;
+
+background: #fff;
+width: 480px;
+border: 1px solid #e0e0e0;
+
+background-color: transparent;
 }
 
 .accordion-item {
-  position: relative;
-  width: 100%;
-  border-bottom: 1px solid #e0e0e0;
-  list-style:none;
+position: relative;
+width: 100%;
+border-bottom: 1px solid #e0e0e0;
+list-style:none;
 
 }
 .accordion-item:last-child {
-  border-bottom: none;
+border-bottom: none;
 }
 
 .accordion-label {
-  padding: 10px 0 10px 30px;
-  width: 100%;
-  display: block;
-  font-size: 18px;
-  background-color:#E2CA9E;
-  color: #464646;
-  border-bottom-left-radius: .25em;
-	border-bottom-right-radius: .25em;
- 
+padding: 10px 0 10px 30px;
+width: 100%;
+display: block;
+font-size: 18px;
+background-color:#E2CA9E;
+color: #464646;
+border-bottom-left-radius: .25em;
+border-bottom-right-radius: .25em;
+
 }
 .accordion-label:hover {
-  cursor: pointer;
-  
+cursor: pointer;
+
 }
 .accordion-label:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 5px;
-  top: 22px;
-  left: 12px;
-  display: inline-block;
-  border-left: 5px solid #999;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  
+content: "";
+position: absolute;
+height: 5px;
+width: 5px;
+top: 22px;
+left: 12px;
+display: inline-block;
+border-left: 5px solid #999;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+
 }
 input[type=checkbox]:checked ~ .accordion-label:before {
-  transform: rotate(90deg);
+transform: rotate(90deg);
 }
 
 .accordion-child {
-  margin: 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  opacity: 0;
-  height: 0;
-  transform: scale(1, 0);
-  transform-origin: center top;
-  width: 515px;
-  
+margin: 0;
+overflow: hidden;
+transition: all 0.3s ease;
+opacity: 0;
+height: 0;
+transform: scale(1, 0);
+transform-origin: center top;
+width: 515px;
+
 
 
 }
- 
+
 input[type=checkbox]:checked ~ .accordion-child {
-  border: 1px solid #e0e0e0;
-  margin: 0 -20px 15px -20px;
-  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
- 
-  padding: 15px;
-  text-align: justify;
-  height: auto;
-  opacity: 1;
-  transform: scale(1, 1);
-  background-image: url(../images/p4-papers-2.jpg);
-  
-  background-position: center 80px;
-  letter-spacing: 10px;
-  color: #464646;
-  border-bottom-left-radius: .25em;
-	border-bottom-right-radius: .25em;
+border: 1px solid #e0e0e0;
+margin: 0 -20px 15px -20px;
+box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
+
+padding: 15px;
+text-align: justify;
+height: auto;
+opacity: 1;
+transform: scale(1, 1);
+background-image: url(../images/p4-papers-2.jpg);
+
+background-position: center 80px;
+letter-spacing: 10px;
+color: #464646;
+border-bottom-left-radius: .25em;
+border-bottom-right-radius: .25em;
 }
-
-
 
 /* 裝飾區 */
 .pic1 {
@@ -207,8 +205,6 @@ input[type=checkbox]:checked ~ .accordion-child {
     left: 410px;
     bottom: 180px;
     /* transform: rotate(deg); */
-   
-   
 }
 .pic2 {
     position: absolute;
@@ -235,7 +231,6 @@ input[type=checkbox]:checked ~ .accordion-child {
     left: 280px;
     bottom: 170px;
     transform: rotate(-2deg);
-  
 }
 .pic5 img {
     width: 130px;
