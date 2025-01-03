@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter} from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import MemStory from "./MemStory"
 import MainPage from "./MainPage";
 import MemStoryPage from "./MemStoryPage";
