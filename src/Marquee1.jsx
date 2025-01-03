@@ -33,7 +33,7 @@ const Marquee1 = () => {
                 transition={{
                     repeat: Infinity,
                     repeatType: "loop",
-                    duration: 8, // 動畫持續時間
+                    duration: 15, // 動畫持續時間
                     ease: "linear",
                 }}
 
