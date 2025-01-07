@@ -98,6 +98,7 @@ main {
 }
 
 /* 配對首頁區 */
+/* 配對首頁區 */
 #topbar {
   position: fixed;
   top: 0;
@@ -108,15 +109,20 @@ main {
   justify-content: space-between;
   align-items: center;
   z-index: 999;
+  padding: 20px 50px;
 }
 
 #topbar .logo {
-  width: 70px;
-  height: 76px;
-  margin: 0 20px;
+  display: flex;
+  position: relative;
   /*svg圖檔，預設抓父元素的寬度*/
 }
-
+#topbar .logo img {
+  width: 100px;
+  position: absolute;
+  left: -45px;
+  top: -35px;
+}
 .navigation {
   display: flex;
   flex-direction: column;
@@ -126,8 +132,9 @@ main {
 
 .menu {
   display: flex;
-  padding: 0 200px;
-
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .menu a {
@@ -140,8 +147,8 @@ main {
 }
 
 .menu a:hover{
-  color: #00ff88 ;
-  border-bottom: 2px solid transparent ;
+  color: #ffcc00;
+  border-bottom: 2px solid transparent;
   text-decoration-line: none;
  
 
