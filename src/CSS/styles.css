@@ -10,39 +10,7 @@ body {
    
 }
 
-/* 頁首 */
-#topbar {
-    display: flex;
-    justify-content: space-between;
-}
-#topbar .logo a img { 
-    height: 70px;
-    width: 70px;
-    margin-left: 50px;
-   
-}
 
-#topbar .navigation .menu {
-    list-style-type:none ;
-    display: flex;
-    padding: 0 200px;
-
-}
-
-#topbar .navigation .menu a {
-  margin: 15px;
-  padding: 7px 0 5px;
-  border-bottom: 2px solid transparent;
-  transition: 0.4s;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
-  text-decoration:none;
-  color: #222;
-}
-#topbar .navigation .menu a:hover{
-
-  color: #00ff88;
-  border-bottom: 2px solid transparent;
-} 
 
 
 .wrap {
@@ -110,6 +78,8 @@ transform: scale(1.1);
 }
 .info {
   display: flex;
+
+
 }
 .title {
   display: flex;
@@ -121,8 +91,10 @@ transform: scale(1.1);
   display: inline-block;
   background-color: #E2CA9E;
   color: #8A5D3B;
-  padding: 7px 7px;
+  padding: 10px 10px;
   margin-left: 20px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .block1 {
@@ -156,14 +128,18 @@ transform: scale(1.1);
   width: 365px;
   height: 388px;
   background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
   padding: 50px 0 0 50px;
   margin-left: 70px;
 }
+
 .box1 h3 {
   font-size: 18px;
   letter-spacing: 20%;
   color: #464646;
   margin-top: 50px;
+  font-weight: 900;
 }
 .box1 p {
   font-size: 14px;
@@ -172,39 +148,43 @@ transform: scale(1.1);
   line-height: 200%;
   margin-top: 10px;
   color: #464646;
+  font-weight: 500;
 }
 
-.box2 {
+.box1b {
   background-image: url(/images/p5-papers-2.png);
   width: 365px;
   height: 388px;
   background-repeat: no-repeat;
   padding: 50px;
+  margin-left:30px ;
 }
-.box2 h3 {
+.box1b h3 {
   font-size: 18px;
   letter-spacing: 20%;
   color: #464646;
   margin-top: 50px;
+  font-weight: 900;
 }
-.box2 p {
+.box1b p {
   font-size: 14px;
   letter-spacing: 20%;
   width: 260px;
   line-height: 200%;
   margin-top: 10px;
   color: #464646;
+  font-weight: 500;
 }
 
 /* 裝飾區 */
 .pic1 {
   position: absolute;
-  left: 410px;
+  left: 430px;
   bottom: 180px;
 }
 .pic2 {
   position: absolute;
-  right: 380px;
+  right: 390px;
   top :100px;
   transform: rotate(-5deg);
 }
@@ -274,7 +254,7 @@ transform: scale(1.1);
 }
 .pic9 {
   position: absolute;
-  right: 650px;
+  right: 710px;
   top: 270px;
   transform: rotate(10deg);
 }
