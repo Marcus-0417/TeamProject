@@ -62,7 +62,6 @@ a {
   height: 78.7vh;
 }
 
-/* 頁首區 */
 /* 內容區 */
 #section1 {
   position: relative;
@@ -177,7 +176,7 @@ a {
   left: 35px;
   border: transparent solid 1px;
   border-radius: 13px;
-  background-image: url(./images/memStory/postcard-landscape.jpg);
+  background-image: url(./images/postcard-landscape.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -190,7 +189,7 @@ a {
   left: 35px;
   border: transparent solid 1px;
   border-radius: 13px;
-  background-image: url(./images/memStory/postcard-islands.jpg);
+  background-image: url(./images/postcard-islands.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -203,7 +202,7 @@ a {
   left: 35px;
   border: transparent solid 1px;
   border-radius: 13px;
-  background-image: url(./images/memStory/postcard-sunset.jpg);
+  background-image: url(./images/postcard-sunset.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -216,7 +215,7 @@ a {
   left: 35px;
   border: transparent solid 1px;
   border-radius: 13px;
-  background-image: url(./images/memStory/postcard-mountain-2.jpg);
+  background-image: url(./images/postcard-mountain-2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -278,4 +277,4 @@ a {
   transform: scaleX(-1);
 }
 
-/* footer *//*# sourceMappingURL=MemStory.css.map */
+/* footer *//*# sourceMappingURL=memStory.css.map */

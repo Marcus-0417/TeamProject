@@ -77,16 +77,16 @@ a {
   position: relative;
 }
 .topbar .logo .img-logo {
-  width: 150px;
+  width: 100px;
   position: absolute;
-  left: -60px;
+  left: -50px;
   top: -70px;
 }
 .topbar .logo h1 {
   position: absolute;
   width: 100px;
-  top: 30px;
-  left: 70px;
+  top: 0px;
+  left: 40px;
   letter-spacing: 2px;
   color: #464646;
 }
@@ -509,10 +509,9 @@ a {
 #layer3 .layer3-4 #dontai2 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
   width: 500px;
-  height: 650px;
+  height: 750px;
   position: absolute;
   top: 60px;
   left: -490px;
@@ -662,4 +661,4 @@ footer p {
   100% {
     transform: translateY(100%);
   }
-}/*# sourceMappingURL=Mainpage.css.map */
+}/*# sourceMappingURL=mainpage.css.map */

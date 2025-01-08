@@ -1,5 +1,5 @@
 import Navbar from "../Navbar";
-import "../CSS/styles3.css";
+import "../about/CSS/styles3.css";
 import { Link } from "react-router-dom";
 export default function Content() {
   return (
