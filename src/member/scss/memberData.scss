@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", serif;
+  line-height: 1.2;
+  background-image: url(../images/background.png);
+
+
+}
+
+/* 重置標題字重 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置清單符號 */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連接 */
+a {
+  display: block;
+  /* 將a預設inline改為block，才能設定間距及寬高 */
+  color: #222;
+  text-decoration: none;
+}
+
+/* reset end */
+
+
+/* 首頁區 */
+// #topbar {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 20px 50px;
+
+//   .logo {
+
+//     display: flex;
+//     position: relative;
+
+
+//     img {
+//       width: 100px;
+//       position: absolute;
+//       left: -45px;
+//       top: -65px;
+
+//     }
+//   }
+
+//   .navigation {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+
+//     .menu {
+//       display: flex;
+//       padding: 0 10px;
+//       margin-top: 10px;
+//       margin-bottom: 20px;
+
+//       a {
+//         margin: 15px;
+//         padding: 7px 0 5px;
+//         border-bottom: 2px solid transparent;
+//         transition: 0.4s;
+//         text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+
+//         &:hover {
+//           color: #ffcc00;
+//           border-bottom: 2px solid transparent;
+//         }
+//       }
+
+//     }
+//   }
+// }
+
+
+#memberData-main {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+/* 左上區塊 */
+#md-about-box {
+  position: absolute;
+  background-image: url('../images/p4-papers-2.jpg');
+  width: 750px;
+  height: 430px;
+  background-position: 10% 50%;
+  top: 130px;
+  left: 200px;
+  display: flex;
+
+
+  /* 郵票圖 */
+  img {
+    width: 106px;
+    height: 146px;
+    margin: 5px;
+  }
+
+
+  /* 照片外框 */
+  .md-frame {
+
+    z-index: 999;
+    padding: 10px 0;
+
+    img {
+      width: 290px;
+      height: 265px;
+      transform: rotate(90deg);
+
+    }
+
+  }
+
+
+  /* 個人照片 */
+  .md-person-pt {
+    position: absolute;
+    left: 216px;
+    top: 7px;
+    padding: 10px 0;
+
+    img {
+      width: 150px;
+      height: 250px;
+
+    }
+
+  }
+
+  /* 個人照片下的id */
+  .md-person-id {
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    width: 180px;
+    height: 90px;
+    background-image: url('../images/small_paper.png');
+    background-size: 100%;
+
+
+    p {
+      position: absolute;
+      font-size: 16px;
+      top: 40%;
+      left: 15%;
+      color: #464646;
+
+    }
+
+  }
+
+
+
+}
+
+/* 個人照片右邊內容區塊 */
+#md-p-content {
+  margin-top: 30px;
+
+  /* 地區 */
+  .md-p01 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    img {
+      margin: 0 10px;
+      width: 50px;
+      height: 50px;
+    }
+
+
+  }
+
+  /* 收件 */
+  .md-p02 {
+    display: flex;
+    margin: 30px 0;
+
+    img {
+      margin: 0 10px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  /* 寄件 */
+  .md-p03 {
+    display: flex;
+    margin: 30px 0;
+
+    img {
+      margin: 0 10px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  /* 地區、收件、寄件內容區塊的設計 */
+  .md-p-box {
+    background-image: url('../images/btn-1.jpg');
+    background-size: contain;
+    margin: 5px 20px;
+    width: 130px;
+    height: 40px;
+
+    text-align: center;
+
+    p {
+
+      height: 100%;
+      line-height: 40px;
+      font-size: 18px;
+      color: #464646;
+    }
+
+  }
+
+
+}
+
+/*  最右邊關於我的內容區塊 */
+#md-about-content {
+
+  position: absolute;
+  right: 250px;
+  top: 120px;
+  display: flex;
+
+  flex-direction: column;
+
+  .item {
+    display: flex;
+
+    justify-content: center;
+    margin-bottom: 10px;
+
+    img {
+      margin: 0 20px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .md-item-content {
+    position: relative;
+    background-image: url('../images/p4-papers-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 350px;
+
+    p {
+      position: absolute;
+      width: 400px;
+      height: 200px;
+      top: 20%;
+      left: 15%;
+
+      font-size: 18px;
+      color: #464646;
+      letter-spacing: 10px;
+      line-height: 40px;
+    }
+  }
+}
+
+/* 下方明信片區塊 */
+
+#md-postcard {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 280px;
+  bottom: 180px;
+
+  p {
+    font-size: 18px;
+    color: #464646;
+    letter-spacing: 5px;
+  }
+
+  .md-pc-img01 {
+    position: relative;
+    margin-left: 50px;
+
+    .md-pc-frame {
+
+      width: 280px;
+      height: 150px;
+
+    }
+
+    .md-pcs {
+      position: absolute;
+      bottom: 35%;
+      left: 9%;
+      width: 230px;
+      height: 80px;
+      z-index: -1;
+    }
+
+  }
+
+  .md-pc-img02 {
+    position: relative;
+    margin-left: 100px;
+
+    .md-pc-frame {
+
+      width: 280px;
+      height: 150px;
+
+    }
+
+    .md-pcs {
+      position: absolute;
+      bottom: 35%;
+      left: 9%;
+      width: 230px;
+      height: 80px;
+      z-index: -1;
+    }
+
+  }
+
+  .md-pc-img03 {
+    position: relative;
+    margin-left: 100px;
+
+    .md-pc-frame {
+
+      width: 280px;
+      height: 150px;
+
+
+    }
+
+    .md-pcs {
+      position: absolute;
+      bottom: 35%;
+      left: 9%;
+      width: 230px;
+      height: 80px;
+      z-index: -1;
+    }
+
+
+  }
+
+}
+
+
+
+
+//背景插圖
+.md-img01 {
+  position: absolute;
+  width: 250px;
+  height: 220px;
+  bottom: 200px;
+  left: 50px;
+}
+
+.md-img02 {
+  position: absolute;
+  width: 160px;
+  height: 88px;
+  left: 820px;
+  top: 480px;
+  transform: rotate(-10deg);
+}
+
+.md-img03 {
+  position: absolute;
+  width: 250px;
+  height: 220px;
+  top: 80px;
+  left: 895px;
+}
+
+.md-img04 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 400px;
+  right: 280px;
+  transform: rotate(-10deg);
+}
+
+.md-img05 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  bottom: 100px;
+  right: 70px;
+  transform: rotate(-45deg);
+}
+
+/* 頁尾區 */
+// footer {
+//   display: inline-block;
+//   position: fixed;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   bottom: 0px;
+//   /* background-color: #E2CA9E; */
+//   width: 100%;
+//   height: 65px;
+  
+//   letter-spacing: 3px;
+//   color: #464646;
+  
+//   }

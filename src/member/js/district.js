@@ -1,6 +1,6 @@
 // Cities of Taiwan
-
-const database3 = {
+database2 = "AnotherDatabase";
+const database2 = {
     '基隆市': {'仁愛區': '200', '信義區': '201', '中正區': '202', '中山區': '203', '安樂區': '204', '暖暖區': '205', '七堵區': '206'},
     '臺北市': {'中正區': '100', '大同區': '103', '中山區': '104', '松山區': '105', '大安區': '106', '萬華區': '108', '信義區': '110', '士林區': '111', '北投區': '112', '內湖區': '114', '南港區': '115', '文山區': '116'},
     '新北市': {
@@ -109,7 +109,7 @@ const district_box = document.querySelector('#district_box');
 const address_box = document.querySelector('#address_box');
 let selected_county;
 
-Object.getOwnPropertyNames(database3).forEach((county) => {
+Object.getOwnPropertyNames(database2).forEach((county) => {
     county_box.innerHTML += `<option value="${county}">${county}</option>`;
 });
 
@@ -120,7 +120,7 @@ county_box.addEventListener('change', () => {
 
     address_box.value = '';
 
-    Object.getOwnPropertyNames(database3[selected_county]).forEach((district) => {
+    Object.getOwnPropertyNames(database2[selected_county]).forEach((district) => {
         district_box.innerHTML += `<option value="${district}">${district}</option>`;
     });
 })

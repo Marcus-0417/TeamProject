@@ -102,6 +102,8 @@ body {
 }
 /* 內容區 */
 .info2-box {
+  display: flex;
+  align-items: center;
   flex-direction: column;
   width: 900px;
   height: 650px;
@@ -109,36 +111,49 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   margin-left: 250px;
+ 
   color: #464646;
 }
 
 .box1c {
   margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 .box1c h2 {
   color: #464646;
   font-size: 22px;
   letter-spacing: 6px;
-  margin-top: 50px;
+  margin-top: 80px;
   display: flex;
   /* justify-content: center; */
 }
-
-.box2c {
-  /* margin: 20px 0 0 50px; */
-  margin-left: 50px;
+.info2{
+  width: 100%;
   display: flex;
+ justify-items: center;
+ flex-wrap: wrap;
+ margin-left: 120px;
+ 
+}
+.info2 h3{
+  width: 100px;
+  letter-spacing: 5px;
+   font-size: 18px;
+   color: #464646;
+   margin-left: 100px;
+   font-weight: 500;
+}
+.box2c {
+ 
+  display: flex;
+  align-items: center;
 }
 
-.box2c h3 {
-  color: #464646;
-  font-size: 18px;
-  letter-spacing: 10px;
-}
+
 
 .box2c input {
-  margin-left: 20px;
+ 
   border: none;
   background-color: #CDB17E;
   width: 400px;
@@ -147,17 +162,15 @@ body {
 
 .box3c {
   margin-top: 15px;
-  margin-left: 50px;
+
   display: flex;
+  align-items: center;
 }
 
-.box3c h3 {
-  color: #464646;
 
-}
 
 .box3c input {
-  margin-left: 20px;
+  
   border: none;
   background-color: #CDB17E;
   width: 400px;
@@ -166,18 +179,15 @@ body {
 
 .box4c {
   margin-top: 15px;
-  margin-left: 50px;
+  
   display: flex;
+  align-items: center;
 }
 
-.box4c h3 {
-  color: #464646;
-  font-size: 18px;
-  letter-spacing: 10px;
-}
+
 
 .box4c input {
-  margin-left: 20px;
+  
   border: none;
   background-color: #CDB17E;
   width: 400px;
@@ -186,21 +196,18 @@ body {
 
 .box5c {
   margin-top: 15px;
-  margin-left: 50px;
+ 
   display: flex;
+  align-items: center;
 }
 
-.box5c h3 {
-  color: #464646;
-  font-size: 18px;
-  letter-spacing: 10px;
-}
+
 
 .box5c input {
-  margin-left: 20px;
+  
   border: none;
   background-color: #CDB17E;
-  width: 700px;
+  width: 400px;
   height: 80px;
 }
 
@@ -340,7 +347,7 @@ input:focus {
   }
 }
 /* 頁尾區 */
-footer {
+.footer {
   display: inline-block;
   position: fixed;
   display: flex;

@@ -18,7 +18,7 @@ const Navbar = () => {
                         <li><Link to="/">首頁</Link></li>
                         <li><a href="./PC-index.html">配對明信片</a></li>
                         {/* <li><a href="">商店</a></li> */}
-                        <li><a href="./Member-Index.html">會員專區</a></li>
+                        <li><Link to="/MemberIndex">會員專區</Link></li>
                         {/* <li><a href="./about.html">關於</a></li> */}
                        <li><Link to="/About">關於</Link></li>
                     </ul>

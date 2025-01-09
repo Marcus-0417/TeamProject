@@ -1,1 +1,340 @@
-/*# sourceMappingURL=memberIndex.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", serif;
+  line-height: 1.2;
+  background-image: url(../images/background.png);
+}
+
+/* 重置標題字重 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置清單符號 */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連接 */
+a {
+  display: block;
+  /* 將a預設inline改為block，才能設定間距及寬高 */
+  color: #222;
+  text-decoration: none;
+}
+
+/* reset end */
+/* main區 */
+main {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+
+/*center-box輸入區  */
+#member-box {
+  background-image: url("../images/p4-papers-4.png");
+  margin-left: 23%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 700px;
+}
+
+#m-center-box {
+  height: 581px;
+  width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* 左邊輸入區 */
+  /* 右邊連結區 */
+}
+#m-center-box .m-input {
+  width: 450px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#m-center-box .m-input .decorate {
+  text-align: center;
+}
+#m-center-box .m-input .decorate img {
+  margin: auto;
+  display: block;
+  width: 128px;
+  height: 144px;
+}
+#m-center-box .m-input .decorate p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #8A5D3B;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+#m-center-box .m-input .m-input-box {
+  width: 280px;
+  margin: 30px;
+}
+#m-center-box .m-input .m-input-box label {
+  display: block;
+  width: 280px;
+  margin-bottom: 10px;
+}
+#m-center-box .m-input .m-input-box input {
+  width: 280px;
+  padding: 8px 0;
+  border: none;
+  background-color: #CDB17E;
+  margin-bottom: 10px;
+}
+#m-center-box .m-input .m-input-box input:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(109, 52, 20, 0.486);
+}
+#m-center-box .m-input .m-input-box a {
+  margin-top: 5px;
+  align-self: flex-start;
+  color: blue;
+  /* 靠左對齊 */
+}
+#m-center-box .m-input .m-btn-in {
+  text-align: center;
+}
+#m-center-box .m-input .m-btn-in button {
+  background-image: url("../images/btn-4.svg");
+  background-size: 80%;
+  border: 0px;
+  width: 120px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 18px;
+}
+#m-center-box button:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#m-center-box .m-link-box {
+  width: 450px;
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#m-center-box .m-link-box .bg {
+  position: relative;
+  width: 450px;
+  height: 215px;
+}
+#m-center-box .m-link-box .bg img {
+  width: 100%;
+}
+#m-center-box .m-link-box .bg .p-link {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  text-align: center;
+}
+#m-center-box .m-link-box .bg .p-link p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#m-center-box .m-link-box .bg .p-link .link-p {
+  display: flex;
+  /* 使用 Flexbox */
+  align-items: center;
+  /* 垂直對齊（如果需要） */
+  gap: 3px;
+  /* 調整元素間距 */
+  text-align: center;
+}
+#m-center-box .m-link-box .bg .p-link .link-p .link-apply {
+  width: 36px;
+  padding: 0;
+  /* 去除內邊距 */
+  margin: 0;
+  /* 去除外邊距 */
+  color: blue;
+}
+#m-center-box .m-link-box .bg p {
+  font-size: 14px;
+}
+
+/* 背景插圖 */
+/* 花 */
+.m-img01 {
+  position: absolute;
+  width: 450px;
+  height: 500px;
+  left: 40px;
+  bottom: 100px;
+}
+
+/* 左上膠帶 */
+.m-img02 {
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  left: 350px;
+  top: 110px;
+  transform: rotate(-80deg);
+}
+
+/* 右下膠帶 */
+.m-img02-1 {
+  position: absolute;
+  width: 270px;
+  height: 120px;
+  right: 400px;
+  bottom: 150px;
+  transform: rotate(-65deg);
+}
+
+/* 左下蠟印 */
+.m-img03 {
+  position: absolute;
+  left: 410px;
+  bottom: 130px;
+}
+
+/* 右上飛機 */
+.m-img04 {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 120px;
+  right: 320px;
+  transform: rotate(8deg);
+}
+
+/* 右上印章 */
+.m-img05 {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  right: 400px;
+  top: 130px;
+  transform: rotate(-10deg);
+}
+
+/* 左下印章 */
+.m-img06 {
+  position: absolute;
+  width: 120px;
+  height: 100px;
+  bottom: 240px;
+  right: 385px;
+  transform: rotate(35deg);
+}
+
+/* 頁尾區 *//*# sourceMappingURL=memberIndex.css.map */
