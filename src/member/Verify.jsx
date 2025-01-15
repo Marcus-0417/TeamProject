@@ -4,39 +4,21 @@ import "./scss/verify.scss";
 
 export default function Verify(){
   useEffect(() => {
-    // 檢查是否已加載 jQuery
-    if (typeof jQuery === 'undefined') {
-      const jQueryScript = document.createElement('script');
-      jQueryScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js';
-      jQueryScript.defer = true;
-      jQueryScript.onload = () => {
-        // jQuery 加載完成後，進行其他操作
-        console.log('jQuery is ready');
-        // 加載其他腳本
-        const VerifyScript = document.createElement('script');
-        VerifyScript.src = '../js/Vcode.js';
-        VerifyScript.async = true;
-        document.body.appendChild(VerifyScript);
-      };
-      document.body.appendChild(jQueryScript);
-      
-      return () => {
-        // 清理腳本
-        document.body.removeChild(jQueryScript);
-      };
-    } else {
-      // jQuery 已加載，直接加載 VerifyScript
-      const VerifyScript = document.createElement('script');
-      VerifyScript.src = '../js/Vcode.js';
-      VerifyScript.async = true;
-      document.body.appendChild(VerifyScript);
+    // const jQ = document.createElement('script');
+    // jQ.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js';
+    // jQ.defer = true; // 確保腳本在 HTML 解析完後執行
+    // document.body.appendChild(jQ);
 
-      return () => {
-        document.body.removeChild(VerifyScript);
-      };
-    }
-  }, []); // 空陣列，確保只在組件加載時運行一次
+    const VerifyScript = document.createElement('script');
+    VerifyScript.src = '../js/Vcode.js';
+    VerifyScript.async = true;
+    document.body.appendChild(VerifyScript);
 
+    return () => {
+      document.body.removeChild(VerifyScript); // 卸載腳本避免衝突
+      // document.body.removeChild(jQ);
+    };
+  }, [])
   return(
     <div id="verifyPage">
       <Navbar/>
