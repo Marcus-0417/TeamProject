@@ -1,6 +1,33 @@
+import { useEffect } from "react";
 import Navbar from "../Navbar";
 import "./scss/finish.scss";
 export default function Finish() {
+  useEffect(()=>{
+    // 加載 jQuery
+    const jQueryScript = document.createElement('script');
+    jQueryScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js';
+    jQueryScript.async = true;
+    document.body.appendChild(jQueryScript);
+
+    // 加載 GSAP
+    const gsapScript = document.createElement('script');
+    gsapScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js';
+    gsapScript.async = true;
+    document.body.appendChild(gsapScript);
+
+    // 加載自己的 JS
+    const customScript = document.createElement('script');
+    customScript.src = '../js/ckAnimation.js'; 
+    customScript.async = true;
+    document.body.appendChild(customScript);
+
+    // 清理腳本，避免重複加載
+    return () => {
+      document.body.removeChild(jQueryScript);
+      document.body.removeChild(gsapScript);
+      document.body.removeChild(customScript);
+    };
+  },[])
   return (
     <div id="finishPage">
       <Navbar />
@@ -10,26 +37,8 @@ export default function Finish() {
           <div className="finish-content">
             {/* 勾勾動畫  */}
             <div id="ck-animation">
-              <svg width="150" height="150">
-                <circle
-                  fill="none"
-                  stroke="#8A5D3B"
-                  strokeWidth="8"
-                  cx="75"
-                  cy="75"
-                  r="71.25"
-                  strokeLinecap="round"
-                  transform="rotate(-45 75 75)"
-                  className="finish-circle" />
-                <polyline
-                  fill="none"
-                  stroke="#8A5D3B"
-                  strokeWidth="12"
-                  points="33,80.25 64.875,106.5 114,51.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="finish-tick" />
-              </svg>
+            <img className="finish-approved" src="./images/success-stamp.png"/>
+             
             </div>
 
 

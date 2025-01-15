@@ -11,6 +11,7 @@ import Apply from "./member/Apply";
 import Finish from "./member/Finish";
 import MemberData from "./member/memberData";
 import PasswordR from "./member/PasswordR";
+import Verify from "./member/verify";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         <Route path="/Finish" element={<Finish />} />
         <Route path="/memberData" element={<MemberData/>}/>
         <Route path="/PasswordR" element={<PasswordR/>}/>
+        <Route path="/Finish" element={<Finish/>}/>
+        <Route path="/Verify" element={<Verify/>}/>
+
 
         {/* 關於頁面 */}
         <Route path="/About" element={<About />} />

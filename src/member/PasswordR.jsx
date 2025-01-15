@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import "./scss/passwordR.scss";
 export default function PasswordR() {
@@ -10,8 +11,9 @@ export default function PasswordR() {
         <img src="./images/p4-papers-1.png" alt=""/>
         <div className="pr-input-email">
           <input type="email" name="email" id="pr-email" title="Email" placeholder="您的E-mail" required autoFocus/>
-          <button type="submit" name="sure-btn" id="pr-sure-btn" value="確定" onclick="location.href='./v-code.html'">確定</button>
-
+    
+          <Link to="/Verify"><button type="submit" name="sure-btn" id="pr-sure-btn" value="確定">確定</button></Link>
+          
         </div>
       </div>
       

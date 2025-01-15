@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../Navbar";
 import "./scss/apply.scss";
+import { Link } from "react-router-dom";
 export default function Apply() {
   useEffect(() => {
     const script = document.createElement('script');
@@ -69,8 +70,9 @@ export default function Apply() {
             </div>
 
             <div className="a-btn">
-              <button type="submit" value="Submit" name="submit-btn" id="submit-btn" onClick="">送出</button>
-
+              <Link to="/Finish"> <button type="submit" value="Submit" name="submit-btn" id="submit-btn" onClick="">送出</button>
+              </Link>
+             
             </div>
 
           </form>
