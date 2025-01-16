@@ -4,19 +4,15 @@ import "./scss/verify.scss";
 
 export default function Verify(){
   useEffect(() => {
-    // const jQ = document.createElement('script');
-    // jQ.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js';
-    // jQ.defer = true; // 確保腳本在 HTML 解析完後執行
-    // document.body.appendChild(jQ);
+   
 
     const VerifyScript = document.createElement('script');
-    VerifyScript.src = '../js/Vcode.js';
+    VerifyScript.src = '/js/Vcode.js';
     VerifyScript.async = true;
     document.body.appendChild(VerifyScript);
 
     return () => {
-      document.body.removeChild(VerifyScript); // 卸載腳本避免衝突
-      // document.body.removeChild(jQ);
+      document.body.removeChild(VerifyScript); // 卸載腳
     };
   }, [])
   return(

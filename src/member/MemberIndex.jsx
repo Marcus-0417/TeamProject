@@ -6,6 +6,7 @@ export default function MemberIndex() {
     <div id="memberIndex">
       <Navbar />
       <main id="member-box">
+        <div id="member-content">
         <div id="m-center-box">
           <section className="m-input">
             <div className="decorate">
@@ -45,6 +46,8 @@ export default function MemberIndex() {
 
 
         </div>
+        </div>
+      
 
       </main>
       {/* 背景插圖  */}

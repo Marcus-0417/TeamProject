@@ -21,11 +21,12 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/MemStory" element={<MemStory />} />
         <Route path="/MemStoryPage" element={<MemStoryPage />} />
-        <Route path="/MemberIndex" element={<MemberIndex />} />
+    
         {/* 會員專區頁面*/}
+        <Route path="/MemberIndex" element={<MemberIndex />} />
         <Route path="/Apply" element={<Apply />} />
-        <Route path="/Finish" element={<Finish />} />
-        <Route path="/memberData" element={<MemberData/>}/>
+       
+         <Route path="/memberData" element={<MemberData/>}/>
         <Route path="/PasswordR" element={<PasswordR/>}/>
         <Route path="/Finish" element={<Finish/>}/>
         <Route path="/Verify" element={<Verify/>}/>

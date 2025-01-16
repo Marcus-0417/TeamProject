@@ -18,7 +18,7 @@ export default function Apply() {
     return (
       <div id="applyPage">
         <Navbar />
-        <main id="applyMain">
+        <main id="apply-Main">
           <article className="apply-article">加入郵你真好大家庭!!!</article>
           <form action="" method="post" name="member-form" id="member-form" title="會員申請資料">
             <div className="apply-box">

@@ -1,5 +1,5 @@
 // 若沒有包在立即函式，options 能直接在 console 中被讀取與修改
-$(function () {
+jQuery(function () {
   let options = {
     canvasId: "auth-code", /**canvas的id*/
     txt: generateRandomString(6), /**隨機生成 6 位數字和字母的驗證碼內容*/
@@ -13,8 +13,8 @@ $(function () {
   };
 
   // 點擊按鈕換圖
-  var $btn = document.getElementById("reBtn");
-  $btn.addEventListener('click', () => {
+  var jQuerybtn = document.getElementById("reBtn");
+  jQuerybtn.addEventListener('click', () => {
     options.txt = generateRandomString(6); /** 重新生成驗證碼內容 */
     helper = new writeAuthCode(options);
     document.getElementById('validResult').innerHTML = "";
@@ -24,24 +24,24 @@ $(function () {
 
 
   // 取得驗證碼輸入框與按鈕
-  var $text = document.getElementById('validText'); // 輸入框
-  var $button = document.getElementById('verify-sure-btn'); // 確定按鈕
+  var jQuerytext = document.getElementById('validText'); // 輸入框
+  var jQuerybutton = document.getElementById('verify-sure-btn'); // 確定按鈕
   var isValid = false; // 初始化驗證狀態
 
   // 點擊按鈕觸發驗證
-  $button.addEventListener('click', function (event) {
+  jQuerybutton.addEventListener('click', function (event) {
     event.preventDefault(); // 阻止表單默認提交行為（如果在<form>中）
 
     if (helper.validate($text.value)) {
       // 驗證成功
       document.getElementById('verify_code').innerHTML = "驗證碼<span>*</span>";
-      $("#verify_code").css("color", "#393939");
+      jQuery("#verify_code").css("color", "#393939");
       isValid = true;
       console.log('驗證碼輸入正確');
     } else {
       // 驗證失敗
       document.getElementById('verify_code').innerHTML = "驗證碼錯誤";
-      $("#verify_code").css("color", "#FF435E");
+      jQuery("#verify_code").css("color", "#FF435E");
       isValid = false;
       console.log('驗證碼輸入錯誤');
     }
