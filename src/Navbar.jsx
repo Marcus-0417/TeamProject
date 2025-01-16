@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-
 const Navbar = () => {
 
     return (
@@ -10,7 +9,7 @@ const Navbar = () => {
             <header className="topbar">
                 {/* Logo */}
                 <div className="logo">
-                    <img className="img-logo" src="./images/logo.png" alt="" />
+                    <img className="img-logo" src="./images/logo-1.png" alt="" />
                     {/* <h1>郵你真好</h1> */}
                 </div>
                 <nav>
@@ -20,7 +19,7 @@ const Navbar = () => {
                         {/* <li><a href="">商店</a></li> */}
                         <li><Link to="/MemberIndex">會員專區</Link></li>
                         {/* <li><a href="./about.html">關於</a></li> */}
-                       <li><Link to="/About">關於</Link></li>
+                        <li><Link to="/About">關於</Link></li>
                     </ul>
                 </nav>
             </header>
