@@ -6,7 +6,7 @@ const TextReveal = () => {
   const letters = text.split(""); // 將文字拆分成單個字元
 
   return (
-    <p className="text-TW" style={{ display: "flex", overflow: "hidden" }}>
+    <p className="text-TW">
       {letters.map((letter, index) => (
         <motion.span
           key={index}
@@ -17,7 +17,7 @@ const TextReveal = () => {
             duration: 2.0, // 每個字的動畫持續時間
             ease: "easeOut",
           }}
-          style={{ display: "inline-block" }}
+          /* style={{ display: "inline-block" }} */
         >
           {letter}
         </motion.span>
