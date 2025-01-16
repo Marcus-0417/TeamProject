@@ -92,12 +92,6 @@ main {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Noto Sans TC", serif;
-  line-height: 1.2;
-  background-image: url(../images/background.png);
-}
-
 /* 重置標題字重 */
 h1,
 h2,
@@ -128,23 +122,28 @@ a {
   text-decoration: none;
 }
 
+#member-box {
+  font-family: "Noto Sans TC", serif;
+  line-height: 1.2;
+  background-image: url(../images/background.png);
+}
+
 /* reset end */
-/* main區 */
-main {
-  width: 90%;
+#member-box {
+  width: 100%;
+  height: auto;
   margin: auto;
-  height: 100%;
 }
 
 /*center-box輸入區  */
-#member-box {
+#member-content {
   background-image: url("../images/p4-papers-4.png");
   margin-left: 23%;
   margin-bottom: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1000px;
+  width: 55%;
   height: 700px;
 }
 
@@ -212,8 +211,10 @@ main {
   /* 靠左對齊 */
 }
 #m-center-box .m-input .m-input-box .link-passwordR:hover {
-  color: #e9aa36; /* 懸浮時改變文字顏色 */
-  transform: scale(1.1); /* 懸浮時放大 */
+  color: #e9aa36;
+  /* 懸浮時改變文字顏色 */
+  transform: scale(1.1);
+  /* 懸浮時放大 */
 }
 #m-center-box .m-input .m-btn-in {
   text-align: center;
@@ -227,7 +228,7 @@ main {
   cursor: pointer;
   font-size: 18px;
 }
-#m-center-box button:hover {
+#m-center-box .m-input .m-btn-in button:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 #m-center-box .m-link-box {
@@ -276,8 +277,10 @@ main {
   font-size: 16px;
 }
 #m-center-box .m-link-box .bg .p-link .custom-link-p .link-apply:hover {
-  color: #e9aa36; /* 懸浮時改變文字顏色 */
-  transform: scale(1.1); /* 懸浮時放大 */
+  color: #e9aa36;
+  /* 懸浮時改變文字顏色 */
+  transform: scale(1.1);
+  /* 懸浮時放大 */
 }
 #m-center-box .m-link-box .bg p {
   font-size: 14px;

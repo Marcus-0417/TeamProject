@@ -1,6 +1,4 @@
-// Cities of Taiwan
-database2 = "AnotherDatabase";
-const database2 = {
+export const database2 = {
     '基隆市': {'仁愛區': '200', '信義區': '201', '中正區': '202', '中山區': '203', '安樂區': '204', '暖暖區': '205', '七堵區': '206'},
     '臺北市': {'中正區': '100', '大同區': '103', '中山區': '104', '松山區': '105', '大安區': '106', '萬華區': '108', '信義區': '110', '士林區': '111', '北投區': '112', '內湖區': '114', '南港區': '115', '文山區': '116'},
     '新北市': {
@@ -103,35 +101,3 @@ const database2 = {
     '連江縣': {'南竿鄉': '209', '北竿鄉': '210', '莒光鄉': '211', '東引鄉': '212'},
     '澎湖縣': {'馬公市': '880', '西嶼鄉': '881', '望安鄉': '882', '七美鄉': '883', '白沙鄉': '884', '湖西鄉': '885'}
 };
-
-const county_box = document.querySelector('#county_box');
-const district_box = document.querySelector('#district_box');
-const address_box = document.querySelector('#address_box');
-let selected_county;
-
-Object.getOwnPropertyNames(database2).forEach((county) => {
-    county_box.innerHTML += `<option value="${county}">${county}</option>`;
-});
-
-county_box.addEventListener('change', () => {
-    selected_county = county_box.options[county_box.selectedIndex].value;
-
-    district_box.innerHTML = '<option value="">選擇鄉鎮市區</option>';
-
-    address_box.value = '';
-
-    Object.getOwnPropertyNames(database2[selected_county]).forEach((district) => {
-        district_box.innerHTML += `<option value="${district}">${district}</option>`;
-    });
-})
-
-// district_box.addEventListener('change', () => {
-//     const selected_district = district_box.options[district_box.selectedIndex].value;
-//     const address_box = database[selected_county][selected_district]
-
-//     // address_box.value = `${address_value}`;
-// })
-
-
-
-
