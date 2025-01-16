@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,500;1,500&display=swap");
 html,
 body,
 div,
@@ -122,25 +122,25 @@ a {
   text-decoration: none;
 }
 
-#verifyPage {
+body {
   font-family: "Noto Sans TC", serif;
   line-height: 1.2;
   background-image: url(../images/background.png);
 }
 
 /* 首頁區 */
-#verify-main {
+#nomail_R-mail {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-size: cover;
   background-attachment: fixed;
-  /* 驗證碼區 */
+  /* 中間內容區塊 */
 }
-#verify-main h2 {
+#nomail_R-mail h2 {
   font-size: 22px;
   letter-spacing: 5px;
   text-align: center;
@@ -148,99 +148,72 @@ a {
   color: #8A5D3B;
   font-weight: bold;
 }
-#verify-main #verify-code {
+#nomail_R-mail #nomail_R-content-box02 {
   width: 830px;
-  height: 600px;
+  height: 490px;
   position: relative;
-  /* 提醒字 */
-  /* 驗證區 */
-  /* 產生驗證碼區 */
-  /* 換圖按鈕 */
-  /* 輸入驗證碼區塊 */
-  /* 確認按鈕 */
-  /* 輸入時的樣式 */
+  letter-spacing: 3px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #464646;
 }
-#verify-main #verify-code img {
+#nomail_R-mail #nomail_R-content-box02 img {
   width: 100%;
   height: 100%;
 }
-#verify-main #verify-code .verify-remind {
+#nomail_R-mail #nomail_R-content-box02 .nomail_R-e-content02 {
   position: absolute;
-  top: 120px;
-  left: 340px;
-  font-size: 18px;
-  color: #464646;
+  top: 100px;
+  left: 120px;
+  width: 600px;
+  height: 120px;
+  /* 最後兩行文字 */
 }
-#verify-main #verify-code #verify-input_block {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: auto;
-  /* 調整輸入區位置 */
-}
-#verify-main #verify-code #verify-input_block .verify-input-code {
-  display: flex;
-  align-items: center;
-}
-#verify-main #verify-code #auth-code {
-  display: block;
-  width: 450px;
-  height: 100px;
-  margin: 20px 30px 40px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-}
-#verify-main #verify-code #reBtn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
-#verify-main #verify-code #validText {
-  width: 430px;
-  height: 50px;
-  margin: 0 10px;
-  background-color: #CDB17E;
-  border: none;
-  font-size: 18px;
-}
-#verify-main #verify-code #verify-sure-btn {
-  position: absolute;
-  top: 400px;
-  left: 335px;
+#nomail_R-mail #nomail_R-content-box02 .nomail_R-e-content02 button {
   width: 150px;
   height: 50px;
   font-size: 18px;
+  color: #464646;
   background-color: #CDB17E;
   border: none;
+  margin-left: 220px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(109, 52, 20, 0.486);
   cursor: pointer;
-  color: #464646;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
-#verify-main #verify-code #verify-sure-btn:hover {
+#nomail_R-mail #nomail_R-content-box02 .nomail_R-e-content02 button:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-#verify-main #verify-code input:focus {
-  outline: none;
-  border-color: #fff;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(109, 52, 20, 0.486);
+#nomail_R-mail #nomail_R-content-box02 .nomail_R-e-content02 a {
+  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #995f32;
+}
+#nomail_R-mail #nomail_R-content-box02 .nomail_R-e-content02 a:hover {
+  color: #e9aa36;
+  /* 懸浮時改變文字顏色 */
+  transform: scale(1.1);
+  /* 懸浮時放大 */
+}
+#nomail_R-mail #nomail_R-content-box02 .nomail_R-e-content02 .nomail_R-endp {
+  margin-left: 220px;
 }
 
 /* 背景插圖 */
-/* 左下角角落 */
-.verify-img01 {
+.nomail_R-img01 {
   position: absolute;
   width: 600px;
   height: 450px;
   left: 0;
-  bottom: 50px;
+  bottom: 0;
 }
 
-/* 左下角花 */
-.verify-img02 {
+.nomail_R-img02 {
   position: absolute;
   width: 480px;
   height: 400px;
@@ -248,18 +221,16 @@ a {
   top: 380px;
 }
 
-/* 驗證碼區的印章 */
-.verify-img03 {
+.nomail_R-img03 {
   position: absolute;
   width: 120px;
   height: 100px;
-  bottom: 180px;
-  right: 550px;
+  bottom: 250px;
+  right: 530px;
   transform: rotate(-5deg);
 }
 
-/* 左中的紙 */
-.verify-img04 {
+.nomail_R-img04 {
   position: absolute;
   width: 320px;
   height: 320px;
@@ -268,8 +239,7 @@ a {
   transform: rotate(15deg);
 }
 
-/* 左邊的花 */
-.verify-img05 {
+.nomail_R-img05 {
   position: absolute;
   width: 280px;
   height: 280px;
@@ -289,4 +259,4 @@ footer {
   height: 65px;
   letter-spacing: 3px;
   color: #000;
-}/*# sourceMappingURL=verify.css.map */
+}/*# sourceMappingURL=nomail2.css.map */

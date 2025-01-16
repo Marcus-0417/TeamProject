@@ -12,6 +12,9 @@ import Finish from "./member/Finish";
 import MemberData from "./member/memberData";
 import PasswordR from "./member/PasswordR";
 import Verify from "./member/verify";
+import NoMail from "./member/NoMail";
+import NoMail_R from "./member/NoMail_R";
+import NewPassword from "./member/NewPassword";
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
         <Route path="/PasswordR" element={<PasswordR/>}/>
         <Route path="/Finish" element={<Finish/>}/>
         <Route path="/Verify" element={<Verify/>}/>
+        <Route path="/NoMail" element={<NoMail/>}/>
+        <Route path="/NoMail_R" element={<NoMail_R/>}/>
+        <Route path="/NewPassword" element={<NewPassword/>}/>
 
 
         {/* 關於頁面 */}

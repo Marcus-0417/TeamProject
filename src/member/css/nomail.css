@@ -122,93 +122,106 @@ a {
   text-decoration: none;
 }
 
-#finishPage {
+#nomailPage {
   font-family: "Noto Sans TC", serif;
   line-height: 1.2;
   background-image: url(../images/background.png);
 }
 
-#finishMain {
+/* 首頁區 */
+#nomail-main {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-size: cover;
+  background-attachment: fixed;
 }
-#finishMain #finish-box {
-  width: 780px;
+#nomail-main h2 {
+  font-size: 22px;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 2.5;
+  color: #8A5D3B;
+  font-weight: bold;
+}
+#nomail-main #nomail-content-box {
+  width: 830px;
   height: 480px;
   position: relative;
-  margin-top: 5%;
 }
-#finishMain #finish-box .finish-bg {
+#nomail-main #nomail-content-box img {
   width: 100%;
   height: 100%;
 }
-#finishMain #finish-box .finish-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#finishMain #finish-box .finish-content img {
+#nomail-main #nomail-content-box .nomail-e-content {
   position: absolute;
-  width: 150px;
-  height: auto;
-}
-#finishMain #finish-box .finish-content .f-content-p {
+  top: 150px;
+  left: 120px;
+  width: 600px;
+  height: 120px;
   text-align: center;
-  position: absolute;
-  top: 250px;
-}
-#finishMain #finish-box .finish-content .f-content-p p {
-  font-size: 24px;
+  letter-spacing: 10px;
+  line-height: 40px;
+  font-size: 18px;
   color: #464646;
-  margin: 20px 0;
-  letter-spacing: 3px;
-}
-#finishMain p {
-  font-size: 16px;
-  color: #464646;
-  letter-spacing: 2px;
 }
 
-#ck-animation .finish-approved {
-  margin-left: 34%;
-  width: 650px;
-  height: 340px;
+/* 背景插圖 */
+.nomail-img01 {
   position: absolute;
-  top: 90px;
-  left: 33px;
-  opacity: 0;
-  transform: scale(2);
+  width: 600px;
+  height: 450px;
+  left: 0;
+  bottom: 0;
 }
 
-/* 裝飾背景 */
-/* 左下印章 */
-.fin-img01 {
+.nomail-img02 {
+  position: absolute;
+  width: 480px;
+  height: 400px;
+  left: 100px;
+  top: 380px;
+}
+
+.nomail-img03 {
   position: absolute;
   width: 120px;
-  height: 120px;
-  bottom: 320px;
-  left: 570px;
-}
-
-/* 右上飛機 */
-.fin-img02 {
-  position: absolute;
-  width: 300px;
-  height: 250px;
-  top: 250px;
-  right: 500px;
-  transform: rotate(12deg);
-}
-
-/* 右上迴紋針 */
-.fin-img03 {
-  position: absolute;
-  width: 100px;
   height: 100px;
-  top: 230px;
-  right: 600px;
-}/*# sourceMappingURL=finish.css.map */
+  bottom: 250px;
+  right: 530px;
+  transform: rotate(-5deg);
+}
+
+.nomail-img04 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  right: 260px;
+  top: 250px;
+  transform: rotate(15deg);
+}
+
+.nomail-img05 {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  right: 165px;
+  top: 175px;
+}
+
+footer {
+  display: inline-block;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  background-color: #E2CA9E;
+  width: 100%;
+  height: 65px;
+  letter-spacing: 3px;
+  color: #000;
+}/*# sourceMappingURL=nomail.css.map */

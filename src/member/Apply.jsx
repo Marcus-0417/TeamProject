@@ -1,18 +1,10 @@
-import { useEffect } from "react";
+
 import Navbar from "../Navbar";
 import "./scss/apply.scss";
 import { Link } from "react-router-dom";
+import AddressSelector from "./Component/AddressSelector";
 export default function Apply() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = '/js/district.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script); // 卸載腳本避免衝突
-    };
-  }, [])
+  
   
   
     return (
@@ -45,23 +37,7 @@ export default function Apply() {
             </div>
 
             {/* 地址下拉選單 */}
-            <div id="district-box">
-
-              <label htmlFor="district">地址:</label>
-              <div className="dropdown">
-
-                <select name="county" id="county_box">
-
-                  <option value="">選擇縣市</option>
-                </select>
-
-                <select name="district" id="district_box">
-                  <option value="">選擇鄉鎮市區</option>
-                </select>
-
-                <input type="text" id="address_box" placeholder="請填寫完整地址" />
-              </div>
-            </div>
+           <AddressSelector/>
 
             <div className="box_check">
               <input type="checkbox" name="agree" id="agree" title="我同意" value="我同意" />
@@ -70,7 +46,7 @@ export default function Apply() {
             </div>
 
             <div className="a-btn">
-              <Link to="/Finish"> <button type="submit" value="Submit" name="submit-btn" id="submit-btn" onClick="">送出</button>
+              <Link to="/Finish"> <button type="submit" value="Submit" name="submit-btn" id="submit-btn" onClick={""}>送出</button>
               </Link>
              
             </div>
