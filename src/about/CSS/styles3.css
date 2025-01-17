@@ -46,19 +46,19 @@ body {
 
 /* 內容區 */
 /* 左側按鈕 */
-.wrap {
+.contentPage-wrap {
   margin-top: 40px;
   display: flex;
 }
 
-.btn {
+.contentPage-btn {
   flex-direction: column;
   display: flex;
   margin-left: 100px;
 
 }
 
-.btn button {
+.contentPage-btn button {
   margin-top: 10px;
   font-size: 18px;
   color: #464646;
@@ -101,50 +101,51 @@ body {
   transform: scale(1.1);
 }
 /* 內容區 */
-.info2-box {
+.contentPage-info2-box {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 900px;
-  height: 650px;
+  width: 50%;
+  height:650px;
   background-image: url(../images/p5-papers-1.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  margin-left: 250px;
+  margin-left: 12%;
+  margin-top: 3.70vh;
  
   color: #464646;
 }
 
-.box1c {
-  margin-left: 50px;
-  margin-bottom: 50px;
+.contentPage-box1c {
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
-.box1c h2 {
+.contentPage-box1c h2 {
   color: #464646;
   font-size: 22px;
   letter-spacing: 6px;
-  margin-top: 80px;
+  margin-top: 8%;
   display: flex;
   /* justify-content: center; */
 }
-.info2{
+.contentPage-info2{
   width: 100%;
   display: flex;
  justify-items: center;
  flex-wrap: wrap;
- margin-left: 120px;
+ margin-left: 38%;
  
 }
-.info2 h3{
+.contentPage-info2 h3{
   width: 100px;
   letter-spacing: 5px;
    font-size: 18px;
    color: #464646;
-   margin-left: 100px;
+
    font-weight: 500;
 }
-.box2c {
+.contentPage-box2c {
  
   display: flex;
   align-items: center;
@@ -152,15 +153,15 @@ body {
 
 
 
-.box2c input {
+.contentPage-box2c input {
  
   border: none;
   background-color: #CDB17E;
-  width: 400px;
-  height: 40px;
+  width: 22vw;
+  height: 4.5vh;
 }
 
-.box3c {
+.contentPage-box3c {
   margin-top: 15px;
 
   display: flex;
@@ -169,15 +170,15 @@ body {
 
 
 
-.box3c input {
+.contentPage-box3c input {
   
   border: none;
   background-color: #CDB17E;
-  width: 400px;
-  height: 40px;
+  width:  22vw;
+  height: 4.5vh;
 }
 
-.box4c {
+.contentPage-box4c {
   margin-top: 15px;
   
   display: flex;
@@ -186,15 +187,15 @@ body {
 
 
 
-.box4c input {
+.contentPage-box4c input {
   
   border: none;
   background-color: #CDB17E;
-  width: 400px;
-  height: 40px;
+  width:  22vw;
+  height: 4.5vh;
 }
 
-.box5c {
+.contentPage-box5c {
   margin-top: 15px;
  
   display: flex;
@@ -203,15 +204,15 @@ body {
 
 
 
-.box5c input {
+.contentPage-box5c input {
   
   border: none;
   background-color: #CDB17E;
-  width: 400px;
-  height: 80px;
+  width:  22vw;
+  height: 10vh;  
 }
 
-.box6c {
+.contentPage-box6c {
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -224,22 +225,22 @@ input:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(109, 52, 20, 0.486);
 }
 
-.box6c button {
+.contentPage-box6c button {
   border: none;
   background-color: #CDB17E;
-  width: 140px;
-  height: 40px;
+  width: 7.29vw;
+  height: 3.70vh;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(109, 52, 20, 0.486);
   cursor: pointer;
 
 
 
 }
-.box6c button:hover{
+.contentPage-box6c button:hover{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.box6c button p {
+.contentPage-box6c button p {
 
 
   color: #464646;
@@ -250,7 +251,7 @@ input:focus {
 }
 
 @media (min-widch:1024px) {
-  .info2-box {
+  .contentPage-info2-box {
     flex-direction: column;
     width: 900px;
     height: 650px;
@@ -264,75 +265,75 @@ input:focus {
 
 
 /* 裝飾區 */
-.pic1 {
+.contentPage-pic1 {
   position: absolute;
   left: 410px;
   bottom: 180px;
   /* transform: rotate(deg); */
 }
 
-.pic2 {
+.contentPage-pic2 {
   position: fixed;
   right: 380px;
   top: 100px;
   transform: rotate(-5deg);
 }
 
-.pic3 img {
+.contentPage-pic3 img {
   width: 250px;
   height: 170px;
 }
 
-.pic3 {
+.contentPage-pic3 {
   position: absolute;
   left: 80px;
   bottom: 220px;
   transform: rotate(-15deg);
 }
 
-.pic4 img {
+.contentPage-pic4 img {
   width: 300px;
   height: 370px;
   animation: swing ease-in-out 2s infinite alternate;
   transform-origin: bottom -20px;
 }
 
-.pic4 {
+.contentPage-pic4 {
   position: absolute;
   left: 280px;
   bottom: 170px;
   transform: rotate(-2deg);
 }
 
-.pic5 img {
+.contentPage-pic5 img {
   width: 130px;
   height: 130px;
 }
 
-.pic5 {
+.contentPage-pic5 {
   position: absolute;
   right: 400px;
   bottom: 220px;
 }
 
-.pic6 img {
+.contentPage-pic6 img {
   width: 340px;
   height: 320px;
 }
 
-.pic6 {
+.contentPage-pic6 {
   position: fixed;
   right: 20px;
   bottom: 300px;
   transform: rotate(5deg);
 }
 
-.pic7 img {
+.contentPage-pic7 img {
   width: 300px;
   height: 290px;
 }
 
-.pic7 {
+.contentPage-pic7 {
   position: absolute;
   right: 100px;
   bottom: 210px;
