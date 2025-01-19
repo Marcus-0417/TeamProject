@@ -11,7 +11,7 @@ export default function AnimatedComponent() {
         duration: 1,
         top: "94px",
         opacity: 1,
-        left: "30px",
+        left: "40px",
         scale: 1,
       
         ease: "bounce.out", // 使用 Bounce 緩動效果

@@ -19,9 +19,10 @@ export default function NoMail_R(){
          
           <p>或點選以下連結</p>
           <a href="htttps://ejejeieioooxxpxpgje.ocjeoeoe">htttps://ejejeieioooxxpxpgje.ocjeoeoe</a>
-          <p className="nomail_R-endp">連結24小時內有效! <br/>
-            郵你真好感謝您~</p>
-
+          <div className="nomail_R-endp">
+            <p>連結24小時內有效! </p>
+           <p> 郵你真好感謝您~</p>
+           </div>
 
         </div>
       </div>

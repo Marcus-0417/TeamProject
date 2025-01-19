@@ -43,18 +43,18 @@ body {
 
 /* 內容區 */
 /* 左側按鈕 */
-.wrap {
+.QaPage-wrap {
   margin-top: 40px;
   display: flex;
 }
 
-.btn {
+.QaPage-btn {
   flex-direction: column;
   display: flex;
   margin-left: 100px;
   
 }
-.btn button{
+.QaPage-btn button{
   margin-top: 10px;
   font-size: 18px;
   color: #464646;
@@ -98,32 +98,37 @@ transform: scale(1.1);
 transform: scale(1.1);
 }
 /* 內容區 */
-.info-box {
-flex-direction: column;
-width: 900px;
-height: 650px;
-background-image: url(../images/p5-papers-1.png);
-background-repeat: no-repeat;
-background-size: 100%;
-/* left: 500px; */
-margin-left: 250px;
+.QaPage-info-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height:650px;
+  background-image: url(../images/p5-papers-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 12%;
+  margin-top: 3.70vh;
+ 
+  color: #464646;
 
 }
 
-.box2 {
-width: 530px;
-margin-top: 70px;
-margin-left: 180px;
+.QaPage-box2 {
+width: 27.604vw;
+
+margin-top: 8%;
+
 border-radius: .25em;
 background: #CDB17E;  
 
 }
-.box2 h2 {
+.QaPage-box2 h2 {
 color: #8A5D3B;
-font-size: 24px;
+font-size: 1.5rem;
 letter-spacing: 20%;
 text-align: center;
-line-height: 55px;
+line-height: 3.4375rem;
 }
 
 /* 手風琴區accordion  */
@@ -140,9 +145,9 @@ position: absolute;
 width: 1px;
 }
 
-#box3{
+#QaPage-box3{
 /* margin: 20px 150px; */
-margin: 20px auto;
+margin: 3% auto;
 }
 .accordion {
 
@@ -152,7 +157,7 @@ border: 1px solid #e0e0e0;
 
 background-color: transparent;
 width: 100%; /* 適配父元素寬度 */
-max-width: 480px; /* 設置最大寬度，避免過大 */
+max-width: 25vw; /* 設置最大寬度，避免過大 */
 margin: 0 auto; /* 置中 */
 }
 
@@ -171,7 +176,7 @@ border-bottom: none;
 padding: 10px 0 10px 30px;
 width: 100%;
 display: block;
-font-size: 18px;
+font-size: 1.125rem;
 background-color:#E2CA9E;
 color: #464646;
 border-bottom-left-radius: .25em;
@@ -207,9 +212,7 @@ opacity: 0;
 height: 0;
 transform: scale(1, 0);
 transform-origin: center top;
-width: 515px;
-
-
+width: 26.823vw;
 
 }
 
@@ -232,70 +235,305 @@ color: #464646;
 border-bottom-left-radius: .25em;
 border-bottom-right-radius: .25em;
 }
+@media (max-width:1440px) 
+{
+ 
+ .QaPage-box2 h2 {
+   
+      font-size: 1.25rem;
+      line-height:5vh;
+  }
+ .accordion-label {
+     
+      font-size: 1rem;    
+   }
+   .accordion-child {
+    
+    width: 26.823vw;
+    font-size: .875rem;    
+    }
+  input[type=checkbox]:checked ~ .accordion-child {
+      
+      margin: 0 -10px 10px -15px;
+      padding: 10px;
+      letter-spacing: 5px;
+      
+     }
+  
+}
+/* 平板 */
+@media (min-width: 768px) and (max-width: 1024px){
+/* 內容區 */
+/* 左側按鈕 */
+.QaPage-wrap {
+  margin-top: 60px;
+}
 
+.QaPage-btn {
+  margin-left: 50px;
+  
+}
+.QaPage-btn button{
+  margin-top: 10px;
+  font-size: .875rem;
+ 
+  width:18vw;
+  height: 45px;
+
+  background-repeat: no-repeat;
+}
+.QaPage-info-box {
+  width: 65%; 
+  height: 700px;
+  
+  background-size: 100% 100%; /* 背景圖寬度和高度完全填充容器 */
+  background-repeat: no-repeat; /* 避免背景重复 */
+  margin-left: 5%;
+  margin-top: 3.70vh;
+
+}
+
+.QaPage-box2 {
+width: 50vw;
+
+margin-top: 8%;
+
+border-radius: .25em;
+
+
+}
+.QaPage-box2 h2 {
+
+font-size: 1.25rem;
+line-height:40px;
+}
+#QaPage-box3{
+  /* margin: 20px 150px; */
+  margin: 3% auto;
+  }
+  .accordion {
+
+  max-width: 45vw; /* 設置最大寬度，避免過大 */
+ 
+  }
+  
+  .accordion-label {
+  padding: 15px 0 10px 30px;
+  width: 100%;
+
+  font-size:16px;
+
+  
+  }
+  .accordion-child {
+
+    width: 50vw;
+    
+    }
+    
+    input[type=checkbox]:checked ~ .accordion-child {
+  
+    margin: 0 -20px 20px -20px;
+    letter-spacing: 10px;
+
+    }
+}
 /* 裝飾區 */
-.pic1 {
+.QaPage-pic1 {
   position: absolute;
-  left: 410px;
-  bottom: 180px;
+  left:22%;
+  bottom:17%;
  
 }
-.pic2 {
+.QaPage-pic2 {
   position: absolute;
-  right: 380px;
-  top :100px;
+  right: 20%;
+  top: 12%;
   transform: rotate(-5deg);
 }
-.pic3 img {
-  width: 250px;
-  height: 170px;
+.QaPage-pic1 img,
+.QaPage-pic2 img
+{
+  width: 14.38vw;
+  height: 15.65vh;
 }
-.pic3 {
+
+
+.QaPage-pic3 img {
+  width: 13.02vw;
+  height: 15.9vh;
+}
+.QaPage-pic3 {
   position: absolute;
-  left: 80px;
-  bottom: 220px;
+  left: 5%;
+  bottom: 22%;
   transform: rotate(-15deg);
 }
-.pic4 img {
-  width: 300px;
-  height: 370px;
-  animation: swing ease-in-out 2s infinite alternate;
-  transform-origin: bottom -20px;
+.QaPage-pic4 img {
+  width: 15.63vw;
+  height: 34.26vh;
+  /* animation: swing ease-in-out 2s infinite alternate;
+  transform-origin: bottom -20px; */
 }
-.pic4 {
+.QaPage-pic4 {
   position: absolute;
-  left: 280px;
-  bottom: 170px;
+  left: 15%;
+  bottom: 17%;
   transform: rotate(-2deg);
 }
-.pic5 img {
-  width: 130px;
-  height: 130px;
+.QaPage-pic5 img {
+  width: 6.77vw;
+  height: 13vh;
 }
-.pic5 {
+.QaPage-pic5 {
   position: absolute;
-  right: 400px;
-  bottom: 220px;
+  right: 22%;
+  bottom: 18%;
 }
-.pic6 img {
-  width: 340px;
-  height: 320px;
+.QaPage-pic6 img {
+  width: 17.71vw;
+  height: 30vh;
 }
-.pic6 {
+.QaPage-pic6 {
   position: absolute;
-  right: 20px;
-  bottom: 300px;
+  right: 2%;
+  bottom: 30%;
   transform: rotate(5deg);
 }
-.pic7 img {
-  width: 300px;
-  height: 290px;
+.QaPage-pic7 img {
+  width: 15.63vw;
+  height: 26.85vh;
 }
-.pic7 {
+.QaPage-pic7 {
   position: absolute;
-  right: 100px;
-  bottom: 210px;
+  right: 10%;
+  bottom: 23%;
   transform: rotate(-50deg);
+}
+@media(max-width:1680px){
+  .QaPage-pic1{
+    bottom:23%;
+    left:25%
+  }
+  .QaPage-pic2{
+    top:12%;
+    right:18%
+  }
+  .QaPage-pic4{
+    left: 18%;
+    bottom: 20%;
+  
+  }
+  .QaPage-pic5{
+    right: 20%;
+    bottom: 25%;
+  }
+  .QaPage-pic6{
+    right: 1.5%;
+    bottom:32% ;
+  }
+  .QaPage-pic7{
+    right: 7.9%;
+    bottom: 28%;
+  }
+}
+@media (max-width:1440px) {
+  .QaPage-pic1{
+    bottom:20%;
+    left:28%
+  }
+  .QaPage-pic2{
+    top:15%;
+    right:15%
+  }
+  .QaPage-pic4{
+    left: 19%;
+    bottom: 20%;
+  }
+  .QaPage-pic5{
+    right: 16%;
+    bottom: 25%;
+  }
+  .QaPage-pic6{
+    right: 0;
+    bottom:32% ;
+  }
+  .QaPage-pic6 img{
+    width: 17vw;
+    height: 28vh;
+  }
+  .QaPage-pic7{
+    right: 4.8%;
+    bottom: 29%;
+  }
+  .QaPage-pic7 img{
+    width: 15vw;
+    height: 26vh;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .QaPage-pic1 {
+      
+    left:26%;
+    bottom: 20%;
+   
+  }
+  .QaPage-pic2 {
+    right: 3%;
+    top: 15%;
+  }
+  .QaPage-pic1 img,
+  .QaPage-pic2 img
+  {
+    width: 14.38vw;
+    height: 10vh;
+  }
+  
+  
+  .QaPage-pic3 img {
+    width: 14vw;
+    height: 7%;
+  }
+  .QaPage-pic3 {
+   
+    left: 25%;
+    bottom: 77%;
+   
+  }
+  .QaPage-pic4 img {
+    width: 15.63vw;
+    height: 18vh;
+  }
+  .QaPage-pic4 {
+   
+    left: 20%;
+    bottom: 24%;
+  
+    transform: scaleX(-1) rotate(25deg);
+  }
+  .QaPage-pic5 img {
+    width: 10vw;
+    height: 8vh;
+  }
+  .QaPage-pic5 {
+    right: 6%; 
+    bottom: 22%;
+  }
+
+  .QaPage-pic6 {
+   display: none;
+  }
+  .QaPage-pic7 img {
+    width: 20vw;
+    height:13vh;
+  }
+  .QaPage-pic7 {
+   
+    right:0;
+    bottom: 70%;
+    transform: rotate(-10deg);
+  }
 }
 /* 花的動畫 */
 @keyframes swing {
@@ -307,18 +545,18 @@ border-bottom-right-radius: .25em;
 }
 }
 /* 頁尾區 */
-footer {
+/* footer {
 display: inline-block;
 position: fixed;
 display: flex;
 align-items: center;
 justify-content: center;
 bottom: 0px;
-/* background-color: #E2CA9E; */
+
 width: 100%;
 height: 65px;
 
 letter-spacing: 3px;
 color: #464646;
 
-}
+} */

@@ -54,12 +54,19 @@ export default function About(){
       </div>
 
       {/* 裝飾區  */}
+      {/* 下面膠帶 */}
       <figure className="About-pic1"><img src="./images/tape-1.png" alt=""/></figure>
+      {/* 上面膠帶 */}
       <figure className="About-pic2"><img src="./images/tape-1.png" alt=""/></figure>
+      {/* 愛心章 */}
       <figure className="About-pic3"><img src="./images/postmask-5.png" alt=""/></figure>
+      {/* 左邊白花 */}
       <figure className="About-pic4"><img src="./images/flowers-2.png" alt=""/></figure>
+      {/* 右下圓章 */}
       <figure className="About-pic5"><img src="./images/postmark-1.png" alt=""/></figure>
+      {/* 右正方底圖 */}
       <figure className="About-pic6"><img src="./images/small_paper-3.png" alt=""/></figure>
+      {/* 右花 */}
       <figure className="About-pic7"><img src="./images/flowers-3.png" alt=""/></figure>
       <figure className="About-pic8"><img src="./images/tape-2.png" alt=""/></figure>
       <figure className="About-pic9"><img src="./images/tape-2.png" alt=""/></figure>

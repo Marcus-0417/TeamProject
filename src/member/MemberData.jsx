@@ -62,12 +62,15 @@ export default function MemberData() {
       </div>
 
       <div id="md-postcard">
+        <div className="md-postcard-p">
         <p>您最近寄出的明信片</p>
+        </div>
+      
         <div className="md-pc-img01">
           <div className="md-pc-frame">
             <img src="./images/stamp-2.png" alt=""/>
           </div>
-          <div class="md-pcs">
+          <div className="md-pcs">
             <img src="./images/postcard-sunset.jpg" alt=""/>
 
           </div>

@@ -46,7 +46,7 @@ export default function Apply() {
             </div>
 
             <div className="a-btn">
-              <Link to="/Finish"> <button type="submit" value="Submit" name="submit-btn" id="submit-btn" onClick={""}>送出</button>
+              <Link to="/Finish"> <button type="submit" value="Submit" name="submit-btn" id="submit-btn" >送出</button>
               </Link>
              
             </div>

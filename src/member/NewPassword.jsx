@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import "./scss/newpassword.scss";
 export default function NewPassword(){
@@ -13,21 +14,22 @@ export default function NewPassword(){
       <div className="newpassword-new-box">
         <label htmlFor="new-password">新密碼:</label>
         <input type="new-password" name="new-password" id="new-password" title="新密碼" placeholder="請輸入6~8混合英文數字" required
-          autofocus/>
+          autoFocus/>
         <small>請使用8~20位的英文大小寫、數字、特殊符號等2種以上組合</small>
 
       </div>
       <div className="newpassword-new-box">
-        <label for="ren-password">再次輸入新密碼:</label>
+        <label htmlFor="ren-password">再次輸入新密碼:</label>
         <input type="ren-password" name="ren-password" id="newpassword-ren-password" title="再次確認密碼" placeholder="請輸入6~8混合英文數字"
-          required autofocus/>
+          required autoFocus/>
         <small>請使用8~20位的英文大小寫、數字、特殊符號等2種以上組合</small>
       </div>
 
 
 
       <div className="newpassword-c-btn">
-        <input type="submit" name="submit-cbtn" id="newpassword-submit-cbtn" value="密碼變更"/>
+    <Link to="/MemberIndex"> <input type="submit" name="submit-cbtn" id="newpassword-submit-cbtn" value="密碼變更"/></Link>
+        
 
       </div>
 

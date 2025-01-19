@@ -70,18 +70,7 @@
 // }
 
 
-// @media (max-width:1023px) {
-//   #topbar {
-//     .navigation {
-//       display: flex;
 
-//       .menu {
-//         padding: 0 20px;
-//       }
-//     }
-//   }
-
-// }
 
 #member-box {
   width: 100%;
@@ -97,44 +86,23 @@
   margin-left: 23%;
 
   margin-bottom: 3%;
-
+  margin-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 55%;
-  height: 700px;
+  height: 70vh;
 
 
 }
 
-// @media (max-width:1023px) {
-//   #member {
-//     margin-top: 90px;
-//     margin-bottom: 112px;
-//     width: 568px;
-//     height: 837px;
-//   }
 
-//   #center-box {
-
-//     flex-direction: column;
-//     margin-bottom: 60px;
-
-
-//   }
-
-//   // 消除帳號上的印章
-//   #d-img {
-//     display: none;
-
-//   }
-// }
 
 #m-center-box {
 
-  height: 581px;
-  width: 950px;
+  height: 53.80vh;
+  width: 49.48vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -143,7 +111,7 @@
   /* 左邊輸入區 */
   .m-input {
 
-    width: 450px;
+    width: 23.438vw;
 
     margin: 0 20px;
 
@@ -163,8 +131,8 @@
 
         margin: auto;
         display: block;
-        width: 128px;
-        height: 144px;
+        width: 6.667vw;
+        height: 13.33vh;
 
 
       }
@@ -175,7 +143,7 @@
 
         margin-bottom: 40px;
 
-        font-size: 24px;
+        font-size: 1.5rem;
 
         color: #8A5D3B;
 
@@ -189,19 +157,19 @@
     }
 
     .m-input-box {
-      width: 280px;
-      margin: 30px;
+      width: 14.58vw;
+      margin: 5%;
 
       label {
         display: block;
-        width: 280px;
+        width: 14.583vw;
         margin-bottom: 10px;
         font-size: 18px;
 
       }
 
       input {
-        width: 280px;
+        width: 14.583vw;
         padding: 8px 0;
         border: none;
         background-color: #CDB17E;
@@ -219,7 +187,7 @@
         align-self: flex-start;
         color: #995f32;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1rem;
 
         /* 靠左對齊 */
         &:hover {
@@ -246,10 +214,10 @@
         background-image: url('../images/btn-4.svg');
         background-size: 80%;
         border: 0px;
-        width: 120px;
-        height: 35px;
+        width: 6.25vw;
+        height: 3.24vh;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 1.125rem;
 
         &:hover {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -260,16 +228,14 @@
 
   }
 
-  // button:hover {
-  //   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  // }
+
 
 
 
   /* 右邊連結區 */
   .m-link-box {
-    width: 450px;
-    height: 215px;
+    width: 23.44vw;
+    height: 19.91vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,8 +243,8 @@
 
     .bg {
       position: relative;
-      width: 450px;
-      height: 215px;
+      width: 23.44vw;
+      height: 19.91vh;
 
       img {
         width: 100%;
@@ -286,13 +252,13 @@
 
       .p-link {
         position: absolute;
-        left: 150px;
-        top: 100px;
+        left: 33%;
+        top: 55%;
         text-align: center;
 
         p {
 
-          font-size: 18px;
+          font-size: 1.125rem;
           margin-bottom: 10px;
         }
 
@@ -313,7 +279,7 @@
             /* 去除外邊距 */
             color: #995f32;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 1rem;
 
             &:hover {
 
@@ -327,7 +293,7 @@
         }
       }
 
-      p {
+      .member-small-p {
         font-size: 14px;
       }
 
@@ -338,64 +304,144 @@
 
 }
 
-// 內容rwd
-// @media (max-width:1023px) {
-//   #center-box {
-//     .input {
-//       .input-box {
-//         width: auto;
+@media (max-width:1680px) {
+  #m-center-box {
+    .m-link-box {
+      .bg {
+       
+        .p-link {
 
-//         label {
-//           font-size: 18px;
-//           padding: 5px 0;
-//         }
+          left: 30%;
+          top: 45%;
 
-//         input {
-//           width: 450px;
-//           height: 45px;
-//         }
-//       }
-
-//       .btn-in {
-//         margin-bottom: 20px;
-
-//         button {
-//           width: 150px;
-//           height: 50px;
-//         }
-//       }
-
-
-//     }
-
-//     .link-box {
-//       .bg {
-//         width: 400px;
-//         height: 230px;
-
-//         .p-link {
-
-//           top: 90px;
-//           left: 130px;
-
-//         }
-//       }
-
-//     }
-//   }
+        }
+      }
+    }
+  }
 
 
 
-// }
+}
+
+// rwd平板
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #member-content {
+  
+    margin-left: 23%;
+  
+    margin-top: 5%;
+  
+    width: 58%;
+    height: 70vh;
+  
+  
+  }
+  #m-center-box {
+
+    display: flex;
+
+    flex-direction: column;
+    
+
+    .m-input {
+
+      .decorate {
+        img {
+          display: none;
+        }
+
+        p {
+          font-size:.875rem;
+          margin-top: 10px;
+          
+
+          margin-bottom: 20px;
+          width:100vw;
+        }
+      }
+
+      .m-input-box {
+        display: flex;
+
+
+        flex-direction: column;
+        margin-right: 50%;
+
+        label {
+          display: block;
+          width: 30vw;
+          margin-bottom: 10px;
+          font-size: .875rem;
+
+        }
+
+        input {
+          width: 30vw;
+          padding: 8px 0;
+          border: none;
+          background-color: #CDB17E;
+          margin-bottom: 10px;
+        }
+      }
+      .m-btn-in{
+        button{
+          width: 10vw;
+          height: 3.24vh;
+          
+          font-size: 1rem;
+          margin-top: 20%;
+          margin-left: 10%;
+        }
+      }
+
+    }
+
+    .m-link-box {
+     
+      .bg {
+        width: 40vw;
+        height: 25vh;
+        margin-left: 10%; 
+  
+        .p-link {
+          left: 30%;
+          top: 35%; 
+
+          p {
+
+
+            font-size: 1rem;
+            margin-bottom: 10px;
+
+          }
+        }
+
+        .member-small-p {
+          font-size: .75rem;
+          width: 250px;
+          margin-left: 10%;
+        }
+      }
+
+    }
+
+  }
+
+
+}
+
+
+
 
 /* 背景插圖 */
 /* 花 */
 .m-img01 {
   position: absolute;
-  width: 450px;
-  height: 500px;
-  left: 40px;
-  bottom: 100px;
+  width: 20vw;
+  height: 40vh;
+  left: 6%;
+  bottom: 15%;
 
 
 
@@ -404,10 +450,10 @@
 /* 左上膠帶 */
 .m-img02 {
   position: absolute;
-  width: 250px;
-  height: 120px;
-  left: 350px;
-  top: 110px;
+  width: 13.02vw;
+  height: 11.11vh;
+  left: 18%;
+  top: 13%;
   transform: rotate(-80deg);
 
 }
@@ -415,19 +461,30 @@
 /* 右下膠帶 */
 .m-img02-1 {
   position: absolute;
-  width: 270px;
-  height: 120px;
-  right: 400px;
-  bottom: 150px;
+  width: 14.06vw;
+  height: 11.11vh;
+  right: 18%;
+  bottom: 18%;
   transform: rotate(-65deg);
 
+}
+
+@media (max-width:1440px) {
+
+  .m-img02-1 {
+
+    right: 19%;
+    bottom: 16%;
+
+
+  }
 }
 
 /* 左下蠟印 */
 .m-img03 {
   position: absolute;
-  left: 410px;
-  bottom: 130px;
+  left: 21%;
+  bottom: 14%;
 
 
 }
@@ -435,10 +492,10 @@
 /* 右上飛機 */
 .m-img04 {
   position: absolute;
-  width: 300px;
-  height: 250px;
-  top: 120px;
-  right: 320px;
+  width: 15.63vw;
+  height: 23.15vh;
+  top: 13%;
+  right: 15%;
   transform: rotate(8deg);
 
 
@@ -447,10 +504,10 @@
 /* 右上印章 */
 .m-img05 {
   position: absolute;
-  width: 100px;
-  height: 25px;
-  right: 400px;
-  top: 130px;
+  width: 5.21vw;
+  height: 2.31vh;
+  right: 20%;
+  top: 13%;
   transform: rotate(-10deg);
 
 
@@ -460,75 +517,72 @@
 .m-img06 {
   position: absolute;
 
-  width: 120px;
-  height: 100px;
-  bottom: 240px;
-  right: 385px;
+  width: 6.25vw;
+  height: 9.26vh;
+  bottom: 28%;
+  right: 18%;
   transform: rotate(35deg);
 
 }
 
-// @media (max-width:1023px) {
-//   .m-img01 {
+// rwd平板
+@media (min-width: 768px) and (max-width: 1024px) {
 
-//     width: 170px;
-//     height: 180px;
-//     top: 48%;
-//     left: 65%;
-//   }
+  /* 花 */
+  .m-img01{
+    width: 15vw;
+    height: 35vh;
+    left: 63%;
+    bottom: 20%;
+  }
+  /* 左上膠帶 */
+.m-img02 {
 
-//   .m-img02 {
-//     width: 230px;
-//     height: 100px;
-//     left: 45px;
-//     top: 150px;
-//     transform: rotate(-65deg);
-//   }
+  width: 13.02vw;
+  height: 11.11vh;
+  left: 22%;
+  top: 10%; 
+ 
 
-//   .m-img02-1 {
-//     width: 230px;
-//     height: 100px;
-//     right: 70px;
-//     bottom: 170px;
-//   }
+}
 
-//   .m-img03 {
-//     left: 100px;
-//     bottom: 160px;
+  // 右下膠帶
+  .m-img02-1 {
 
-//   }
+    right: 12%;
+    bottom: 10%;    
+    
+  
+  }
 
-//   .m-img04 {
-//     width: 250px;
-//     height: 200px;
-//     top: 140px;
-//     right: 55px;
-//   }
+  /* 右上印章 */
+  .m-img05 {
 
-//   .m-img05 {
-//     display: none;
+    display: none;
 
-//   }
+  }
 
-//   .m-img06 {
-//     display: none;
-//   }
-// }
+  /* 左下印章 */
+  .m-img06 {
 
+    display: none;
+  }
+
+}
 
 /* 頁尾區 */
-// footer {
-//   display: inline-block;
-//   position: fixed;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   bottom: 0px;
-//   /* background-color: #E2CA9E; */
-//   width: 100%;
-//   height: 65px;
+footer {
+  display: inline-block;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  /* background-color: #E2CA9E; */
+  width: 100%;
+  height: 65px;
 
-//   letter-spacing: 3px;
-//   color: #464646;
+  letter-spacing: 3px;
+  color: #464646;
 
-//   }
+  }

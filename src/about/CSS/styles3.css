@@ -215,7 +215,7 @@ body {
 .contentPage-box6c {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 5%;
 }
 
 
@@ -249,6 +249,21 @@ input:focus {
   font-weight: 800;
 
 }
+@media (max-width:1440px) {
+  .contentPage-box1c h2{
+  
+    font-size: 18px;
+ 
+  }
+.contentPage-info2-box{
+  .contentPage-info2{
+    margin-left: 30%;
+  }
+
+}
+
+  
+}
 
 @media (min-widch:1024px) {
   .contentPage-info2-box {
@@ -262,81 +277,209 @@ input:focus {
     margin-left: 150px;
   }
 }
+/* 平板 */
+@media (min-width: 768px) and (max-width: 1024px){
+/* 內容區 */
+/* 左側按鈕 */
+.contentPage-wrap {
+  margin-top: 60px;
+}
 
+.contentPage-btn {
+  margin-left: 50px;
+}
+
+.contentPage-btn button {
+  margin-top: 10px;
+  font-size: .875rem;
+ 
+  width:18vw;
+  height: 45px;
+
+  background-repeat: no-repeat;
+}
+
+/* 內容區 */
+.contentPage-info2-box {
+  width: 65%; 
+  height: 700px;
+  
+  background-size: 100% 100%; /* 背景圖寬度和高度完全填充容器 */
+  background-repeat: no-repeat; /* 避免背景重复 */
+  margin-left: 5%;
+  margin-top: 3.70vh;
+}
+
+.contentPage-box1c {
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.contentPage-box1c h2 {
+  
+  font-size: 1.125rem;
+  letter-spacing: 5px;
+  margin-top: 10%;
+  margin-left:  20px;
+  margin-right: 20px;
+  line-height: 2em;
+}
+.contentPage-info2{
+ 
+ margin-left: 0;
+ margin-top: 5%;
+ 
+}
+.contentPage-info2 h3{
+  width: 100px;
+  letter-spacing: 5px;
+   font-size: 1rem;
+  
+
+
+   font-weight: 400;
+}
+
+.contentPage-box2c input {
+ 
+
+  width: 28vw;
+  height: 3.5vh;
+}
+
+.contentPage-box3c {
+  margin-top: 30px;
+
+}
+
+.contentPage-box3c input {
+
+  width: 28vw;
+  height: 3.5vh;
+}
+
+.contentPage-box4c {
+  margin-top: 30px;
+
+  
+}
+.contentPage-box4c input {
+  width: 28vw;
+  height: 3.5vh;
+}
+
+.contentPage-box5c {
+  margin-top: 30px;
+
+}
+.contentPage-box5c input {
+
+  width: 35vw;
+  height: 15vh;
+}
+
+.contentPage-box6c {
+ 
+  margin-top: 50px;
+
+}
+.contentPage-box6c button {
+ 
+  width:15vw;
+  height: 3.70vh;
+ 
+
+}
+
+.contentPage-box6c button p {
+
+  font-size: 1rem;
+  line-height: 0;
+  font-weight: 800;
+}
+
+}
 
 /* 裝飾區 */
 .contentPage-pic1 {
   position: absolute;
-  left: 410px;
-  bottom: 180px;
+  left:22%;
+  bottom:17%;
   /* transform: rotate(deg); */
 }
 
 .contentPage-pic2 {
-  position: fixed;
-  right: 380px;
-  top: 100px;
+  position: absolute;
+  right: 20%;
+  top: 12%;
   transform: rotate(-5deg);
+}
+.contentPage-pic1 img, 
+.contentPage-pic2 img{
+  width: 14.38vw;
+  height: 15.65vh;
 }
 
 .contentPage-pic3 img {
-  width: 250px;
-  height: 170px;
+  width: 13.02vw;
+  height: 15.9vh;
 }
 
 .contentPage-pic3 {
   position: absolute;
-  left: 80px;
-  bottom: 220px;
+  left: 5%;
+  bottom: 22%;
   transform: rotate(-15deg);
 }
 
 .contentPage-pic4 img {
-  width: 300px;
-  height: 370px;
-  animation: swing ease-in-out 2s infinite alternate;
-  transform-origin: bottom -20px;
+  width: 15.63vw;
+  height: 34.26vh;
+  /* animation: swing ease-in-out 2s infinite alternate;
+  transform-origin: bottom -20px; */
 }
 
 .contentPage-pic4 {
   position: absolute;
-  left: 280px;
-  bottom: 170px;
+  left: 15%;
+  bottom: 17%;
   transform: rotate(-2deg);
 }
 
 .contentPage-pic5 img {
-  width: 130px;
-  height: 130px;
+  width: 6.77vw;
+  height: 13vh;
 }
 
 .contentPage-pic5 {
   position: absolute;
-  right: 400px;
-  bottom: 220px;
+  right: 22%;
+  bottom: 18%;
 }
 
 .contentPage-pic6 img {
-  width: 340px;
-  height: 320px;
+  width: 17.71vw;
+  height: 30vh;
+ 
 }
 
 .contentPage-pic6 {
-  position: fixed;
-  right: 20px;
-  bottom: 300px;
+  position: absolute;
+  right: 2%;
+  bottom: 30%;
   transform: rotate(5deg);
 }
 
 .contentPage-pic7 img {
-  width: 300px;
-  height: 290px;
+  width: 15.63vw;
+  height: 26.85vh;
+ 
 }
 
 .contentPage-pic7 {
   position: absolute;
-  right: 100px;
-  bottom: 210px;
+  right: 10%;
+  bottom: 23%;
   transform: rotate(-50deg);
 }
 @keyframes swing {
@@ -347,15 +490,157 @@ input:focus {
       transform: rotate(-2deg);
   }
 }
+
+
+@media (max-width:1680px) {
+  .contentPage-pic1{
+    bottom:23%;
+    left:25%
+  }
+  .contentPage-pic2{
+    top:12%;
+    right:18%
+
+  }
+
+  .contentPage-pic4{
+    left: 18%;
+    bottom: 20%;
+  }
+  .contentPage-pic5{
+    right: 20%;
+    bottom: 25%;
+  }
+  .contentPage-pic6{
+
+    right: 1.5%;
+    bottom:32% ;
+  }
+  .contentPage-pic7{
+    right: 7.9%;
+    bottom: 28%;
+  }
+  
+}
+@media (max-width:1440px) {
+  .contentPage-pic1{
+    bottom:20%;
+    left:28%
+  }
+  .contentPage-pic2{
+    top:15%;
+    right:15%
+  }
+  .contentPage-pic4{
+    left: 19%;
+    bottom: 20%;
+  }
+  .contentPage-pic5{
+    right: 16%;
+    bottom: 25%;
+  }
+  .contentPage-pic6{
+    right: 0;
+    bottom:32% ;
+  }
+  .contentPage-pic6 img {
+    width: 17vw;
+    height: 28vh;
+
+  }
+  .contentPage-pic7{
+    right: 4.8%;
+    bottom: 29%;
+  }
+  .contentPage-pic7 img{
+    width: 15vw;
+    height: 26vh;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 1024px){
+/* 裝飾區 */
+.contentPage-pic1 {
+  left:26%;
+  bottom: 20%;
+}
+
+.contentPage-pic2 {
+  right: 3%;
+  top: 15%;
+}
+.contentPage-pic1 img, 
+.contentPage-pic2 img{
+  width: 14.38vw;
+    height: 10vh;
+}
+
+.contentPage-pic3 img {
+  width: 14vw;
+  height: 7%;
+}
+
+.contentPage-pic3 {
+  left: 25%;
+  bottom: 77%;
+}
+
+.contentPage-pic4 img {
+  width: 15.63vw;
+    height: 18vh;
+}
+
+.contentPage-pic4 {
+  left: 20%;
+  bottom: 24%;
+
+  transform: scaleX(-1) rotate(25deg);
+}
+
+.contentPage-pic5 img {
+  width: 10vw;
+    height: 8vh;
+}
+
+.contentPage-pic5 {
+  right: 6%; 
+  bottom: 22%;
+}
+
+.contentPage-pic6 img {
+  width: 18vw;
+    height: 15vh;
+ 
+}
+
+.contentPage-pic6 {
+  right: 4%;
+  bottom: 63%;
+  transform:scaleX(-1) rotate(20deg);
+}
+
+.contentPage-pic7 img {
+   width: 15vw; 
+    height:15vh;
+   
+ 
+}
+
+.contentPage-pic7 {
+  right: 8%;
+    bottom: 60%;
+}
+
+}
 /* 頁尾區 */
 .footer {
   display: inline-block;
   position: fixed;
-  display: flex;
+ 
   align-items: center;
   justify-content: center;
   bottom: 0px;
-  /* background-color: #E2CA9E; */
+
   width: 100%;
   height: 65px;
 
