@@ -148,7 +148,7 @@ function MainPage() {
             <p id='layer4-1-text1'>這裡可以看到其他用戶分享的故事與心得哦！</p>
             <Link to="/MemStory"><p id='layer4-1-text2'>點這裡閱讀用戶故事</p></Link>
             <motion.div
-              style={{ width: "10px", height: "100%", position: "absolute", top: "0", left: "1180px", zIndex: "999" }}
+              style={{ width: "10px", height: "100%", position: "absolute", top: "5px", left: "100%", zIndex: "999" }}
               animate={{
                 x: ["0%", "50%", "100%", "-50%", "0%",], // 從左到右，再返回初始位置
               }}
