@@ -79,14 +79,10 @@ body {
   box-sizing: border-box;
   background-color: var(--background);
   position: relative;
-
 }
 
 a:hover {
   color: var(--primary-1);
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-
 }
 
 #postPage-main {
