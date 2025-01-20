@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import "../pc/css/post.css"
 import React, { useEffect } from "react"
+import TaiwanPageTwo from "./component/TaiwanPageTwo";
 export default function Post(){
 
 React.useEffect(()=>{
@@ -128,121 +129,10 @@ return(
       </div>
 
 
+<TaiwanPageTwo/>
 
 
-
-      <div id="postPage-taiwan">
-        <img src="./images/taiwan_picture.svg" alt=""/>
-
-        <div id="postPage-islands" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover1')}></button>
-
-          <div id="popover1" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt=""/>
-              <img src="./images/件.svg" alt=""/>
-              <img src="./images/總.svg" alt=""/>
-              <img src="./images/數.svg" alt=""/>
-
-            </div>
-            <div className="total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt=""/>
-              <img src="./images/行.svg" alt=""/>
-              <img src="./images/榜.svg" alt=""/>
-            </div>
-            <div className="rankings"></div>
-
-          </div>
-        </div>
-        </div>
-
-
-        <div id="postPage-north" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover2')}></button>
-
-          <div id="popover2" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt=""/>
-              <img src="./images/件.svg" alt=""/>
-              <img src="./images/總.svg" alt=""/>
-              <img src="./images/數.svg" alt=""/>
-
-            </div>
-            <div className="total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt=""/>
-              <img src="./images/行.svg" alt=""/>
-              <img src="./images/榜.svg" alt=""/>
-            </div>
-            <div className="rankings"></div>
-
-          </div>
-        </div>
-        <div id="postPage-central" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover3')}></button>
-
-          <div id="popover3" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt=""/>
-              <img src="./images/件.svg" alt=""/>
-              <img src="./images/總.svg" alt=""/>
-              <img src="./images/數.svg" alt=""/>
-
-            </div>
-            <div className="total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt=""/>
-              <img src="./images/行.svg" alt=""/>
-              <img src="./images/榜.svg" alt=""/>
-            </div>
-            <div className="rankings"></div>
-
-          </div>
-        </div>
-
-        <div id="postPage-south" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover4')}></button>
-
-          <div id="popover4" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt=""/>
-              <img src="./images/件.svg" alt=""/>
-              <img src="./images/總.svg" alt=""/>
-              <img src="./images/數.svg" alt=""/>
-
-            </div>
-            <div className="total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt=""/>
-              <img src="./images/行.svg" alt=""/>
-              <img src="./images/榜.svg" alt=""/>
-            </div>
-            <div className="rankings"></div>
-
-          </div>
-        </div>
-        <div id="postPage-east" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover5')}></button>
-
-          <div id="popover5" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt=""/>
-              <img src="./images/件.svg" alt=""/>
-              <img src="./images/總.svg" alt=""/>
-              <img src="./images/數.svg" alt=""/>
-
-            </div>
-            <div className="total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt=""/>
-              <img src="./images/行.svg" alt=""/>
-              <img src="./images/榜.svg" alt=""/>
-            </div>
-            <div className="rankings"></div>
-
-          </div>
-        </div>
+     
         </main>
 
 {/* 裝飾區  */}

@@ -2,25 +2,10 @@
 import { Link } from "react-router-dom"
 import Navbar from "../Navbar"
 import "../pc/css/PC-index.css"
-import React, { useEffect } from "react"
+
+import TaiwanPage from "./component/TaiwanPage";
 
 export default function PcIndex() {
-  React.useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "/js/taiwan.js";
-    script.async = true; // 设置异步加载
-    script.onload = () => {
-      // 脚本加载完成后的操作
-      console.log("Script loaded successfully!");
-    };
-    document.body.appendChild(script);
-
-    return () => {
-      // 清理脚本
-      document.body.removeChild(script);
-    };
-  }, []);
-  
 
   return (
     <div id="pcIndexPage">
@@ -65,121 +50,7 @@ export default function PcIndex() {
           </div>
         </div>
 
-        <div id="pcIndexPage-taiwan">
-          <img src="./images/taiwan_picture.svg" alt="" />
-          {/* 離島 */}
-          <div id="pcIndexPage-islands" className="point">
-            <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover1')}></button>
-
-            <div id="popover1" className="popover">
-              <div className="popover-title">
-                <img src="./images/寄.svg" alt="" />
-                <img src="./images/件.svg" alt="" />
-                <img src="./images/總.svg" alt="" />
-                <img src="./images/數.svg" alt="" />
-
-              </div>
-              <div className="pcIndexPage-total"></div>
-              <div className="r-title">
-                <img src="./images/排.svg" alt="" />
-                <img src="./images/行.svg" alt="" />
-                <img src="./images/榜.svg" alt="" />
-              </div>
-              <div className="pcIndexPage-rankings"></div>
-
-            </div>
-          </div>
-        </div>
-        {/* 北部 */}
-        <div id="pcIndexPage-north" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover2')}></button>
-
-          <div id="popover2" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt="" />
-              <img src="./images/件.svg" alt="" />
-              <img src="./images/總.svg" alt="" />
-              <img src="./images/數.svg" alt="" />
-
-            </div>
-            <div className="pcIndexPage-total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt="" />
-              <img src="./images/行.svg" alt="" />
-              <img src="./images/榜.svg" alt="" />
-            </div>
-            <div className="pcIndexPage-rankings"></div>
-
-          </div>
-        </div>
-
-        {/* 中部 */}
-        <div id="pcIndexPage-central" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover3')}></button>
-
-          <div id="popover3" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt="" />
-              <img src="./images/件.svg" alt="" />
-              <img src="./images/總.svg" alt="" />
-              <img src="./images/數.svg" alt="" />
-
-            </div>
-            <div className="pcIndexPage-total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt="" />
-              <img src="./images/行.svg" alt="" />
-              <img src="./images/榜.svg" alt="" />
-            </div>
-            <div className="pcIndexPage-rankings"></div>
-
-          </div>
-        </div>
-        {/* 南部 */}
-        <div id="pcIndexPage-south" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover4')}></button>
-
-          <div id="popover4" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt="" />
-              <img src="./images/件.svg" alt="" />
-              <img src="./images/總.svg" alt="" />
-              <img src="./images/數.svg" alt="" />
-
-            </div>
-            <div className="pcIndexPage-total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt="" />
-              <img src="./images/行.svg" alt="" />
-              <img src="./images/榜.svg" alt="" />
-            </div>
-            <div className="pcIndexPage-rankings"></div>
-
-          </div>
-        </div>
-        {/* 東部 */}
-        <div id="pcIndexPage-east" className="point">
-          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover5')}></button>
-
-          <div id="popover5" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt="" />
-              <img src="./images/件.svg" alt="" />
-              <img src="./images/總.svg" alt="" />
-              <img src="./images/數.svg" alt="" />
-
-            </div>
-            <div className="pcIndexPage-total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt="" />
-              <img src="./images/行.svg" alt="" />
-              <img src="./images/榜.svg" alt="" />
-            </div>
-            <div className="pcIndexPage-rankings"></div>
-
-          </div>
-
-        </div>
+        <TaiwanPage/>
 
         <div id="pcIndexPage-button-pair">
           <Link to="/Post"> <button >開始配對</button></Link>

@@ -498,28 +498,29 @@ margin: 0 35px;
 /* 北部 */
 #postPage-north{
   position: absolute;
-  top: 25%;
-  right:13%;
+  top: 20%;
+  right:40%;
 }
 /* 中部 */
 #postPage-central {
   position: absolute;
  
   top: 35%;
-  right: 18%; 
+  right: 55%;
 }
 /* 南部 */
 #postPage-south {
   position: absolute;
-  bottom: 45%;
-  right: 20%;
+  bottom: 35%;
+  right: 65%;
+
 
 }
 /* 東部 */
 #postPage-east {
   position: absolute;
-  bottom: 50%;
-  right: 14%;
+  bottom: 35%;
+  right: 45%; 
 }
 /* 顯示的小視窗 */
 .point button{
@@ -543,7 +544,8 @@ margin: 0 35px;
 }
 .popover {
   position: absolute;
-  display: none;
+  
+  display: block;
 
   background-image: url(../images/p2-papers-1.jpg);
   border-radius: 10px;
@@ -599,8 +601,16 @@ margin: 5px;
   height: 98px;
   margin: auto;
 }
+/* 關閉按鈕 */
+ #postPage-taiwan .popover .taiwan-closeButton-post{
+  width: 52px;
+  margin-top: 5px;
+  margin-left: 45px;
 
-
+}
+#postPage-taiwan .popover .taiwan-closeButton-post:hover{
+  color: #ffffff;
+}
 
 /* 裝飾區 */
 /* 白花 */

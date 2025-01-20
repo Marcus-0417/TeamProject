@@ -304,29 +304,29 @@ a:hover {
 /* 北部 */
 #pcIndexPage-north{
   position: absolute;
-  top: 25%;
-  right:13%;
+  top: 20%;
+  right:40%;
 }
 
 /* 中部 */
 #pcIndexPage-central {
   position: absolute;
   top: 35%;
-  right: 18%;
+  right: 55%;
 }
 /* 南部 */
 #pcIndexPage-south {
   position: absolute;
-  bottom: 45%;
-  right: 20%;
+  bottom: 35%;
+  right: 65%;
 
 }
 /* 東部 */
 #pcIndexPage-east {
   position: absolute;
  
-  bottom: 50%;
-  right: 14%;
+  bottom: 35%;
+  right: 45%; 
 }
 
 
@@ -353,8 +353,8 @@ a:hover {
 }
 #pcIndexPage-taiwan .popover {
   position: absolute;
-  display: none;
 
+  display:block;
   background-image: url(../images/p2-papers-1.jpg);
   border-radius: 10px;
   width: 164px;
@@ -409,7 +409,15 @@ margin: 5px;
   height: 98px;
   margin: auto;
 }
-
+/* 關閉按鈕 */
+#pcIndexPage-taiwan .popover .taiwan-closeButton{
+  width: 52px;
+  margin-top: 5px;
+  margin-left: 45px;
+}
+#pcIndexPage-taiwan .popover .taiwan-closeButton:hover{
+  color: #ffffff;
+}
 
 /* 配對按鈕 */
 
