@@ -9,8 +9,9 @@ const Navbar = () => {
             <header className="topbar">
                 {/* Logo */}
                 <div className="logo">
-                    <img className="img-logo" src="./images/logo-1.png" alt="" />
-                    {/* <h1>郵你真好</h1> */}
+                    <a href="./">
+                        <img className="img-logo" src="./images/logo-1.png" alt="" />
+                    </a>
                 </div>
                 <nav>
                     <ul className="menu">

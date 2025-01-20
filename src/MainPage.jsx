@@ -45,24 +45,9 @@ function MainPage() {
 
         {/* 第三層 */}
         <div id='layer3'>
-          {/* <div className='layer3-1'>
-            <img className='layer3-1-img1' src="./images/layer3/p1-papers-2.jpg" alt="" />
-            <img className='layer3-1-img2' src="./images/layer3/postmark-2.png" alt="" />
-            <div className='text1'>
-              <p id='text4'>已經迫不及待想與別人分享生活了嗎?<br />點選這裡就可以直接交流啦 !</p>
-              <p id='text5'>開始<br />你的明信片旅程吧！</p>
-            </div>
-            <img className='layer3-1-img8' src="./images/layer3/tape-2.png" alt="" />
-            <img className='layer3-1-img3' src="./images/layer3/p4-papers-1.png" alt="" />
-            <p id='text6'>想要獲得更完整的體驗<br />可以先到會員中心<br />進行登入/註冊喔!</p>
-            <img id='layer3-1-img4' src="./images/layer3/postmask-5.png" alt="" />
-            <img id='layer3-1-img5' src="./images/layer3/stamp-7.png" alt="" />
-            <img id='layer3-1-img6' src="./images/layer3/stamp-8.png" alt="" />
-            <img id='layer3-1-img7' src="./images/layer3/stamp-9.png" alt="" />
-          </div> */}
-
           <div className='layer3-2' style={{ width: "33%" }}>
-            <img style={{ width: "100%" }} src="./images/layer3-2.png" alt="" />
+            <img style={{ width: "100%", height: "100%" }} src="./images/layer3-2.png" alt="" />
+            <Link to="/MemberIndex"><p className='text6'>想要獲得更完整的體驗<br />可以先到會員中心<br />進行登入/註冊喔!</p></Link>
           </div>
 
           <div className='layer3-3'>
