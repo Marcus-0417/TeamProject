@@ -15,6 +15,8 @@ import Verify from "./member/verify";
 import NoMail from "./member/NoMail";
 import NoMail_R from "./member/NoMail_R";
 import NewPassword from "./member/NewPassword";
+import PcIndex from "./pc/pcIndex";
+import Post from "./pc/Post";
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/MemStory" element={<MemStory />} />
         <Route path="/MemStoryPage" element={<MemStoryPage />} />
+        {/* 配對區 */}
+        <Route path="/PcIndex"  element={<PcIndex/>}/>
+        <Route path="/Post" element={<Post/>}/>
 
         {/* 會員專區頁面*/}
         <Route path="/MemberIndex" element={<MemberIndex />} />
