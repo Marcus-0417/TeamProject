@@ -27,40 +27,44 @@ function MemStory() {
 
         <div id="section2">
           <div className='box'>
-            <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
+            {/* <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
             <img className='boxImg2' src="./images/stamp-2.png" alt="" />
-            <div id="frame1"></div>
+            <div id="frame1"></div> */}
 
+            <img className='boxImg' src="./images/box1-1.png" alt="" />
             <p className='text1'>東部 @noname_ya</p>
             <p className='text2'>在這個科技發達的時代，<br />好久沒拿起筆寫下當下的<br />感受，透過郵你真好這個<br />平台讓我......</p>
             <p className='text3'>閱讀更多</p>
           </div>
 
           <div className='box'>
-            <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
+            {/* <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
             <img className='boxImg2' src="./images/stamp-2.png" alt="" />
-            <div id="frame2"></div>
+            <div id="frame2"></div> */}
 
+            <img className='boxImg' src="./images/box1-2.png" alt="" />
             <p className='text1'>東部 @noname_ya</p>
             <p className='text2'>在這個科技發達的時代，<br />好久沒拿起筆寫下當下的<br />感受，透過郵你真好這個<br />平台讓我......</p>
             <Link to="/MemStoryPage"><p className='text3'>閱讀更多</p></Link>
           </div>
 
           <div className='box'>
-            <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
+            {/* <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
             <img className='boxImg2' src="./images/stamp-2.png" alt="" />
-            <div id="frame3"></div>
+            <div id="frame3"></div> */}
 
+            <img className='boxImg' src="./images/box1-3.png" alt="" />
             <p className='text1'>東部 @noname_ya</p>
             <p className='text2'>在這個科技發達的時代，<br />好久沒拿起筆寫下當下的<br />感受，透過郵你真好這個<br />平台讓我......</p>
             <p className='text3'>閱讀更多</p>
           </div>
 
           <div className='box'>
-            <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
+            {/* <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
             <img className='boxImg2' src="./images/stamp-2.png" alt="" />
-            <div id="frame4"></div>
+            <div id="frame4"></div> */}
 
+            <img className='boxImg' src="./images/box1-4.png" alt="" />
             <p className='text1'>東部 @noname_ya</p>
             <p className='text2'>在這個科技發達的時代，<br />好久沒拿起筆寫下當下的<br />感受，透過郵你真好這個<br />平台讓我......</p>
             <p className='text3'>閱讀更多</p>
@@ -69,8 +73,7 @@ function MemStory() {
           <img id='section2-img1' src="./images/flowers-2.png" alt="" />
           <img id='section2-img2' src="./images/small_paper-3.png" alt="" />
           <img id='section2-img3' src="./images/stamp-9.png" alt="" />
-          {/* <img id='section2-img4' src="./images/memStory/arrow.png" alt="" />
-          <img id='section2-img5' src="./images/memStory/arrow.png" alt="" /> */}
+
         </div>
       </main>
 

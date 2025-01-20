@@ -24,18 +24,18 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/MemStory" element={<MemStory />} />
         <Route path="/MemStoryPage" element={<MemStoryPage />} />
-    
+
         {/* 會員專區頁面*/}
         <Route path="/MemberIndex" element={<MemberIndex />} />
         <Route path="/Apply" element={<Apply />} />
-       
-         <Route path="/memberData" element={<MemberData/>}/>
-        <Route path="/PasswordR" element={<PasswordR/>}/>
-        <Route path="/Finish" element={<Finish/>}/>
-        <Route path="/Verify" element={<Verify/>}/>
-        <Route path="/NoMail" element={<NoMail/>}/>
-        <Route path="/NoMail_R" element={<NoMail_R/>}/>
-        <Route path="/NewPassword" element={<NewPassword/>}/>
+
+        <Route path="/memberData" element={<MemberData />} />
+        <Route path="/PasswordR" element={<PasswordR />} />
+        <Route path="/Finish" element={<Finish />} />
+        <Route path="/Verify" element={<Verify />} />
+        <Route path="/NoMail" element={<NoMail />} />
+        <Route path="/NoMail_R" element={<NoMail_R />} />
+        <Route path="/NewPassword" element={<NewPassword />} />
 
 
         {/* 關於頁面 */}
