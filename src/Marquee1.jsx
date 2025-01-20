@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 
 const Marquee1 = () => {
     const items = [
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********收到了來自", src1: "./images/layer3/logo-Taoyuan.png", src2: "./images/layer3/logo-Taichung.png", text1: "的明信片" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********收到了來自", src1: "./images/layer3/logo-Taoyuan.png", src2: "./images/layer3/logo-Taichung.png", text1: "的明信片" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
-        { text: "*********收到了來自", src1: "./images/layer3/logo-Taoyuan.png", src2: "./images/layer3/logo-Taichung.png", text1: "的明信片" },
-        { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },
+        { text: "*********寄送明信片到", src1: "./images/logo-taipei.png", src2: "./images/logo-new_taipei.png" },
+        { text: "*********收到了來自", src1: "./images/logo-Taoyuan.png", src2: "./images/logo-Taichung.png", text1: "的明信片" },
+        { text: "*********寄送明信片到", src1: "./images/logo-taipei.png", src2: "./images/logo-new_taipei.png" },
+        { text: "*********寄送明信片到", src1: "./images/logo-taipei.png", src2: "./images/logo-new_taipei.png" },
+        { text: "*********收到了來自", src1: "./images/logo-Taoyuan.png", src2: "./images/logo-Taichung.png", text1: "的明信片" },
+        { text: "*********寄送明信片到", src1: "./images/logo-taipei.png", src2: "./images/logo-new_taipei.png" },
+        { text: "*********寄送明信片到", src1: "./images/logo-taipei.png", src2: "./images/logo-new_taipei.png" },
+        { text: "*********收到了來自", src1: "./images/logo-Taoyuan.png", src2: "./images/logo-Taichung.png", text1: "的明信片" },
+        { text: "*********寄送明信片到", src1: "./images/logo-taipei.png", src2: "./images/logo-new_taipei.png" },
         // 添加更多項目...
     ];
 

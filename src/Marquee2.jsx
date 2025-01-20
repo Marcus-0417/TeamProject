@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 
 const Marquee2 = () => {
     const items = [
-        { text: "歡迎", src1: "./images/layer3/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-Taichung.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-taipei.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-Taichung.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-taipei.png", text1: "********加入郵你真好!!!" },
-        { text: "歡迎", src1: "./images/layer3/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-Taichung.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-Taichung.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-new_taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-taipei.png", text1: "********加入郵你真好!!!" },
+        { text: "歡迎", src1: "./images/logo-Taoyuan.png", text1: "********加入郵你真好!!!" },
 
         // { text: "*********收到了來自", src1: "./images/layer3/logo-Taoyuan.png", src2: "./images/layer3/logo-Taichung.png", text1: "的明信片" },
         // { text: "*********寄送明信片到", src1: "./images/layer3/logo-taipei.png", src2: "./images/layer3/logo-new_taipei.png" },

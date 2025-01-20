@@ -12,23 +12,23 @@ function MemStory() {
       {/* 內容區 */}
       <main id="MemStory-main">
         <div id='section1'>
-          <Link to="/"><img id='backToMainPage' src="./images/MemStoryPage/arrow.png" alt="" /></Link>
-          <img id='section1-img1' src="./images/memStory/stamp-7.png" alt="" />
-          <img id='section1-img2' src="./images/memStory/stamp-8.png" alt="" />
-          <img id='bar1-1' src="./images/layer3/Rectangle_205.png" alt="" />
+          <Link to="/"><img id='backToMainPage' src="./images/arrow.png" alt="" /></Link>
+          <img id='section1-img1' src="./images/stamp-7.png" alt="" />
+          <img id='section1-img2' src="./images/stamp-8.png" alt="" />
+          <img id='bar1-1' src="./images/Rectangle_205.png" alt="" />
           <p id='text1-1'>用</p>
-          <img id='bar1-2' src="./images/layer3/Rectangle_206.png" alt="" />
+          <img id='bar1-2' src="./images/Rectangle_206.png" alt="" />
           <p id='text1-2'>戶</p>
-          <img id='bar1-3' src="./images/layer3/Rectangle_207.png" alt="" />
+          <img id='bar1-3' src="./images/Rectangle_207.png" alt="" />
           <p id='text1-3'>故</p>
-          <img id='bar1-4' src="./images/layer3/Rectangle_208.png" alt="" />
+          <img id='bar1-4' src="./images/Rectangle_208.png" alt="" />
           <p id='text1-4'>事</p>
         </div>
 
         <div id="section2">
           <div className='box'>
-            <img className='boxImg1' src="./images/memStory/p1-papers-7.png" alt="" />
-            <img className='boxImg2' src="./images/memStory/stamp-2.png" alt="" />
+            <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
+            <img className='boxImg2' src="./images/stamp-2.png" alt="" />
             <div id="frame1"></div>
 
             <p className='text1'>東部 @noname_ya</p>
@@ -37,8 +37,8 @@ function MemStory() {
           </div>
 
           <div className='box'>
-            <img className='boxImg1' src="./images/memStory/p1-papers-7.png" alt="" />
-            <img className='boxImg2' src="./images/memStory/stamp-2.png" alt="" />
+            <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
+            <img className='boxImg2' src="./images/stamp-2.png" alt="" />
             <div id="frame2"></div>
 
             <p className='text1'>東部 @noname_ya</p>
@@ -47,8 +47,8 @@ function MemStory() {
           </div>
 
           <div className='box'>
-            <img className='boxImg1' src="./images/memStory/p1-papers-7.png" alt="" />
-            <img className='boxImg2' src="./images/memStory/stamp-2.png" alt="" />
+            <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
+            <img className='boxImg2' src="./images/stamp-2.png" alt="" />
             <div id="frame3"></div>
 
             <p className='text1'>東部 @noname_ya</p>
@@ -57,8 +57,8 @@ function MemStory() {
           </div>
 
           <div className='box'>
-            <img className='boxImg1' src="./images/memStory/p1-papers-7.png" alt="" />
-            <img className='boxImg2' src="./images/memStory/stamp-2.png" alt="" />
+            <img className='boxImg1' src="./images/p1-papers-7.png" alt="" />
+            <img className='boxImg2' src="./images/stamp-2.png" alt="" />
             <div id="frame4"></div>
 
             <p className='text1'>東部 @noname_ya</p>
@@ -66,9 +66,9 @@ function MemStory() {
             <p className='text3'>閱讀更多</p>
           </div>
 
-          <img id='section2-img1' src="./images/memStory/flowers-2.png" alt="" />
-          <img id='section2-img2' src="./images/memStory/small_paper-3.png" alt="" />
-          <img id='section2-img3' src="./images/memStory/stamp-9.png" alt="" />
+          <img id='section2-img1' src="./images/flowers-2.png" alt="" />
+          <img id='section2-img2' src="./images/small_paper-3.png" alt="" />
+          <img id='section2-img3' src="./images/stamp-9.png" alt="" />
           {/* <img id='section2-img4' src="./images/memStory/arrow.png" alt="" />
           <img id='section2-img5' src="./images/memStory/arrow.png" alt="" /> */}
         </div>
