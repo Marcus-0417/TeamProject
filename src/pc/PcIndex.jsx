@@ -80,7 +80,7 @@ export default function PcIndex() {
       {/* 頁尾區 */}
       <footer className="pcIndexPage-footer">
         <div>
-          <p>郵你真好 &copy; 2024 postcard.com</p>
+          <p>copyright &copy; 2025  郵你真好(此為學生練習作品，無商業用途)</p>
         </div>
       </footer>
     </div>

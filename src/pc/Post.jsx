@@ -1,21 +1,11 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import "../pc/css/post.css"
-import React, { useEffect } from "react"
+
 import TaiwanPageTwo from "./component/TaiwanPageTwo";
 export default function Post(){
 
-React.useEffect(()=>{
-  const script = document.createElement("script");
-  script.src = "public/js/taiwan.js";
-  script.async = true; // 设置异步加载
-  document.body.appendChild(script);
 
-  return () => {
-    // 清理脚本
-    document.body.removeChild(script);
-  };
-},[])
 
 return(
   <div id="postPage">
@@ -156,7 +146,7 @@ return(
   {/* 頁尾區 */}
     <footer className="postPage-footer">
       <div>
-        <p>郵你真好 &copy; 2024 postcard.com</p>
+        <p>copyright &copy; 2025  郵你真好(此為學生練習作品，無商業用途)</p>
       </div>
     </footer>
   </div>
