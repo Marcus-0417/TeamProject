@@ -61,10 +61,10 @@ const Marquee1 = () => {
                             height: `${itemHeight}px`,
                         }}
                     >
-                        <img className="logo" src={item.src1} alt="" />
-                        <p>{item.text}</p>
-                        <img className="logo" src={item.src2} alt="" />
-                        <p>{item.text1}</p>
+                        <img className="citylogo" src={item.src1} alt="" />
+                        <p className="citytext">{item.text}</p>
+                        <img className="citylogo" src={item.src2} alt="" />
+                        <p className="citytext">{item.text1}</p>
                     </div>
                 ))}
                 {/* 重複添加一次內容 */}
@@ -78,10 +78,10 @@ const Marquee1 = () => {
                             height: `${itemHeight}px`,
                         }}
                     >
-                        <img className="logo" src={item.src1} alt="" />
-                        <p>{item.text}</p>
-                        <img className="logo" src={item.src2} alt="" />
-                        <p>{item.text1}</p>
+                        <img className="citylogo" src={item.src1} alt="" />
+                        <p className="citytext">{item.text}</p>
+                        <img className="citylogo" src={item.src2} alt="" />
+                        <p className="citytext">{item.text1}</p>
                     </div>
                 ))}
             </motion.div>

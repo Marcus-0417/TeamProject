@@ -69,8 +69,8 @@ function MemStory() {
           <img id='section2-img1' src="./images/memStory/flowers-2.png" alt="" />
           <img id='section2-img2' src="./images/memStory/small_paper-3.png" alt="" />
           <img id='section2-img3' src="./images/memStory/stamp-9.png" alt="" />
-          <img id='section2-img4' src="./images/memStory/arrow.png" alt="" />
-          <img id='section2-img5' src="./images/memStory/arrow.png" alt="" />
+          {/* <img id='section2-img4' src="./images/memStory/arrow.png" alt="" />
+          <img id='section2-img5' src="./images/memStory/arrow.png" alt="" /> */}
         </div>
       </main>
 

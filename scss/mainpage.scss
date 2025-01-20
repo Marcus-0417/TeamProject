@@ -403,26 +403,24 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 80%;
+            align-items: center;
+            width: 85%;
             height: 750px;
             position: absolute;
             top: 60px;
-            left: 70px;
+            left: 60px;
             padding: 60px 15px;
             overflow: hidden;
+            font-size: 0.85vw;
 
-            .dontai-1 {
-                display: flex;
-                margin-top: 35px;
-                letter-spacing: 5px;
-                font-size: 18px;
-                color: #464646;
+            .citylogo {
+                width: 5%;
+                margin: 0 5px;
             }
 
-            .logo {
-                width: 25px;
-                height: 25px;
-                margin: 0 10px;
+            .citytext {
+                font-size: 0.85vw;
+                font-weight: 400;
             }
         }
     }
@@ -521,7 +519,7 @@
                 top: 60px;
                 right: 50px;
             }
-    
+
             #layer3-4-img2 {
                 position: absolute;
                 width: 150px;
@@ -543,19 +541,14 @@
             padding: 60px 45px;
             overflow: hidden;
 
-            .dontai-1 {
-                display: flex;
-                margin-top: 40px;
-                letter-spacing: 5px;
-                font-size: 18px;
-                color: #464646;
-                animation: scrollAnimation 1s linear infinite;
+            .citylogo {
+                width: 5%;
+                margin: 0 5px;
             }
 
-            .logo {
-                width: 25px;
-                height: 25px;
-                margin: 0 10px;
+            .citytext {
+                font-size: 0.85vw;
+                font-weight: 400;
             }
         }
     }
@@ -568,6 +561,7 @@
     display: flex;
     justify-content: space-around;
     padding: 50px 40px;
+    margin-top: 30px;
 
     .layer4-1 {
         position: relative;
