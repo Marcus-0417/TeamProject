@@ -12,7 +12,7 @@ function MemStory() {
       {/* 內容區 */}
       <main id="MemStory-main">
         <div id='section1'>
-          <Link to="./"><img id='backToMainPage' src="./images/arrow.png" alt="" /></Link>
+          <Link to="/"><img id='backToMainPage' src="./images/arrow.png" alt="" /></Link>
           <img id='section1-img1' src="./images/stamp-7.png" alt="" />
           <img id='section1-img2' src="./images/stamp-8.png" alt="" />
           <img id='bar1-1' src="./images/Rectangle_205.png" alt="" />
