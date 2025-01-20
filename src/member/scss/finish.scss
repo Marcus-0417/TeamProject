@@ -208,3 +208,19 @@
     display: none;
   }
 }
+
+.finishPage-footer{
+  display: inline-block;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  /* background-color: #E2CA9E; */
+  width: 100%;
+  height: 65px;
+
+  letter-spacing: 3px;
+  color: #464646;
+
+}

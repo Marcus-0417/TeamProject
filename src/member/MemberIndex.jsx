@@ -80,8 +80,10 @@ export default function MemberIndex() {
         <img src="./images/postmark-1.png" alt="" />
       </figure>
 
-      <footer>
-        <div> <small>郵你真好&copy;2024 postcard.com</small></div>
+      <footer className="memberIndex-footer">
+      <div>
+        <p>郵你真好 &copy; 2024 postcard.com</p>
+      </div>
 
       </footer>
     </div>

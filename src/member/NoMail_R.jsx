@@ -46,7 +46,7 @@ export default function NoMail_R(){
       <img src="./images/flowers-3.png" alt=""/>
     </figure>
 
-    <footer>
+    <footer  className="nomail_R-page-footer">
       <div>
         <p>郵你真好 &copy; 2024 postcard.com</p>
       </div>

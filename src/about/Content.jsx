@@ -52,18 +52,18 @@ export default function Content() {
 
 
         {/* 裝飾區   */}
-        <figure class="contentPage-pic1"><img src="./images/tape-1.png" alt=""/></figure>
-        <figure class="contentPage-pic2"><img src="./images/tape-1.png" alt=""/></figure>
-        <figure class="contentPage-pic3"><img src="./images/postmask-5.png" alt=""/></figure>
-        <figure class="contentPage-pic4"><img src="./images/flowers-2.png" alt=""/></figure>
-        <figure class="contentPage-pic5"><img src="./images/postmark-1.png" alt=""/></figure>
-        <figure class="contentPage-pic6"><img src="./images/small_paper-3.png" alt=""/></figure>
-        <figure class="contentPage-pic7"><img src="./images/flowers-3.png" alt=""/></figure>
+        <figure className="contentPage-pic1"><img src="./images/tape-1.png" alt=""/></figure>
+        <figure className="contentPage-pic2"><img src="./images/tape-1.png" alt=""/></figure>
+        <figure className="contentPage-pic3"><img src="./images/postmask-5.png" alt=""/></figure>
+        <figure className="contentPage-pic4"><img src="./images/flowers-2.png" alt=""/></figure>
+        <figure className="contentPage-pic5"><img src="./images/postmark-1.png" alt=""/></figure>
+        <figure className="contentPage-pic6"><img src="./images/small_paper-3.png" alt=""/></figure>
+        <figure className="contentPage-pic7"><img src="./images/flowers-3.png" alt=""/></figure>
 
-      </main>
+      </main> 
 
       {/* 頁尾區  */}
-      <footer className="footer">
+      <footer className="contentPage-footer">
         <p>郵你真好 &copy; 2024 postcard.com</p>
       </footer>
     </div>
