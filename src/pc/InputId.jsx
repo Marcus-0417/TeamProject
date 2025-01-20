@@ -45,7 +45,7 @@ export default function InputId() {
           <hr />
           <div className="inputIdpage-input-box">
 
-            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" value="請輸入明信片上的ID" />
+            <input type="text" id="name" name="name" required minLength="4" maxLength="8" size="10" value="請輸入明信片上的ID" />
             <input type="date" id="input_date" name="input_date" min="2024-12-05T00:00" max="3024-12-31T00:00" />
           </div>
           <div id="inputIdpage-btn-sure">
@@ -85,7 +85,7 @@ export default function InputId() {
       <figure className="inputIdpage-img05"><img src="./images/stamp-8.png" alt="" /></figure>
       <figure className="inputIdpage-img06"><img src="./images/stamp-7.png" alt="" /></figure>
       {/* 頁尾區 */}
-      <footer class="inputIdpage-footer">
+      <footer className="inputIdpage-footer">
         <div>
           <p>郵你真好 &copy; 2024 postcard.com</p>
         </div>
