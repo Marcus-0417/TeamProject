@@ -50,7 +50,7 @@ export default function NewPassword(){
 
 
   <footer>
-    <div>
+    <div className="newpasswordPage-footer">
       <p>郵你真好 &copy; 2024 postcard.com</p>
     </div>
   </footer>

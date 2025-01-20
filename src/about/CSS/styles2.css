@@ -472,69 +472,7 @@ line-height:40px;
   }
   
 }
-@media (min-width: 768px) and (max-width: 1024px){
-  .QaPage-pic1 {
-      
-    left:26%;
-    bottom: 20%;
-   
-  }
-  .QaPage-pic2 {
-    right: 3%;
-    top: 15%;
-  }
-  .QaPage-pic1 img,
-  .QaPage-pic2 img
-  {
-    width: 14.38vw;
-    height: 10vh;
-  }
-  
-  
-  .QaPage-pic3 img {
-    width: 14vw;
-    height: 7%;
-  }
-  .QaPage-pic3 {
-   
-    left: 25%;
-    bottom: 77%;
-   
-  }
-  .QaPage-pic4 img {
-    width: 15.63vw;
-    height: 18vh;
-  }
-  .QaPage-pic4 {
-   
-    left: 20%;
-    bottom: 24%;
-  
-    transform: scaleX(-1) rotate(25deg);
-  }
-  .QaPage-pic5 img {
-    width: 10vw;
-    height: 8vh;
-  }
-  .QaPage-pic5 {
-    right: 6%; 
-    bottom: 22%;
-  }
 
-  .QaPage-pic6 {
-   display: none;
-  }
-  .QaPage-pic7 img {
-    width: 20vw;
-    height:13vh;
-  }
-  .QaPage-pic7 {
-   
-    right:0;
-    bottom: 70%;
-    transform: rotate(-10deg);
-  }
-}
 /* 花的動畫 */
 @keyframes swing {
 0% {
@@ -544,8 +482,10 @@ line-height:40px;
     transform: rotate(-2deg);
 }
 }
+
+
 /* 頁尾區 */
-/* footer {
+ .QaPage-footer {
 display: inline-block;
 position: fixed;
 display: flex;
@@ -559,4 +499,75 @@ height: 65px;
 letter-spacing: 3px;
 color: #464646;
 
-} */
+} 
+
+@media (min-width: 768px) and (max-width: 1024px){
+  /* 左下膠帶 */
+  .QaPage-pic1 {
+      
+    left:26%;
+    bottom:10%;
+   
+  }
+  /* 右上膠帶 */
+  .QaPage-pic2 {
+    right: 3%;
+    top: 15%;
+  }
+  .QaPage-pic1 img,
+  .QaPage-pic2 img
+  {
+    width: 14.38vw;
+    height: 10vh;
+  }
+  
+   /* 愛心印章 */
+  .QaPage-pic3 img {
+    width: 14vw;
+    height: 7%;
+  }
+  .QaPage-pic3 {
+   
+    left: 25%;
+    bottom: 78%;
+   
+  }
+
+     /* 白花 */
+  .QaPage-pic4 img {
+    width: 15.63vw;
+    height: 18vh;
+  }
+  .QaPage-pic4 {
+   
+    left: 18%;
+    bottom: 10%;
+  
+    transform: scaleX(-1) rotate(25deg);
+  }
+   /* 圓章 */
+  .QaPage-pic5 img {
+    width: 10vw;
+    height: 8vh;
+  }
+  .QaPage-pic5 {
+    right: 6%; 
+    bottom: 10%;
+  }
+  /* 右紙 */
+  .QaPage-pic6 {
+   display: none;
+  }
+    /* 右花 */
+  .QaPage-pic7 img {
+    width: 20vw;
+    height:13vh;
+  }
+  .QaPage-pic7 {
+   
+    right: 3%;
+    bottom: 70%;
+    transform: rotate(-10deg);
+  }
+ 
+}

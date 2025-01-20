@@ -45,7 +45,7 @@ export default function Finish() {
       </figure>
 
 
-      <footer>
+      <footer className="finishPage-footer">
         <div>
           <p>郵你真好 &copy; 2024 postcard.com</p>
         </div>

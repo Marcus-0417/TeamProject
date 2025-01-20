@@ -558,93 +558,97 @@ input:focus {
   }
   
 }
-@media (min-width: 768px) and (max-width: 1024px){
-/* 裝飾區 */
-.contentPage-pic1 {
-  left:26%;
-  bottom: 20%;
-}
 
-.contentPage-pic2 {
-  right: 3%;
-  top: 15%;
-}
-.contentPage-pic1 img, 
-.contentPage-pic2 img{
-  width: 14.38vw;
-    height: 10vh;
-}
-
-.contentPage-pic3 img {
-  width: 14vw;
-  height: 7%;
-}
-
-.contentPage-pic3 {
-  left: 25%;
-  bottom: 77%;
-}
-
-.contentPage-pic4 img {
-  width: 15.63vw;
-    height: 18vh;
-}
-
-.contentPage-pic4 {
-  left: 20%;
-  bottom: 24%;
-
-  transform: scaleX(-1) rotate(25deg);
-}
-
-.contentPage-pic5 img {
-  width: 10vw;
-    height: 8vh;
-}
-
-.contentPage-pic5 {
-  right: 6%; 
-  bottom: 22%;
-}
-
-.contentPage-pic6 img {
-  width: 18vw;
-    height: 15vh;
- 
-}
-
-.contentPage-pic6 {
-  right: 4%;
-  bottom: 63%;
-  transform:scaleX(-1) rotate(20deg);
-}
-
-.contentPage-pic7 img {
-   width: 15vw; 
-    height:15vh;
-   
- 
-}
-
-.contentPage-pic7 {
-  right: 8%;
-    bottom: 60%;
-}
-
-}
 /* 頁尾區 */
-.footer {
+.contentPage-footer {
   display: inline-block;
   position: fixed;
- 
+  display: flex;
   align-items: center;
   justify-content: center;
   bottom: 0px;
-
+  
   width: 100%;
   height: 65px;
-
+  
   letter-spacing: 3px;
   color: #464646;
 
 }
+/* 平板 */
+@media (min-width: 768px) and (max-width: 1024px){
+  /* 裝飾區 */
+  /* 左下膠帶 */
+  .contentPage-pic1 {
+    left:26%;
+    bottom:10%;
+  }
+    /* 右上膠帶 */
+  .contentPage-pic2 {
+    right: 3%;
+    top: 15%;
+  }
+  .contentPage-pic1 img, 
+  .contentPage-pic2 img{
+    width: 14.38vw;
+      height: 10vh;
+  }
+  /* 愛心印章 */
+  .contentPage-pic3 img {
+    width: 14vw;
+    height: 7%;
+  }
+  
+  .contentPage-pic3 {
+    left: 25%;
+    bottom: 78%;
+  }
+  /* 白花 */
+  .contentPage-pic4 img {
+    width: 15.63vw;
+      height: 18vh;
+  }
+  
+  .contentPage-pic4 {
+    left: 18%;
+    bottom: 10%;
+  
+    transform: scaleX(-1) rotate(25deg);
+  }
+   /* 圓章 */
+  .contentPage-pic5 img {
+    width: 10vw;
+      height: 8vh;
+  }
+  
+  .contentPage-pic5 {
+    
+    right: 6%; 
+    bottom: 10%;
+  }
+  /* 右紙 */
+  .contentPage-pic6 img {
+    width: 18vw;
+      height: 15vh;
+   
+  }
+  
+  .contentPage-pic6 {
+    right: 0;
+    bottom: 50%;
+    transform:scaleX(-1) rotate(20deg);
+  }
+    /* 右花 */
+  .contentPage-pic7 img {
+     width: 15vw; 
+      height:15vh;
+     
+   
+  }
+  
+  .contentPage-pic7 {
+    right: 5%;
+    bottom: 45%;
+  }
+
+  }

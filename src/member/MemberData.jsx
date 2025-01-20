@@ -115,7 +115,7 @@ export default function MemberData() {
       <img src="./images/flowers-3.png" alt=""/>
     </figure>
 
-    <footer>
+    <footer className="memberData-footer">
       <div>
         <p>郵你真好 &copy; 2024 postcard.com</p>
       </div>

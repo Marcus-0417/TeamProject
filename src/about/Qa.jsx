@@ -66,7 +66,7 @@ export default function Qa() {
       </main>
 
       {/* 頁尾區  */}
-      <footer className="footer">
+      <footer className="QaPage-footer">
         <p>郵你真好 &copy; 2024 postcard.com</p>
       </footer>
     </div>

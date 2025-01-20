@@ -36,7 +36,7 @@ export default function PasswordR() {
       <img src="./images/flowers-3.png" alt=""/>
     </figure>
    
-<footer>
+<footer className="password-r-Page-footer"> 
   <div>
     <p>郵你真好 &copy; 2024 postcard.com</p>
   </div>

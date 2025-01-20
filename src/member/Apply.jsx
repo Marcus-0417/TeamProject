@@ -69,7 +69,7 @@ export default function Apply() {
         </figure>
 
 
-        <footer>
+        <footer className="applyPage-footer">
           <div>
             <p>郵你真好 &copy; 2024 postcard.com</p>
           </div>

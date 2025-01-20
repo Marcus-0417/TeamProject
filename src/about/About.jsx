@@ -75,7 +75,7 @@ export default function About(){
 
 
   {/* 頁尾區  */}
-  <footer className="footer">
+  <footer className="AboutPage-footer">
     <div>
       <p>郵你真好 &copy; 2024 postcard.com</p>
     </div>
