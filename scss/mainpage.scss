@@ -198,6 +198,7 @@
     padding: 50px 50px;
     height: 100vh;
     position: relative;
+    margin-bottom: 70px;
 
     .layer3-2 {
         position: relative;
@@ -229,66 +230,66 @@
             position: relative;
 
             #bar1-1 {
-                width: 50px;
+                width: 9%;
                 position: absolute;
                 top: -20px;
-                left: 150px;
+                left: 26%;
             }
 
             #bar1-2 {
-                width: 50px;
+                width: 9%;
                 position: absolute;
                 top: -20px;
-                left: 220px;
+                left: 38%;
             }
 
             #bar1-3 {
-                width: 50px;
+                width: 9%;
                 position: absolute;
                 top: -20px;
-                left: 290px;
+                left: 50.5%;
             }
 
             #bar1-4 {
-                width: 50px;
+                width: 9%;
                 position: absolute;
                 top: -20px;
-                left: 360px;
+                left: 62%;
             }
 
             #text3-3-1 {
                 position: absolute;
                 top: -15px;
-                left: 160px;
+                left: 28%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
             #text3-3-2 {
                 position: absolute;
                 top: -15px;
-                left: 225px;
+                left: 39.5%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
             #text3-3-3 {
                 position: absolute;
                 top: -15px;
-                left: 300px;
+                left: 52%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
             #text3-3-4 {
                 position: absolute;
                 top: -15px;
-                left: 370px;
+                left: 64%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
@@ -343,82 +344,82 @@
             color: #464646;
 
             #bar2-1 {
-                width: 50px;
+                width: 10%;
                 position: absolute;
-                top: -15px;
-                right: 450px;
+                top: -20px;
+                right: 78%;
             }
 
             #bar2-2 {
-                width: 50px;
+                width: 9%;
                 position: absolute;
-                top: -15px;
-                right: 380px;
+                top: -20px;
+                right: 65.5%;
             }
 
             #bar2-3 {
-                width: 50px;
+                width: 10%;
                 position: absolute;
-                top: -15px;
-                right: 310px;
+                top: -20px;
+                right: 52.5%;
             }
 
             #bar2-4 {
-                width: 50px;
+                width: 10%;
                 position: absolute;
-                top: -15px;
-                right: 240px;
+                top: -20px;
+                right: 41%;
             }
 
             #bar2-5 {
-                width: 50px;
+                width: 10%;
                 position: absolute;
-                top: -15px;
-                right: 170px;
+                top: -20px;
+                right: 29%;
             }
 
             #text3-4-1 {
                 position: absolute;
                 top: -15px;
-                right: 460px;
+                right: 80%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
             #text3-4-2 {
                 position: absolute;
                 top: -15px;
-                right: 390px;
+                right: 68%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
             #text3-4-3 {
                 position: absolute;
                 top: -15px;
-                right: 320px;
+                right: 55%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
             #text3-4-4 {
                 position: absolute;
                 top: -15px;
-                right: 250px;
+                right: 43%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
             #text3-4-5 {
                 position: absolute;
                 top: -15px;
-                right: 180px;
+                right: 31%;
                 font-family: "Noto Sans TC", serif;
-                font-size: 30px;
+                font-size: 1.55vw;
                 font-weight: bold;
             }
 
@@ -443,12 +444,12 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 80%;
+            width: 90%;
             height: 750px;
             position: absolute;
             top: 60px;
-            right: 50px;
-            padding: 60px 45px;
+            right: 30px;
+            padding: 60px 15px;
             overflow: hidden;
 
             .citylogo {

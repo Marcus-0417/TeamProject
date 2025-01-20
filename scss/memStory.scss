@@ -3,9 +3,10 @@
 #MemStory {
     width: 100%;
     background-color: #F2E9D4;
+    overflow: hidden;
 
     #MemStory-main {
-        height: 79vh;
+        height: 75vh;
     }
 }
 
@@ -19,6 +20,7 @@
         width: 6%;
         top: 60px;
         left: 60px;
+        z-index: 999;
     }
 
     #section1-img1 {
@@ -111,6 +113,7 @@
     justify-content: space-around;
     padding: 0px 200px;
     position: relative;
+    height: 65vh;
 
     .box {
 
@@ -158,22 +161,22 @@
     #section2-img1 {
         position: absolute;
         width: 220px;
-        bottom: -600px;
+        bottom: -70px;
         left: 0px;
     }
 
     #section2-img2 {
         position: absolute;
         width: 230px;
-        bottom: -550px;
-        right: 50px;
+        bottom: -50px;
+        right: 30px;
         transform: scaleX(-1);
     }
 
     #section2-img3 {
         position: absolute;
         width: 100px;
-        bottom: -550px;
-        right: 80px;
+        bottom: 0px;
+        right: 50px;
     }
 }
