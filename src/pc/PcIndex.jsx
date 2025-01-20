@@ -7,8 +7,12 @@ import React, { useEffect } from "react"
 export default function PcIndex() {
   React.useEffect(() => {
     const script = document.createElement("script");
-    script.src = "public/js/taiwan.js";
+    script.src = "/js/taiwan.js";
     script.async = true; // 设置异步加载
+    script.onload = () => {
+      // 脚本加载完成后的操作
+      console.log("Script loaded successfully!");
+    };
     document.body.appendChild(script);
 
     return () => {
@@ -16,6 +20,7 @@ export default function PcIndex() {
       document.body.removeChild(script);
     };
   }, []);
+  
 
   return (
     <div id="pcIndexPage">
