@@ -2,8 +2,20 @@
 import { Link } from "react-router-dom"
 import Navbar from "../Navbar"
 import "../pc/css/PC-index.css"
+import React, { useEffect } from "react"
 
 export default function PcIndex() {
+React.useEffect(()=>{
+  const script = document.createElement("script");
+    script.src = "public/js/taiwan.js";
+    script.async = true; // 设置异步加载
+    document.body.appendChild(script);
+
+    return () => {
+      // 清理脚本
+      document.body.removeChild(script);
+    };
+},[]);
 
   return (
     <div id="pcIndexPage">
@@ -13,14 +25,15 @@ export default function PcIndex() {
         <aside>
           <div id="pcIndexPage-sidebar">
             {/* 寄件區  */}
-            <div className="sidebar-item01 button-grow-shadow">
+            <div className="pcIndexPage-sidebar-item01 button-grow-shadow">
               <img src="./images/btn-3.svg" alt="" />
-              <h2><a href="./post.html">寄件區</a></h2>
+              <Link to="/Post"><h2>寄件區</h2></Link>
             </div>
             {/* 紀錄區  */}
-            <div className="sidebar-item02 button-grow-shadow">
+            <div className="pcIndexPage-sidebar-item02 button-grow-shadow">
               <img src="./images/btn-3.svg" alt="" />
-              <h2><a href="./receive_record.html">紀錄</a></h2>
+              <Link to="/ReceiveRecord"><h2>紀錄區</h2></Link>
+              
 
             </div>
           </div>
@@ -51,7 +64,7 @@ export default function PcIndex() {
           <img src="./images/taiwan_picture.svg" alt="" />
           {/* 離島 */}
           <div id="pcIndexPage-islands" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover1')"></button>
+          <button onClick="togglePopoverWithDynamicPosition(event, 'popover1')"></button>
 
           <div id="popover1" className="popover">
             <div className="popover-title">
@@ -74,10 +87,10 @@ export default function PcIndex() {
         </div>
         {/* 北部 */}
         <div id="pcIndexPage-north" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover2')"></button>
+          <button onClick="togglePopoverWithDynamicPosition(event, 'popover2')"></button>
 
           <div id="popover2" className="popover">
-            <div class="popover-title">
+            <div className="popover-title">
               <img src="./images/寄.svg" alt="" />
               <img src="./images/件.svg" alt="" />
               <img src="./images/總.svg" alt="" />
@@ -97,7 +110,7 @@ export default function PcIndex() {
 
         {/* 中部 */}
         <div id="pcIndexPage-central" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover3')"></button>
+          <button onClick="togglePopoverWithDynamicPosition(event, 'popover3')"></button>
 
           <div id="popover3" className="popover">
             <div className="popover-title">
@@ -119,7 +132,7 @@ export default function PcIndex() {
         </div>
         {/* 南部 */}
         <div id="pcIndexPage-south" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover4')"></button>
+          <button onClick="togglePopoverWithDynamicPosition(event, 'popover4')"></button>
 
           <div id="popover4" className="popover">
             <div className="popover-title">
@@ -141,9 +154,9 @@ export default function PcIndex() {
         </div>
         {/* 東部 */}
         <div id="pcIndexPage-east" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover5')"></button>
+          <button onClick="togglePopoverWithDynamicPosition(event, 'popover5')"></button>
 
-          <div id="popover5" class="popover">
+          <div id="popover5" className="popover">
             <div className="popover-title">
               <img src="./images/寄.svg" alt="" />
               <img src="./images/件.svg" alt="" />
@@ -180,7 +193,7 @@ export default function PcIndex() {
       <figure className="pcIndexPage-img02"><img src="./images/postmark-2.svg" alt="" />
       </figure>
       {/* 郵票  */}
-      <figure class="pcIndexPage-img03"><img src="./images/stamp-7.png" alt="" />
+      <figure className="pcIndexPage-img03"><img src="./images/stamp-7.png" alt="" />
       </figure>
       {/* UPDATE印章  */}
       <figure className="pcIndexPage-img04"><img src="./images/postmark-3.png" alt="" />

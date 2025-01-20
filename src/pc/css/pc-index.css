@@ -75,7 +75,7 @@ a {
   text-decoration-line: none;
 }
 
-body {
+#pcIndexPage {
   box-sizing: border-box;
   background-color: var(--background);
 
@@ -158,10 +158,10 @@ a:hover {
   margin-top: 100px;
   height: auto;
   width: 200px;
-  
+ 
 }
 
-.sidebar-item01 {
+.pcIndexPage-sidebar-item01 {
   position: relative;
   width: 180px;
   height: 80px;
@@ -169,37 +169,37 @@ a:hover {
 
 }
 
-.sidebar-item01 img{
+.pcIndexPage-sidebar-item01 img{
   width: 100%;
   height: 100%;
 }
 
-.sidebar-item01 h2 {
+.pcIndexPage-sidebar-item01 h2 {
   position: absolute;
   top: 22px;
   left: 52px;
 
 }
 
-.sidebar-item02 {
+.pcIndexPage-sidebar-item02 {
   position: relative;
   width: 180px;
   height: 80px;
 }
 
-.sidebar-item02 img{
+.pcIndexPage-sidebar-item02 img{
   width: 100%;
   height: 100%;
 
 }
 
-.sidebar-item02 h2 {
+.pcIndexPage-sidebar-item02 h2 {
   position: absolute;
   top: 22px;
   left: 62px;
 }
 /* 按鈕動畫 */
-.button-grow-shadow {
+#pcIndexPage-sidebar .button-grow-shadow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -214,17 +214,17 @@ a:hover {
   transition-property: transform;
  
 }
-.button-grow-shadow:hover{
+#pcIndexPage-sidebar .button-grow-shadow:hover{
 
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.button-grow-shadow:focus{
+#pcIndexPage-sidebar .button-grow-shadow:focus{
 
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.button-grow-shadow:active{
+#pcIndexPage-sidebar .button-grow-shadow:active{
 
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -237,7 +237,7 @@ a:hover {
   height: 650px;
   position: relative;
   margin-left:120px;
-  margin-top:100px;
+  margin-top:5%;
   
 
 }
@@ -332,7 +332,7 @@ a:hover {
 
 
 /* 顯示的小視窗 */
-.point button{
+#pcIndexPage-taiwan .point button{
   width: 24px;
   height: 24px;
   border-radius: 99px;
@@ -341,17 +341,17 @@ a:hover {
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* 添加平滑過渡效果 */
 }
-.point button:hover {
+#pcIndexPage-taiwan .point button:hover {
   background-color: #8A5D3B; /* 滑鼠移入時的顏色 */
  
   transform: translateY(-3px); /* 按鈕往上移動，模擬凸起 */
 }
-.point button.active {
+#pcIndexPage-taiwan .point button.active {
   background-color: #8A5D3B; /* 點擊後保持的顏色 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1); /* 保持的陰影效果 */
   transform: translateY(-3px); /* 按鈕往上移動，模擬凸起 */
 }
-.popover {
+#pcIndexPage-taiwan .popover {
   position: absolute;
   display: none;
 
@@ -367,7 +367,7 @@ a:hover {
   z-index: 1000;
 
 }
-.popover-title{
+#pcIndexPage-taiwan .popover-title{
   display: flex;
   margin:auto;
 
@@ -388,7 +388,7 @@ a:hover {
   margin-top:12px ;
   
 }
-.r-title{
+#pcIndexPage-taiwan .r-title{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,62 +429,54 @@ margin: 5px;
 
 }
 
-button:hover{
+#pcIndexPage-button-pair  button:hover{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /* 裝飾區 */
 /* 白花 */
 .pcIndexPage-img01{
   position: absolute;
-  width: 300px;
-  height: 300px;
-  bottom: 220px;
-  left: 220px;
+  width: 15.63vw;
+  height:20vw;
+  bottom: 0;
+  left: 10%;
   /* animation: swing ease-in-out 2s infinite alternate;
   transform-origin: bottom -20px; */
 }
-/* 花的動畫 */
-@keyframes swing {
-  0% {
-      transform: rotate(2deg);
-  }
-  100%{
-      transform: rotate(-2deg);
-  }
-}   
+
 /* APPROVED印章 */
 .pcIndexPage-img02{
   position: absolute;
-  width: 120px;
-  height: 120px;
-  bottom: 70px; 
-  left: 480px;
+  width: 6.25vw;
+  height: 11.11vh;
+  bottom: 10%; 
+  left: 25%;
 }
 /* 郵票 */
 .pcIndexPage-img03{
   position: absolute;
-  width: 120px;
-  height: 140px;
-  top: 120px;
-  left: 550px;
+  width: 6.25vw;
+  height:12.96vh;
+  top: 20%;
+  left: 28%;
   transform: rotate(25deg);
 }
 /*UPDATE印章  */
 .pcIndexPage-img04{
   position: absolute;
-  width: 170px;
-  height: 40px;
-  top: 100px;
-  left: 980px;
+  width: 8.85vw;
+  height:3.70vh;
+  top: 20%;
+  left: 50%;
   transform: rotate(20deg); 
 }
 /* rule-box左下的紙 */
 .pcIndexPage-img05{
   position: absolute;
-  width: 250px;
-  height: 260px;
-  bottom: 100px;
-  left:1010px;
+  width: 13.02vw;
+  height: 24.07vh;
+  bottom: 10%;
+  left:53%;
   transform: rotate(20deg); 
 }
 /* 頁尾區 */
@@ -503,5 +495,5 @@ button:hover{
   
   letter-spacing: 3px;
   color: #464646;
-  
+  margin-top: 30px;
   }

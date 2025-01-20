@@ -15,8 +15,11 @@ import Verify from "./member/verify";
 import NoMail from "./member/NoMail";
 import NoMail_R from "./member/NoMail_R";
 import NewPassword from "./member/NewPassword";
-import PcIndex from "./pc/pcIndex";
+import PcIndex from "./pc/PcIndex";
 import Post from "./pc/Post";
+import ReceiveRecord from "./pc/ReceiveRecord";
+import PostRevcord from "./pc/PostRecord";
+import InputId from "./pc/InputId";
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
         {/* 配對區 */}
         <Route path="/PcIndex"  element={<PcIndex/>}/>
         <Route path="/Post" element={<Post/>}/>
+        <Route path="/ReceiveRecord" element={<ReceiveRecord/>}/>
+        <Route path="/PostRevcord" element={<PostRevcord/>}/>
+        <Route path="/InputId" element={<InputId/>}/>
 
         {/* 會員專區頁面*/}
         <Route path="/MemberIndex" element={<MemberIndex />} />

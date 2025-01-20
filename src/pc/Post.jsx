@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import "../pc/css/post.css"
 
@@ -11,15 +12,16 @@ return(
       <aside>
         <div id="postPage-sidebar">
           {/* 寄件區  */}
-          <div className="sidebar-item01 button-grow-shadow ">
+          <div className="postPage-sidebar-item01 button-grow-shadow ">
             <img src="./images/btn-3.svg" alt=""/>
-            <h2><a href="./post.html">寄件區</a></h2>
+            <Link to="/Post"><h2>寄件區</h2></Link>
           </div>
          {/* 紀錄區 */}
-          <div className="sidebar-item02 button-grow-shadow ">
+          <div className="postPage-sidebar-item02 button-grow-shadow ">
             <img src="./images/btn-3.svg" alt=""/>
-            <h2><a href="./receive_record.html">紀錄</a></h2>
-
+            <Link to="/ReceiveRecord"> <h2>紀錄區</h2>
+            </Link>
+           
           </div>
         </div>
 
