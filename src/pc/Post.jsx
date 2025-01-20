@@ -1,8 +1,20 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import "../pc/css/post.css"
-
+import React, { useEffect } from "react"
 export default function Post(){
+
+React.useEffect(()=>{
+  const script = document.createElement("script");
+  script.src = "public/js/taiwan.js";
+  script.async = true; // 设置异步加载
+  document.body.appendChild(script);
+
+  return () => {
+    // 清理脚本
+    document.body.removeChild(script);
+  };
+},[])
 
 return(
   <div id="postPage">
@@ -44,7 +56,7 @@ return(
           <div className="p02">
             <img src="./images/P02.svg" alt=""/>
             <img src="./images/P02-2.svg" alt=""/>
-            <div class="p-box">
+            <div className="p-box">
               <p>27封</p>
             </div>
           </div>
@@ -73,39 +85,39 @@ return(
 
         <div className="postPage-send-postcard">
           <p>對方最近寄出的明信片</p>
-          <div class="pc01">
-            <div class="pc01-frame">
+          <div className="pc01">
+            <div className="pc01-frame">
               <img src="./images/stamp-2.png" alt=""/>
             </div>
-            <div class="pc01-photo">
+            <div className="pc01-photo">
               <img src="./images/postcard-taipei101-sunrise-1.jpg" alt=""/>
             </div>
           </div>
 
-          <div class="pc02">
-            <div class="pc02-frame">
+          <div className="pc02">
+            <div className="pc02-frame">
               <img src="./images/stamp-2.png" alt=""/>
             </div>
-            <div class="pc02-photo"> <img src="./images/postcard-beach.jpg" alt=""/></div>
+            <div className="pc02-photo"> <img src="./images/postcard-beach.jpg" alt=""/></div>
           </div>
 
         </div>
 
-        <div class="postPage-about-other">
+        <div className="postPage-about-other">
           <img src="./images/關於對方區塊.svg" alt=""/>
-          <div class="postPage-other-title">
+          <div className="postPage-other-title">
             <img src="./images/主題區塊.svg" alt=""/>
           </div>
           <p>你好~我很喜歡拍照，所以喜歡蒐集有動物以及古蹟、建築物的明信片!
             我會懷著期待的心情等待的，期待收到漂亮的明信片!</p>
          
         </div>
-        <div class="postPage-other-content">
-          <div class="postPage-other-id">
+        <div className="postPage-other-content">
+          <div className="postPage-other-id">
             <h2>明信片 ID : #123abcd4</h2>
             <small>不要忘記把明信片ID寫在明信片上喔!!!</small>
           </div>
-          <div class="postPage-other-name">
+          <div className="postPage-other-name">
             <p>配對者 : 辛郝蕾</p>
             <p>地址:</p>
             <p>100025 台北市中正區濟南路一段 321號 </p>
@@ -123,7 +135,7 @@ return(
         <img src="./images/taiwan_picture.svg" alt=""/>
 
         <div id="postPage-islands" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover1')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover1')}></button>
 
           <div id="popover1" className="popover">
             <div className="popover-title">
@@ -147,7 +159,7 @@ return(
 
 
         <div id="postPage-north" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover2')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover2')}></button>
 
           <div id="popover2" className="popover">
             <div className="popover-title">
@@ -168,7 +180,7 @@ return(
           </div>
         </div>
         <div id="postPage-central" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover3')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover3')}></button>
 
           <div id="popover3" className="popover">
             <div className="popover-title">
@@ -190,7 +202,7 @@ return(
         </div>
 
         <div id="postPage-south" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover4')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover4')}></button>
 
           <div id="popover4" className="popover">
             <div className="popover-title">
@@ -211,10 +223,10 @@ return(
           </div>
         </div>
         <div id="postPage-east" className="point">
-          <button onclick="togglePopoverWithDynamicPosition(event, 'popover5')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover5')}></button>
 
           <div id="popover5" className="popover">
-            <div class="popover-title">
+            <div className="popover-title">
               <img src="./images/寄.svg" alt=""/>
               <img src="./images/件.svg" alt=""/>
               <img src="./images/總.svg" alt=""/>

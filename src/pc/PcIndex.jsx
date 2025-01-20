@@ -5,8 +5,8 @@ import "../pc/css/PC-index.css"
 import React, { useEffect } from "react"
 
 export default function PcIndex() {
-React.useEffect(()=>{
-  const script = document.createElement("script");
+  React.useEffect(() => {
+    const script = document.createElement("script");
     script.src = "public/js/taiwan.js";
     script.async = true; // 设置异步加载
     document.body.appendChild(script);
@@ -15,7 +15,7 @@ React.useEffect(()=>{
       // 清理脚本
       document.body.removeChild(script);
     };
-},[]);
+  }, []);
 
   return (
     <div id="pcIndexPage">
@@ -33,7 +33,7 @@ React.useEffect(()=>{
             <div className="pcIndexPage-sidebar-item02 button-grow-shadow">
               <img src="./images/btn-3.svg" alt="" />
               <Link to="/ReceiveRecord"><h2>紀錄區</h2></Link>
-              
+
 
             </div>
           </div>
@@ -64,30 +64,30 @@ React.useEffect(()=>{
           <img src="./images/taiwan_picture.svg" alt="" />
           {/* 離島 */}
           <div id="pcIndexPage-islands" className="point">
-          <button onClick="togglePopoverWithDynamicPosition(event, 'popover1')"></button>
+            <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover1')}></button>
 
-          <div id="popover1" className="popover">
-            <div className="popover-title">
-              <img src="./images/寄.svg" alt=""/>
-              <img src="./images/件.svg" alt=""/>
-              <img src="./images/總.svg" alt=""/>
-              <img src="./images/數.svg" alt=""/>
+            <div id="popover1" className="popover">
+              <div className="popover-title">
+                <img src="./images/寄.svg" alt="" />
+                <img src="./images/件.svg" alt="" />
+                <img src="./images/總.svg" alt="" />
+                <img src="./images/數.svg" alt="" />
+
+              </div>
+              <div className="pcIndexPage-total"></div>
+              <div className="r-title">
+                <img src="./images/排.svg" alt="" />
+                <img src="./images/行.svg" alt="" />
+                <img src="./images/榜.svg" alt="" />
+              </div>
+              <div className="pcIndexPage-rankings"></div>
 
             </div>
-            <div className="pcIndexPage-total"></div>
-            <div className="r-title">
-              <img src="./images/排.svg" alt=""/>
-              <img src="./images/行.svg" alt=""/>
-              <img src="./images/榜.svg" alt=""/>
-            </div>
-            <div className="pcIndexPage-rankings"></div>
-
           </div>
-        </div>
         </div>
         {/* 北部 */}
         <div id="pcIndexPage-north" className="point">
-          <button onClick="togglePopoverWithDynamicPosition(event, 'popover2')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover2')}></button>
 
           <div id="popover2" className="popover">
             <div className="popover-title">
@@ -110,7 +110,7 @@ React.useEffect(()=>{
 
         {/* 中部 */}
         <div id="pcIndexPage-central" className="point">
-          <button onClick="togglePopoverWithDynamicPosition(event, 'popover3')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover3')}></button>
 
           <div id="popover3" className="popover">
             <div className="popover-title">
@@ -132,7 +132,7 @@ React.useEffect(()=>{
         </div>
         {/* 南部 */}
         <div id="pcIndexPage-south" className="point">
-          <button onClick="togglePopoverWithDynamicPosition(event, 'popover4')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover4')}></button>
 
           <div id="popover4" className="popover">
             <div className="popover-title">
@@ -154,7 +154,7 @@ React.useEffect(()=>{
         </div>
         {/* 東部 */}
         <div id="pcIndexPage-east" className="point">
-          <button onClick="togglePopoverWithDynamicPosition(event, 'popover5')"></button>
+          <button onClick={(event) => togglePopoverWithDynamicPosition(event, 'popover5')}></button>
 
           <div id="popover5" className="popover">
             <div className="popover-title">
@@ -164,22 +164,21 @@ React.useEffect(()=>{
               <img src="./images/數.svg" alt="" />
 
             </div>
-            <div className="pcIndexPage-total">
-              <div className="r-title">
-                <img src="./images/排.svg" alt="" />
-                <img src="./images/行.svg" alt="" />
-                <img src="./images/榜.svg" alt="" />
-              </div>
-              <div className="pcIndexPage-rankings"></div>
-
+            <div className="pcIndexPage-total"></div>
+            <div className="r-title">
+              <img src="./images/排.svg" alt="" />
+              <img src="./images/行.svg" alt="" />
+              <img src="./images/榜.svg" alt="" />
             </div>
+            <div className="pcIndexPage-rankings"></div>
+
           </div>
 
         </div>
 
         <div id="pcIndexPage-button-pair">
           <Link to="/Post"> <button >開始配對</button></Link>
-         
+
         </div>
 
       </main>
