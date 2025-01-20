@@ -33,7 +33,7 @@ function MemStoryPage() {
             </main>
 
             <footer>
-                <p>copyright &copy; 2025  郵你真好(學生練習作品)</p>
+                <p>copyright &copy; 2025  郵你真好(此為學生練習作品，無商業用途)</p>
             </footer>
         </div>
     )
